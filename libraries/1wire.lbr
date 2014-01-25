@@ -1,0 +1,1932 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.1">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
+<layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+</layers>
+<library>
+<description>&lt;h1&gt;Dallas/Maxim 1-Wire/iButton devices&lt;/h1&gt;
+&lt;p&gt;Onewire is a simple, low-cost bus system working with hundreds of devices on an up to 300m long one-wire (plus GND) bus system. It is relative slow (~16kBaud) but electrically undemanding, too. The onewire is hotplug-capable, if the host software supports it. The bus can be controlled by a single &amp;mu;C port pin or by special host adapter chips, which are available for RS232, Parallel, I&lt;sup&gt;2&lt;/sup&gt;C, and USB to onewire conversion. They are available as ready-to-run host adapter devices, too.&lt;/p&gt;
+&lt;p&gt;The chips on the bus can be powered through the bus line, this is called "parasite power". All neccesary circuit and capacities for parasite power are on chip. Some chips need an additional power source to provide all features.&lt;/p&gt;
+&lt;p&gt;iButton is an application for onewire devices, using special packaged onewire devices as keys or for data storage. All onewire chips have a unique serial number for technical reasons, and together with the hot-plug capability this makes them useable as unique keys. In addition, many onewire chips have additional memory (EPROM, EEPROM, RAM) on the chip, which can be used to store cryptographic keys. iButtons come in various packages which are protected against corrosive agents and weather influences.&lt;/p&gt;
+&lt;p&gt;Get more info at &lt;tt&gt;http://www.maxim-ic.com/1-Wire.cfm&lt;/tt&gt;&lt;/p&gt;
+&lt;p&gt;Linux driver at &lt;tt&gt;http://owfs.sf.net&lt;/tt&gt;&lt;/p&gt;
+&lt;h3&gt;Copyright notice:&lt;/h3&gt;
+&lt;p&gt;The devices in this library are copyrighted by various authors &amp;mdash; permission to use, distribute and modify this library is given to you at the terms of the LGPL. Copyright holders are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;&lt;/li&gt;
+&lt;li&gt;Giovanni Varasano &amp;lt;giovanni.varasano@fastwebnet.it&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The authorship for each device is given in the device notes.&lt;/p&gt;</description>
+<packages>
+<package name="TSOC6">
+<description>&lt;b&gt;TSOC 6&lt;/b&gt;</description>
+<wire x1="-1.8542" y1="1.8034" x2="1.8542" y2="1.8034" width="0.254" layer="21"/>
+<wire x1="1.8542" y1="1.8034" x2="1.8542" y2="-1.8034" width="0.254" layer="21"/>
+<wire x1="1.8542" y1="-1.8034" x2="-1.8542" y2="-1.8034" width="0.254" layer="21"/>
+<wire x1="-1.8542" y1="-1.8034" x2="-1.8542" y2="1.8034" width="0.254" layer="21"/>
+<circle x="-1.143" y="-1.016" radius="0.254" width="0.1524" layer="21"/>
+<smd name="1" x="-1.27" y="-1.6002" dx="0.4064" dy="1.2192" layer="1"/>
+<smd name="2" x="0" y="-1.6002" dx="0.4064" dy="1.2192" layer="1"/>
+<smd name="3" x="1.27" y="-1.6002" dx="0.4064" dy="1.2192" layer="1"/>
+<smd name="4" x="1.27" y="1.6002" dx="0.4064" dy="1.2192" layer="1"/>
+<smd name="5" x="0" y="1.6002" dx="0.4064" dy="1.2192" layer="1"/>
+<smd name="6" x="-1.27" y="1.6002" dx="0.4064" dy="1.2192" layer="1"/>
+<text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.3716" y1="-2.0828" x2="-1.1684" y2="-1.0668" layer="51"/>
+<rectangle x1="-0.1016" y1="-2.0828" x2="0.1016" y2="-1.0668" layer="51"/>
+<rectangle x1="1.1684" y1="-2.0828" x2="1.3716" y2="-1.0668" layer="51"/>
+<rectangle x1="1.1684" y1="1.0668" x2="1.3716" y2="2.0828" layer="51"/>
+<rectangle x1="-0.1016" y1="1.0668" x2="0.1016" y2="2.0828" layer="51"/>
+<rectangle x1="-1.3716" y1="1.0668" x2="-1.1684" y2="2.0828" layer="51"/>
+</package>
+<package name="TO92-">
+<description>&lt;b&gt;TO-92&lt;/b&gt;</description>
+<wire x1="-2.095" y1="-1.651" x2="2.095" y2="-1.651" width="0.1524" layer="21"/>
+<wire x1="-2.413" y1="1.1359" x2="2.413" y2="1.1359" width="0.1524" layer="21" curve="-129.583345" cap="flat"/>
+<wire x1="1.136" y1="-0.127" x2="-1.136" y2="-0.127" width="0.1524" layer="51"/>
+<wire x1="-2.413" y1="1.1359" x2="-2.413" y2="-1.1359" width="0.1524" layer="51" curve="50.416655" cap="flat"/>
+<wire x1="-1.404" y1="-0.127" x2="-2.664" y2="-0.127" width="0.1524" layer="51"/>
+<wire x1="-2.4135" y1="-1.1359" x2="-2.095" y2="-1.651" width="0.1524" layer="21" curve="13.038528" cap="flat"/>
+<wire x1="-1.136" y1="-0.127" x2="-1.404" y2="-0.127" width="0.1524" layer="21"/>
+<wire x1="2.413" y1="-1.1359" x2="2.413" y2="1.1359" width="0.1524" layer="51" curve="50.416655" cap="flat"/>
+<wire x1="2.664" y1="-0.127" x2="1.404" y2="-0.127" width="0.1524" layer="51"/>
+<wire x1="1.404" y1="-0.127" x2="1.136" y2="-0.127" width="0.1524" layer="21"/>
+<wire x1="2.095" y1="-1.651" x2="2.4247" y2="-1.1118" width="0.1524" layer="21" curve="13.609443" cap="flat"/>
+<pad name="3" x="2.54" y="0" drill="0.8128" shape="octagon"/>
+<pad name="1" x="-2.54" y="0" drill="0.8128" shape="octagon"/>
+<pad name="2" x="0" y="0" drill="0.8128" shape="octagon"/>
+<text x="-2.54" y="3.048" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-3.302" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="SOT223">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;&lt;p&gt;
+DALLAS Semiconductor (DS2405.pdf)&lt;/b&gt;</description>
+<wire x1="3.277" y1="1.778" x2="3.277" y2="-1.778" width="0.2032" layer="21"/>
+<wire x1="3.277" y1="-1.778" x2="-3.277" y2="-1.778" width="0.2032" layer="21"/>
+<wire x1="-3.277" y1="-1.778" x2="-3.277" y2="1.778" width="0.2032" layer="21"/>
+<wire x1="-3.277" y1="1.778" x2="3.277" y2="1.778" width="0.2032" layer="21"/>
+<smd name="2" x="-2.311" y="-3.099" dx="1.219" dy="2.235" layer="1"/>
+<smd name="4" x="0" y="-3.099" dx="1.219" dy="2.235" layer="1"/>
+<smd name="3" x="2.311" y="-3.099" dx="1.219" dy="2.235" layer="1"/>
+<smd name="1" x="0" y="3.099" dx="3.6" dy="2.2" layer="1"/>
+<text x="-2.54" y="0.0508" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-1.3208" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
+<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
+<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
+<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
+<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
+<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
+<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
+<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
+</package>
+<package name="UMAX8">
+<description>&lt;b&gt;micro MAX Package&lt;/b&gt;</description>
+<wire x1="-1.4" y1="1.4" x2="1.4" y2="1.4" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="1.4" x2="1.4" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="-1.4" x2="-1.4" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="-1.4" y1="-1.4" x2="-1.4" y2="1.4" width="0.2032" layer="21"/>
+<wire x1="-0.7" y1="-1.1" x2="-0.7" y2="-0.4" width="0.2032" layer="21" curve="-180"/>
+<wire x1="-0.7" y1="-0.4" x2="-0.7" y2="-1.1" width="0.2032" layer="21"/>
+<smd name="1" x="-0.975" y="-2.175" dx="0.45" dy="1.2" layer="1"/>
+<smd name="2" x="-0.325" y="-2.175" dx="0.45" dy="1.2" layer="1"/>
+<smd name="3" x="0.325" y="-2.175" dx="0.45" dy="1.2" layer="1"/>
+<smd name="4" x="0.975" y="-2.175" dx="0.45" dy="1.2" layer="1"/>
+<smd name="5" x="0.975" y="2.175" dx="0.45" dy="1.2" layer="1"/>
+<smd name="6" x="0.325" y="2.175" dx="0.45" dy="1.2" layer="1"/>
+<smd name="7" x="-0.325" y="2.175" dx="0.45" dy="1.2" layer="1"/>
+<smd name="8" x="-0.975" y="2.175" dx="0.45" dy="1.2" layer="1"/>
+<text x="-1.636" y="-2.286" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="2.906" y="-2.286" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.1528" y1="-2.4036" x2="-0.7972" y2="-1.4384" layer="51"/>
+<rectangle x1="-0.5028" y1="-2.4036" x2="-0.1472" y2="-1.4384" layer="51"/>
+<rectangle x1="0.1472" y1="-2.4036" x2="0.5028" y2="-1.4384" layer="51"/>
+<rectangle x1="0.7972" y1="-2.4036" x2="1.1528" y2="-1.4384" layer="51"/>
+<rectangle x1="0.7972" y1="1.4384" x2="1.1528" y2="2.4036" layer="51"/>
+<rectangle x1="0.1472" y1="1.4384" x2="0.5028" y2="2.4036" layer="51"/>
+<rectangle x1="-0.5028" y1="1.4384" x2="-0.1472" y2="2.4036" layer="51"/>
+<rectangle x1="-1.1528" y1="1.4384" x2="-0.7972" y2="2.4036" layer="51"/>
+</package>
+<package name="SO16">
+<description>&lt;b&gt;Small Outline Package&lt;/b&gt;</description>
+<wire x1="4.699" y1="1.9558" x2="-4.699" y2="1.9558" width="0.1524" layer="21"/>
+<wire x1="4.699" y1="-1.9558" x2="5.08" y2="-1.5748" width="0.1524" layer="21" curve="90"/>
+<wire x1="-5.08" y1="1.5748" x2="-4.699" y2="1.9558" width="0.1524" layer="21" curve="-90"/>
+<wire x1="4.699" y1="1.9558" x2="5.08" y2="1.5748" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-5.08" y1="-1.5748" x2="-4.699" y2="-1.9558" width="0.1524" layer="21" curve="90"/>
+<wire x1="-4.699" y1="-1.9558" x2="4.699" y2="-1.9558" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="-1.5748" x2="5.08" y2="1.5748" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="1.5748" x2="-5.08" y2="0.508" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="0.508" x2="-5.08" y2="-0.508" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-0.508" x2="-5.08" y2="-1.5748" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="0.508" x2="-5.08" y2="-0.508" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-5.08" y1="-1.6002" x2="5.08" y2="-1.6002" width="0.0508" layer="21"/>
+<smd name="1" x="-4.445" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="16" x="-4.445" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="2" x="-3.175" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="3" x="-1.905" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="15" x="-3.175" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="14" x="-1.905" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="4" x="-0.635" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="13" x="-0.635" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="5" x="0.635" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="12" x="0.635" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="6" x="1.905" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="7" x="3.175" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="11" x="1.905" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="10" x="3.175" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="8" x="4.445" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="9" x="4.445" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<text x="-4.064" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-5.461" y="-2.032" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<rectangle x1="-0.889" y1="1.9558" x2="-0.381" y2="3.0988" layer="51"/>
+<rectangle x1="-4.699" y1="-3.0988" x2="-4.191" y2="-1.9558" layer="51"/>
+<rectangle x1="-3.429" y1="-3.0988" x2="-2.921" y2="-1.9558" layer="51"/>
+<rectangle x1="-2.159" y1="-3.0734" x2="-1.651" y2="-1.9304" layer="51"/>
+<rectangle x1="-0.889" y1="-3.0988" x2="-0.381" y2="-1.9558" layer="51"/>
+<rectangle x1="-2.159" y1="1.9558" x2="-1.651" y2="3.0988" layer="51"/>
+<rectangle x1="-3.429" y1="1.9558" x2="-2.921" y2="3.0988" layer="51"/>
+<rectangle x1="-4.699" y1="1.9558" x2="-4.191" y2="3.0988" layer="51"/>
+<rectangle x1="0.381" y1="-3.0988" x2="0.889" y2="-1.9558" layer="51"/>
+<rectangle x1="1.651" y1="-3.0988" x2="2.159" y2="-1.9558" layer="51"/>
+<rectangle x1="2.921" y1="-3.0988" x2="3.429" y2="-1.9558" layer="51"/>
+<rectangle x1="4.191" y1="-3.0988" x2="4.699" y2="-1.9558" layer="51"/>
+<rectangle x1="0.381" y1="1.9558" x2="0.889" y2="3.0988" layer="51"/>
+<rectangle x1="1.651" y1="1.9558" x2="2.159" y2="3.0988" layer="51"/>
+<rectangle x1="2.921" y1="1.9558" x2="3.429" y2="3.0988" layer="51"/>
+<rectangle x1="4.191" y1="1.9558" x2="4.699" y2="3.0988" layer="51"/>
+</package>
+<package name="DIL16">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="10.16" y1="2.921" x2="-10.16" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-10.16" y1="-2.921" x2="10.16" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="10.16" y1="2.921" x2="10.16" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-10.16" y1="2.921" x2="-10.16" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-10.16" y1="-2.921" x2="-10.16" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-10.16" y1="1.016" x2="-10.16" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="15" x="-6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="16" x="-8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-10.541" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-7.493" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="SO24L">
+<description>&lt;b&gt;Small Outline Package&lt;/b&gt;</description>
+<wire x1="7.366" y1="3.7338" x2="-7.366" y2="3.7338" width="0.1524" layer="21"/>
+<wire x1="7.366" y1="-3.7338" x2="7.747" y2="-3.3528" width="0.1524" layer="21" curve="90"/>
+<wire x1="-7.747" y1="3.3528" x2="-7.366" y2="3.7338" width="0.1524" layer="21" curve="-90"/>
+<wire x1="7.366" y1="3.7338" x2="7.747" y2="3.3528" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-7.747" y1="-3.3528" x2="-7.366" y2="-3.7338" width="0.1524" layer="21" curve="90"/>
+<wire x1="-7.366" y1="-3.7338" x2="7.366" y2="-3.7338" width="0.1524" layer="21"/>
+<wire x1="7.747" y1="-3.3528" x2="7.747" y2="3.3528" width="0.1524" layer="21"/>
+<wire x1="-7.747" y1="3.3528" x2="-7.747" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-7.747" y1="1.27" x2="-7.747" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-7.747" y1="-1.27" x2="-7.747" y2="-3.3528" width="0.1524" layer="21"/>
+<wire x1="-7.747" y1="-3.3782" x2="7.747" y2="-3.3782" width="0.0508" layer="21"/>
+<wire x1="-7.747" y1="1.27" x2="-7.747" y2="-1.27" width="0.1524" layer="21" curve="-180"/>
+<smd name="1" x="-6.985" y="-5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="2" x="-5.715" y="-5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="3" x="-4.445" y="-5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="4" x="-3.175" y="-5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="5" x="-1.905" y="-5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="6" x="-0.635" y="-5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="7" x="0.635" y="-5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="8" x="1.905" y="-5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="17" x="1.905" y="5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="18" x="0.635" y="5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="19" x="-0.635" y="5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="20" x="-1.905" y="5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="21" x="-3.175" y="5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="22" x="-4.445" y="5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="23" x="-5.715" y="5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="24" x="-6.985" y="5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="16" x="3.175" y="5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="15" x="4.445" y="5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="14" x="5.715" y="5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="13" x="6.985" y="5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="9" x="3.175" y="-5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="10" x="4.445" y="-5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="11" x="5.715" y="-5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="12" x="6.985" y="-5.0292" dx="0.6604" dy="2.032" layer="1"/>
+<text x="-5.842" y="-0.762" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-8.128" y="-3.556" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<rectangle x1="-7.239" y1="-3.8608" x2="-6.731" y2="-3.7338" layer="21"/>
+<rectangle x1="-7.239" y1="-5.334" x2="-6.731" y2="-3.8608" layer="51"/>
+<rectangle x1="-5.969" y1="-3.8608" x2="-5.461" y2="-3.7338" layer="21"/>
+<rectangle x1="-5.969" y1="-5.334" x2="-5.461" y2="-3.8608" layer="51"/>
+<rectangle x1="-4.699" y1="-3.8608" x2="-4.191" y2="-3.7338" layer="21"/>
+<rectangle x1="-4.699" y1="-5.334" x2="-4.191" y2="-3.8608" layer="51"/>
+<rectangle x1="-3.429" y1="-3.8608" x2="-2.921" y2="-3.7338" layer="21"/>
+<rectangle x1="-3.429" y1="-5.334" x2="-2.921" y2="-3.8608" layer="51"/>
+<rectangle x1="-2.159" y1="-5.334" x2="-1.651" y2="-3.8608" layer="51"/>
+<rectangle x1="-2.159" y1="-3.8608" x2="-1.651" y2="-3.7338" layer="21"/>
+<rectangle x1="-0.889" y1="-3.8608" x2="-0.381" y2="-3.7338" layer="21"/>
+<rectangle x1="-0.889" y1="-5.334" x2="-0.381" y2="-3.8608" layer="51"/>
+<rectangle x1="0.381" y1="-3.8608" x2="0.889" y2="-3.7338" layer="21"/>
+<rectangle x1="0.381" y1="-5.334" x2="0.889" y2="-3.8608" layer="51"/>
+<rectangle x1="1.651" y1="-3.8608" x2="2.159" y2="-3.7338" layer="21"/>
+<rectangle x1="1.651" y1="-5.334" x2="2.159" y2="-3.8608" layer="51"/>
+<rectangle x1="-7.239" y1="3.8608" x2="-6.731" y2="5.334" layer="51"/>
+<rectangle x1="-7.239" y1="3.7338" x2="-6.731" y2="3.8608" layer="21"/>
+<rectangle x1="-5.969" y1="3.7338" x2="-5.461" y2="3.8608" layer="21"/>
+<rectangle x1="-5.969" y1="3.8608" x2="-5.461" y2="5.334" layer="51"/>
+<rectangle x1="-4.699" y1="3.7338" x2="-4.191" y2="3.8608" layer="21"/>
+<rectangle x1="-4.699" y1="3.8608" x2="-4.191" y2="5.334" layer="51"/>
+<rectangle x1="-3.429" y1="3.7338" x2="-2.921" y2="3.8608" layer="21"/>
+<rectangle x1="-3.429" y1="3.8608" x2="-2.921" y2="5.334" layer="51"/>
+<rectangle x1="-2.159" y1="3.7338" x2="-1.651" y2="3.8608" layer="21"/>
+<rectangle x1="-2.159" y1="3.8608" x2="-1.651" y2="5.334" layer="51"/>
+<rectangle x1="-0.889" y1="3.7338" x2="-0.381" y2="3.8608" layer="21"/>
+<rectangle x1="-0.889" y1="3.8608" x2="-0.381" y2="5.334" layer="51"/>
+<rectangle x1="0.381" y1="3.7338" x2="0.889" y2="3.8608" layer="21"/>
+<rectangle x1="0.381" y1="3.8608" x2="0.889" y2="5.334" layer="51"/>
+<rectangle x1="1.651" y1="3.7338" x2="2.159" y2="3.8608" layer="21"/>
+<rectangle x1="1.651" y1="3.8608" x2="2.159" y2="5.334" layer="51"/>
+<rectangle x1="2.921" y1="3.7338" x2="3.429" y2="3.8608" layer="21"/>
+<rectangle x1="4.191" y1="3.7338" x2="4.699" y2="3.8608" layer="21"/>
+<rectangle x1="5.461" y1="3.7338" x2="5.969" y2="3.8608" layer="21"/>
+<rectangle x1="6.731" y1="3.7338" x2="7.239" y2="3.8608" layer="21"/>
+<rectangle x1="2.921" y1="3.8608" x2="3.429" y2="5.334" layer="51"/>
+<rectangle x1="4.191" y1="3.8608" x2="4.699" y2="5.334" layer="51"/>
+<rectangle x1="5.461" y1="3.8608" x2="5.969" y2="5.334" layer="51"/>
+<rectangle x1="6.731" y1="3.8608" x2="7.239" y2="5.334" layer="51"/>
+<rectangle x1="2.921" y1="-3.8608" x2="3.429" y2="-3.7338" layer="21"/>
+<rectangle x1="4.191" y1="-3.8608" x2="4.699" y2="-3.7338" layer="21"/>
+<rectangle x1="5.461" y1="-3.8608" x2="5.969" y2="-3.7338" layer="21"/>
+<rectangle x1="6.731" y1="-3.8608" x2="7.239" y2="-3.7338" layer="21"/>
+<rectangle x1="2.921" y1="-5.334" x2="3.429" y2="-3.8608" layer="51"/>
+<rectangle x1="4.191" y1="-5.334" x2="4.699" y2="-3.8608" layer="51"/>
+<rectangle x1="5.461" y1="-5.334" x2="5.969" y2="-3.8608" layer="51"/>
+<rectangle x1="6.731" y1="-5.334" x2="7.239" y2="-3.8608" layer="51"/>
+</package>
+<package name="SO08">
+<description>&lt;b&gt;Small Outline Package&lt;/b&gt;</description>
+<wire x1="2.159" y1="1.9558" x2="-2.159" y2="1.9558" width="0.1524" layer="21"/>
+<wire x1="2.159" y1="-1.9558" x2="2.54" y2="-1.5748" width="0.1524" layer="21" curve="90"/>
+<wire x1="-2.54" y1="1.5748" x2="-2.159" y2="1.9558" width="0.1524" layer="21" curve="-90"/>
+<wire x1="2.159" y1="1.9558" x2="2.54" y2="1.5748" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.54" y1="-1.5748" x2="-2.159" y2="-1.9558" width="0.1524" layer="21" curve="90"/>
+<wire x1="-2.159" y1="-1.9558" x2="2.159" y2="-1.9558" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-1.5748" x2="2.54" y2="1.5748" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="1.5748" x2="-2.54" y2="0.508" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.508" x2="-2.54" y2="-0.508" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.508" x2="-2.54" y2="-1.5748" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.508" x2="-2.54" y2="-0.508" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-2.54" y1="-1.6002" x2="2.54" y2="-1.6002" width="0.0508" layer="21"/>
+<smd name="1" x="-1.905" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="8" x="-1.905" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="2" x="-0.635" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="3" x="0.635" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="7" x="-0.635" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="6" x="0.635" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="4" x="1.905" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="5" x="1.905" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<text x="3.937" y="-2.032" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<text x="-2.921" y="-1.905" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<rectangle x1="1.651" y1="1.9558" x2="2.159" y2="3.0988" layer="51"/>
+<rectangle x1="-2.159" y1="-3.0988" x2="-1.651" y2="-1.9558" layer="51"/>
+<rectangle x1="-0.889" y1="-3.0988" x2="-0.381" y2="-1.9558" layer="51"/>
+<rectangle x1="0.381" y1="-3.0734" x2="0.889" y2="-1.9304" layer="51"/>
+<rectangle x1="1.651" y1="-3.0988" x2="2.159" y2="-1.9558" layer="51"/>
+<rectangle x1="0.381" y1="1.9558" x2="0.889" y2="3.0988" layer="51"/>
+<rectangle x1="-0.889" y1="1.9558" x2="-0.381" y2="3.0988" layer="51"/>
+<rectangle x1="-2.159" y1="1.9558" x2="-1.651" y2="3.0988" layer="51"/>
+</package>
+<package name="SSOP16">
+<description>&lt;b&gt;Shrink Small Outline Package&lt;/b&gt;&lt;p&gt;
+package type SS</description>
+<wire x1="-3.15" y1="-2.6" x2="3.15" y2="-2.6" width="0.2032" layer="21"/>
+<wire x1="3.15" y1="-2.6" x2="3.15" y2="2.6" width="0.2032" layer="21"/>
+<wire x1="3.15" y1="2.6" x2="-3.15" y2="2.6" width="0.2032" layer="21"/>
+<smd name="1" x="-2.275" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="2" x="-1.625" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="3" x="-0.975" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="4" x="-0.325" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="5" x="0.325" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="6" x="0.975" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="7" x="1.625" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="8" x="2.275" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="9" x="2.275" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="10" x="1.625" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="11" x="0.975" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="12" x="0.325" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="13" x="-0.325" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="14" x="-0.975" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="15" x="-1.625" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="16" x="-2.275" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<text x="-3.556" y="-2.5999" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="4.856" y="-2.5999" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.4528" y1="-3.937" x2="-2.0972" y2="-2.6416" layer="51"/>
+<rectangle x1="-1.8029" y1="-3.937" x2="-1.4473" y2="-2.6416" layer="51"/>
+<rectangle x1="-1.1529" y1="-3.937" x2="-0.7973" y2="-2.6416" layer="51"/>
+<rectangle x1="-0.5029" y1="-3.937" x2="-0.1473" y2="-2.6416" layer="51"/>
+<rectangle x1="0.1471" y1="-3.937" x2="0.5027" y2="-2.6416" layer="51"/>
+<rectangle x1="0.7971" y1="-3.937" x2="1.1527" y2="-2.6416" layer="51"/>
+<rectangle x1="1.4471" y1="-3.937" x2="1.8027" y2="-2.6416" layer="51"/>
+<rectangle x1="2.0973" y1="-3.937" x2="2.4529" y2="-2.6416" layer="51"/>
+<rectangle x1="2.0971" y1="2.6416" x2="2.4527" y2="3.937" layer="51"/>
+<rectangle x1="1.4471" y1="2.6416" x2="1.8027" y2="3.937" layer="51"/>
+<rectangle x1="0.7971" y1="2.6416" x2="1.1527" y2="3.937" layer="51"/>
+<rectangle x1="0.1471" y1="2.6416" x2="0.5027" y2="3.937" layer="51"/>
+<rectangle x1="-0.5029" y1="2.6416" x2="-0.1473" y2="3.937" layer="51"/>
+<rectangle x1="-1.1528" y1="2.6416" x2="-0.7972" y2="3.937" layer="51"/>
+<rectangle x1="-1.8028" y1="2.6416" x2="-1.4472" y2="3.937" layer="51"/>
+<rectangle x1="-2.4527" y1="2.6416" x2="-2.0971" y2="3.937" layer="51"/>
+<rectangle x1="-3.2499" y1="-2.5999" x2="-2.275" y2="2.5999" layer="27"/>
+</package>
+<package name="SOT23">
+<description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="DS2408">
+<wire x1="-5.08" y1="12.7" x2="5.08" y2="12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="12.7" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-15.24" x2="-5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-15.24" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
+<text x="-5.08" y="15.875" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="13.335" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="P7" x="10.16" y="10.16" length="middle" direction="oc" rot="R180"/>
+<pin name="P6" x="10.16" y="7.62" length="middle" direction="oc" rot="R180"/>
+<pin name="P5" x="10.16" y="5.08" length="middle" direction="oc" rot="R180"/>
+<pin name="P4" x="10.16" y="2.54" length="middle" direction="oc" rot="R180"/>
+<pin name="P3" x="10.16" y="0" length="middle" direction="oc" rot="R180"/>
+<pin name="P2" x="10.16" y="-2.54" length="middle" direction="oc" rot="R180"/>
+<pin name="P1" x="10.16" y="-5.08" length="middle" direction="oc" rot="R180"/>
+<pin name="P0" x="10.16" y="-7.62" length="middle" direction="oc" rot="R180"/>
+<pin name="RSTZ" x="10.16" y="-12.7" length="middle" direction="oc" rot="R180"/>
+</symbol>
+<symbol name="DS2409">
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="-7.62" y="10.795" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="8.255" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1W_OUT" x="12.7" y="0" length="middle" direction="oc" rot="R180"/>
+<pin name="1W_AUX" x="12.7" y="-5.08" length="middle" direction="oc" rot="R180"/>
+<pin name="CO" x="12.7" y="5.08" length="middle" direction="oc" rot="R180"/>
+<pin name="1W_IN" x="-12.7" y="-2.54" length="middle" direction="oc"/>
+</symbol>
+<symbol name="CNT">
+<wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<text x="-5.08" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="CNT" x="-10.16" y="0" length="middle" direction="in" function="dotclk"/>
+</symbol>
+<symbol name="DS2890">
+<wire x1="-7.62" y1="12.7" x2="2.54" y2="12.7" width="0.254" layer="94"/>
+<wire x1="2.54" y1="12.7" x2="2.54" y2="10.16" width="0.254" layer="94"/>
+<wire x1="2.54" y1="10.16" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="2.54" x2="-1.27" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="7.62" x2="-3.81" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="7.62" x2="-3.81" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="7.62" x2="-2.54" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="10.16" x2="2.54" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="3.81" x2="0" y2="6.35" width="0.254" layer="94"/>
+<wire x1="0" y1="6.35" x2="-0.635" y2="6.35" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<text x="-7.62" y="15.875" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="13.335" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-1.27" y="10.4775" size="1.778" layer="95">RH</text>
+<text x="-6.985" y="-0.9525" size="0.8128" layer="94">Software</text>
+<text x="-6.985" y="-1.905" size="0.8128" layer="94">Controlled</text>
+<pin name="RH" x="7.62" y="10.16" visible="pad" length="middle" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="DS2890P">
+<wire x1="-5.08" y1="12.7" x2="5.08" y2="12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="12.7" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="1.27" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="7.62" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="7.62" x2="0" y2="7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="7.62" x2="-1.27" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="7.62" x2="0" y2="10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="-2.54" y2="6.35" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="6.35" x2="-1.905" y2="6.35" width="0.254" layer="94"/>
+<text x="-5.08" y="15.875" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="13.335" size="1.778" layer="96">&gt;VALUE</text>
+<text x="1.5875" y="10.4775" size="1.778" layer="95">RH</text>
+<text x="1.905" y="0.3175" size="1.778" layer="95">RL</text>
+<text x="2.2225" y="5.3975" size="1.778" layer="95">WI</text>
+<text x="-4.445" y="-0.9525" size="0.8128" layer="94">Software</text>
+<text x="-4.445" y="-1.905" size="0.8128" layer="94">Controlled</text>
+<pin name="RH" x="10.16" y="10.16" visible="pad" length="middle" direction="pas" rot="R180"/>
+<pin name="WI" x="10.16" y="5.08" visible="pad" length="middle" direction="pas" rot="R180"/>
+<pin name="RL" x="10.16" y="0" visible="pad" length="middle" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="DS9503">
+<wire x1="-3.175" y1="1.27" x2="-1.905" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="1.27" x2="-0.3175" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-0.3175" y1="1.27" x2="-0.3175" y2="0.635" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="1.27" x2="-3.175" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-3.175" y1="-1.27" x2="-0.635" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="2.54" x2="-1.905" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="1.27" x2="-1.905" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-1.905" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="2.54" x2="0.635" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0.635" y1="2.54" x2="0.635" y2="3.175" width="0.254" layer="94"/>
+<wire x1="0.635" y1="3.175" x2="3.175" y2="3.175" width="0.254" layer="94"/>
+<wire x1="3.175" y1="3.175" x2="3.175" y2="2.54" width="0.254" layer="94"/>
+<wire x1="3.175" y1="2.54" x2="3.175" y2="1.905" width="0.254" layer="94"/>
+<wire x1="3.175" y1="1.905" x2="0.635" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0.635" y1="1.905" x2="0.635" y2="2.54" width="0.254" layer="94"/>
+<wire x1="3.175" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-2.54" x2="0.635" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-1.905" x2="3.175" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="3.175" y1="-1.905" x2="3.175" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="3.175" y1="-2.54" x2="3.175" y2="-3.175" width="0.254" layer="94"/>
+<wire x1="3.175" y1="-3.175" x2="0.635" y2="-3.175" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-3.175" x2="0.635" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="3.175" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<circle x="-1.905" y="2.54" radius="0.0762" width="0.6096" layer="94"/>
+<circle x="-1.905" y="-2.54" radius="0.0762" width="0.6096" layer="94"/>
+<text x="-5.08" y="5.715" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-5.08" y="8.255" size="1.778" layer="95">&gt;NAME</text>
+<pin name="P$1" x="-7.62" y="2.54" visible="pad" length="short" direction="pas"/>
+<pin name="P$2" x="-7.62" y="-2.54" visible="pad" length="short" direction="pas"/>
+<pin name="P$3" x="7.62" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="P$4" x="7.62" y="2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="DS9502">
+<wire x1="-6.35" y1="1.27" x2="-5.08" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="1.27" x2="-3.4925" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-3.4925" y1="1.27" x2="-3.4925" y2="0.635" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="1.27" x2="-6.35" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="-1.27" x2="-3.81" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-1.27" x2="-5.08" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="1.27" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-10.16" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="5.08" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="-10.16" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-2.54" x2="-10.16" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="2.54" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<circle x="-5.08" y="2.54" radius="0.0762" width="0.6096" layer="94"/>
+<circle x="-5.08" y="-2.54" radius="0.0762" width="0.6096" layer="94"/>
+<text x="-10.16" y="5.715" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-10.16" y="8.255" size="1.778" layer="95">&gt;NAME</text>
+<pin name="P$1" x="-12.7" y="2.54" visible="pad" length="short" direction="pas"/>
+<pin name="P$2" x="-12.7" y="-2.54" visible="pad" length="short" direction="pas"/>
+<pin name="P$3" x="2.54" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="P$4" x="2.54" y="2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="DS2480">
+<wire x1="-12.7" y1="17.78" x2="2.54" y2="17.78" width="0.254" layer="94"/>
+<wire x1="2.54" y1="17.78" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="-12.7" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-2.54" x2="-12.7" y2="17.78" width="0.254" layer="94"/>
+<text x="-8.89" y="18.415" size="1.27" layer="96">&gt;VALUE</text>
+<text x="-8.89" y="20.32" size="1.27" layer="95">&gt;NAME</text>
+<pin name="VDD" x="-10.16" y="22.86" length="middle" direction="pwr" rot="R270"/>
+<pin name="VPP" x="0" y="22.86" length="middle" direction="pwr" rot="R270"/>
+<pin name="RXD" x="-17.78" y="5.08" length="middle" direction="out"/>
+<pin name="TXD" x="-17.78" y="7.62" length="middle" direction="in"/>
+<pin name="1W" x="7.62" y="7.62" length="middle" direction="oc" rot="R180"/>
+<pin name="POL" x="-17.78" y="0" length="middle" direction="in"/>
+<pin name="GND" x="-5.08" y="-7.62" length="middle" direction="pwr" rot="R90"/>
+</symbol>
+<symbol name="DS2417">
+<wire x1="-20.32" y1="17.78" x2="-10.16" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="17.78" x2="-10.16" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="2.54" x2="-20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="2.54" x2="-20.32" y2="17.78" width="0.254" layer="94"/>
+<text x="-20.32" y="20.955" size="1.778" layer="95">&gt;NAME</text>
+<text x="-20.32" y="18.415" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="X2" x="-5.08" y="12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="X1" x="-5.08" y="15.24" length="middle" direction="pas" rot="R180"/>
+<pin name="INT" x="-5.08" y="5.08" length="middle" direction="oc" function="dot" rot="R180"/>
+</symbol>
+<symbol name="VDD-GND">
+<text x="-0.635" y="-0.635" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="1.905" y="-2.54" size="1.27" layer="95" font="vector" rot="MR270">GND</text>
+<text x="1.905" y="2.54" size="1.27" layer="95" font="vector" rot="R90">VDD</text>
+<pin name="VDD" x="0" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="GND" x="0" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
+</symbol>
+<symbol name="1W">
+<text x="-8.89" y="1.905" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<pin name="1W" x="-5.08" y="0" visible="pad" length="middle" direction="pwr"/>
+</symbol>
+<symbol name="1W_SUP">
+<wire x1="-7.62" y1="1.27" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.27" x2="-7.62" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-1.27" x2="-7.62" y2="1.27" width="0.254" layer="94"/>
+<text x="-6.35" y="-0.635" size="1.27" layer="94" font="vector">1W</text>
+<pin name="1W" x="0" y="0" visible="pad" length="short" direction="sup" rot="R180"/>
+</symbol>
+<symbol name="GND">
+<text x="-0.635" y="-0.635" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="1.905" y="-2.54" size="1.27" layer="95" font="vector" rot="MR270">GND</text>
+<pin name="GND" x="0" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
+</symbol>
+<symbol name="IC">
+<wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<text x="5.715" y="0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.715" y="-1.905" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.54" y="-1.905" size="3.81" layer="94" ratio="15">IC</text>
+</symbol>
+<symbol name="AIN">
+<wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<text x="5.715" y="0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.715" y="-1.905" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="AIN" x="-10.16" y="0" length="middle" direction="oc"/>
+</symbol>
+<symbol name="OC">
+<wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<text x="-5.08" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="IO" x="10.16" y="0" length="middle" direction="oc" rot="R180"/>
+</symbol>
+<symbol name="OC_POWER">
+<wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="3.175" y1="1.27" x2="4.445" y2="0" width="0.254" layer="94"/>
+<wire x1="4.445" y1="0" x2="3.175" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="3.175" y1="-1.27" x2="3.175" y2="1.27" width="0.254" layer="94"/>
+<text x="-5.08" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-5.08" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<pin name="IO" x="10.16" y="0" length="middle" direction="oc" rot="R180"/>
+</symbol>
+<symbol name="DS2404">
+<wire x1="-7.62" y1="10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<text x="-7.62" y="10.795" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-7.62" y="13.335" size="1.778" layer="95">&gt;NAME</text>
+<pin name="X1" x="12.7" y="7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="X2" x="12.7" y="5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="IRQ" x="-12.7" y="-7.62" length="middle" direction="out" function="dot"/>
+<pin name="RST" x="-12.7" y="2.54" length="middle" direction="in" function="dot"/>
+<pin name="SDATA" x="-12.7" y="7.62" length="middle"/>
+<pin name="SCLK" x="-12.7" y="5.08" length="middle" direction="in" function="clk"/>
+<pin name="1W/PIO" x="-12.7" y="-2.54" length="middle" direction="oc"/>
+<pin name="VBATB" x="12.7" y="-5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="VBATO" x="12.7" y="-7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="1HZ" x="12.7" y="0" length="middle" direction="out" rot="R180"/>
+</symbol>
+<symbol name="DS2422">
+<wire x1="-10.16" y1="12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<text x="-10.16" y="15.24" size="1.27" layer="95">&gt;NAME</text>
+<text x="-10.16" y="13.335" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="X1" x="-15.24" y="2.54" length="middle" direction="pas"/>
+<pin name="X2" x="-15.24" y="0" length="middle" direction="pas"/>
+<pin name="AGND" x="15.24" y="-10.16" length="middle" direction="pwr" rot="R180"/>
+<pin name="TEST_SPLY" x="-15.24" y="-7.62" length="middle" direction="pwr"/>
+<pin name="TEXT_RX" x="-15.24" y="-10.16" length="middle" direction="pwr"/>
+<pin name="SDATA" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="SCLK" x="15.24" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="CNVST" x="15.24" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="VPAD" x="15.24" y="10.16" length="middle" direction="pwr" rot="R180"/>
+<pin name="PUMP_ONZ" x="15.24" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="ALARM" x="-15.24" y="10.16" length="middle" direction="out"/>
+<pin name="TEST_CG" x="-15.24" y="-5.08" length="middle" direction="pwr"/>
+</symbol>
+<symbol name="DS2482-800">
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<text x="-7.62" y="10.795" size="1.27" layer="96">&gt;VALUE</text>
+<text x="-7.62" y="12.7" size="1.27" layer="95">&gt;NAME</text>
+<pin name="SDA" x="-12.7" y="7.62" length="middle"/>
+<pin name="SCL" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="AD0" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="AD1" x="-12.7" y="-7.62" length="middle" direction="in"/>
+<pin name="AD2" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="1W_7" x="12.7" y="7.62" length="middle" direction="oc" rot="R180"/>
+<pin name="1W_6" x="12.7" y="5.08" length="middle" direction="oc" rot="R180"/>
+<pin name="1W_5" x="12.7" y="2.54" length="middle" direction="oc" rot="R180"/>
+<pin name="1W_4" x="12.7" y="0" length="middle" direction="oc" rot="R180"/>
+<pin name="1W_3" x="12.7" y="-2.54" length="middle" direction="oc" rot="R180"/>
+<pin name="1W_2" x="12.7" y="-5.08" length="middle" direction="oc" rot="R180"/>
+<pin name="1W_1" x="12.7" y="-7.62" length="middle" direction="oc" rot="R180"/>
+<pin name="1W_0" x="12.7" y="-10.16" length="middle" direction="oc" rot="R180"/>
+</symbol>
+<symbol name="DS2482-100">
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="-7.62" y="8.255" size="1.27" layer="96">&gt;VALUE</text>
+<text x="-7.62" y="10.16" size="1.27" layer="95">&gt;NAME</text>
+<pin name="SDA" x="-12.7" y="5.08" length="middle"/>
+<pin name="SCL" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="AD0" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="AD1" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="PCT" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="1W" x="12.7" y="-2.54" length="middle" direction="oc" rot="R180"/>
+</symbol>
+<symbol name="DS2438">
+<wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<text x="-5.08" y="8.255" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-5.08" y="10.795" size="1.778" layer="95">&gt;NAME</text>
+<pin name="AIN" x="10.16" y="5.08" length="middle" direction="in" rot="R180"/>
+<pin name="I+" x="10.16" y="0" length="middle" direction="in" rot="R180"/>
+<pin name="I-" x="10.16" y="-5.08" length="middle" direction="in" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DS2408" prefix="IC">
+<description>&lt;h2&gt;8-Channel Addressable Switch&lt;/h2&gt;
+&lt;p&gt;This is a general purpose I/O multiplier. The PIO pins P0..P7 are inputs/open drain outputs and can be used in a mixed I/O fashion. Output sink capability is appr. 4mA. Each input state can be read but changing input signals additionally trigger the egde detector for this input. The edge detector state can be read back, too.&lt;/p&gt;
+&lt;p&gt;The RSTZ pin can be configured by software as a &amp;ndash;STROBE output (default) or as the common edge detector &amp;ndash;RESET input. In the latter mode, the output pins are all set to floating on a &amp;ndash;RESET trigger, too.&lt;/p&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="A" symbol="DS2408" x="0" y="0" addlevel="always"/>
+<gate name="_1W" symbol="1W" x="-7.62" y="10.16" addlevel="request"/>
+<gate name="P" symbol="VDD-GND" x="-10.16" y="-5.08" addlevel="request"/>
+</gates>
+<devices>
+<device name="S" package="SO16">
+<connects>
+<connect gate="A" pin="P0" pad="2"/>
+<connect gate="A" pin="P1" pad="14"/>
+<connect gate="A" pin="P2" pad="13"/>
+<connect gate="A" pin="P3" pad="12"/>
+<connect gate="A" pin="P4" pad="11"/>
+<connect gate="A" pin="P5" pad="9"/>
+<connect gate="A" pin="P6" pad="8"/>
+<connect gate="A" pin="P7" pad="7"/>
+<connect gate="A" pin="RSTZ" pad="10"/>
+<connect gate="P" pin="GND" pad="5"/>
+<connect gate="P" pin="VDD" pad="3"/>
+<connect gate="_1W" pin="1W" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS2409" prefix="IC">
+<description>&lt;h2&gt;MicroLAN Coupler&lt;/h2&gt;
+&lt;p&gt;This device allows to create star-topology networks of onewire devices. The idea of this chip is to switch branches of a star-topology network so the resulting network is always a bus (with short stubs only), as only bus-topology onewire networks work properly.&lt;/p&gt;
+&lt;p&gt;The 1W_IN pin is the connection to the network backbone on the host side. The 1W_OUT pin connects to the backbone, too, but on the far side. The 1W_AUX pin is the network branch connection. The CO output pin can be controlled by software or automatically switched on/off whenever the 1W_OUT or 1W_AUX pin (configureable by software) is connected to the 1W_IN pin. The drive load for this pin is 10mA. Up to one dozen DS2409 chips may be cascaded on both backbone and branch line.&lt;/p&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="G$1" symbol="DS2409" x="0" y="0" addlevel="always"/>
+<gate name="P" symbol="VDD-GND" x="-17.78" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="P" package="TSOC6">
+<connects>
+<connect gate="G$1" pin="1W_AUX" pad="4"/>
+<connect gate="G$1" pin="1W_IN" pad="2"/>
+<connect gate="G$1" pin="1W_OUT" pad="3"/>
+<connect gate="G$1" pin="CO" pad="5"/>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="P" pin="VDD" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS2423" prefix="IC">
+<description>&lt;h2&gt;4096-Bit RAM with Access Counter&lt;/h2&gt;
+&lt;p&gt;This chip features a 16x256 bit RAM. The last four pages have an associated 32-Bit access counters which are incremented on each write access to the page and can't be reset separately from RAM contents.&lt;/p&gt;
+&lt;p&gt;In addition, the counters of page 14 and 15 may be incremented on each high-to-low transition on the input CNTA/CNTB. That makes this chip interesting for readout of incremental sensors, too. Additional external circuit makes it even possible to get absolute position data by substraction of the two counter values.&lt;/p&gt;
+&lt;h3&gt;Notes:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Parasite power does not supply the RAM contents, so Vdd &lt;strong&gt;must&lt;/strong&gt; be applied to operate the RAM. The chip is still addressable even if Vdd fails, though.&lt;/li&gt;
+&lt;li&gt;Resetting the counters is only possible by performing a power-up sequence on Vdd (and lose the whole RAM contents). As the parasite power cuircuit doesn't supply the RAM, Vdd acts like a &amp;ndash;RESET pin, too.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="A" symbol="CNT" x="0" y="2.54"/>
+<gate name="_1W" symbol="1W" x="-10.16" y="-5.08" addlevel="request"/>
+<gate name="P" symbol="VDD-GND" x="10.16" y="-5.08" addlevel="request"/>
+<gate name="B" symbol="CNT" x="0" y="-12.7"/>
+</gates>
+<devices>
+<device name="P" package="TSOC6">
+<connects>
+<connect gate="A" pin="CNT" pad="6"/>
+<connect gate="B" pin="CNT" pad="5"/>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="P" pin="VDD" pad="3"/>
+<connect gate="_1W" pin="1W" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS2406" prefix="IC">
+<description>&lt;h2&gt;Dual Addressable Switch Plus 1024 Bit EPROM&lt;/h2&gt;
+&lt;p&gt;This chip provides one open drain I/O pin (PA) with 50mA sinking capability.The I/O pin also feature an edge detector which is set by any level change on the input and reset by software. The EPROM has 4 pages to 256 bit with sparate write protection.&lt;/p&gt;
+&lt;h3&gt;Notes:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;12V must be applied to the 1W pin in a controlled fashion to program the EPROM. This is handled by e.g. the DS2480B host adapter chip automatically.&lt;/li&gt;
+&lt;li&gt;The DS2406P is the same chip in a TSOC6 package with 2 additional pins PB and Vdd, which offer additional features.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="G$1" symbol="OC_POWER" x="0" y="0" addlevel="always"/>
+<gate name="_1W" symbol="1W" x="-7.62" y="0" addlevel="request"/>
+<gate name="GND" symbol="GND" x="0" y="-5.08" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="TO92-">
+<connects>
+<connect gate="G$1" pin="IO" pad="3"/>
+<connect gate="GND" pin="GND" pad="1"/>
+<connect gate="_1W" pin="1W" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS2406P" prefix="IC">
+<description>&lt;h2&gt;Dual Addressable Switch Plus 1024-Bit EPROM&lt;/h2&gt;
+&lt;p&gt;This chip provides one open drain I/O pin (PA) with 50mA sinking capability and a second open drain I/O pin (PB) with 8mA sinking capability. Each I/O pin also feature an edge detector which is set by any level change on the input and reset by software. The EPROM has 4 pages of 256 bit with sparate write protection.&lt;/p&gt;
+&lt;h3&gt;Notes:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;12V must be applied to the 1W pin in a controlled fashion to program the EPROM. This is handled by e.g. the DS2480B host adapter chip automatically.&lt;/li&gt;
+&lt;li&gt;Vdd@5V may be used to save the current chip state whenever parasitic power over the 1W pin is lost. &lt;strong&gt;Vdd is no Vpp pin! Never connect 12V to Vdd.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;The DS2406 is the same chip in a TO-92 package with 3 pins only, thus missing the PB and Vdd features.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="A" symbol="OC_POWER" x="0" y="5.08"/>
+<gate name="B" symbol="OC" x="0" y="-7.62"/>
+<gate name="_1W" symbol="1W" x="-10.16" y="10.16" addlevel="request"/>
+<gate name="P" symbol="VDD-GND" x="-12.7" y="-2.54" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="TSOC6">
+<connects>
+<connect gate="A" pin="IO" pad="3"/>
+<connect gate="B" pin="IO" pad="6"/>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="P" pin="VDD" pad="4"/>
+<connect gate="_1W" pin="1W" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS2450" prefix="IC">
+<description>&lt;h2&gt;Quad A/D Converter&lt;/h2&gt;
+&lt;p&gt;This chip offers 4 A/D converter channels with up to 16bit precision and a range from 0..2.56 or 0..5.12V. The A/D conversion is initiated by software and automatically checked against programmable top and bottom thresholds.&lt;/p&gt;
+&lt;h3&gt;Note:&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;The A/D input pins feature an open drain output with 4mA sinking capability, too.&lt;/li&gt;&lt;/ul&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="A" symbol="AIN" x="0" y="10.16"/>
+<gate name="B" symbol="AIN" x="0" y="2.54"/>
+<gate name="C" symbol="AIN" x="0" y="-5.08"/>
+<gate name="D" symbol="AIN" x="0" y="-12.7"/>
+<gate name="_1W" symbol="1W" x="-15.24" y="10.16" addlevel="request"/>
+<gate name="P" symbol="VDD-GND" x="-17.78" y="-5.08" addlevel="request"/>
+</gates>
+<devices>
+<device name="S" package="SO08">
+<connects>
+<connect gate="A" pin="AIN" pad="5"/>
+<connect gate="B" pin="AIN" pad="6"/>
+<connect gate="C" pin="AIN" pad="7"/>
+<connect gate="D" pin="AIN" pad="8"/>
+<connect gate="P" pin="GND" pad="4"/>
+<connect gate="P" pin="VDD" pad="1"/>
+<connect gate="_1W" pin="1W" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS2890" prefix="P">
+<description>&lt;h2&gt;1-Wire Digital Potentiometer&lt;/h2&gt;
+&lt;p&gt;This chip provides a 0..100k RH to GND resistor which can be controlled by software in 256 steps. The RH pin may be connected to levels from 0..11V.&lt;/p&gt;
+&lt;h3&gt;Notes:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The DS2890P is the same chip in a TSOC6 package with 3 additional pins Vdd, WI and RL, which allows to use the chip as a full featured potentiometer.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="G$1" symbol="DS2890" x="2.54" y="-5.08" addlevel="always"/>
+<gate name="_1W" symbol="1W" x="-7.62" y="7.62" addlevel="request"/>
+<gate name="P" symbol="GND" x="-10.16" y="2.54" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="TO92-">
+<connects>
+<connect gate="G$1" pin="RH" pad="3"/>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="_1W" pin="1W" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS2890P" prefix="P">
+<description>&lt;h2&gt;1-Wire Digital Potentiometer&lt;/h2&gt;
+&lt;p&gt;This chip provides a 0..100k potentiometer which can be controlled by software in 256 steps. The RH, RL and WI pins may be connected to levels from 0..11V.&lt;/p&gt;
+&lt;h3&gt;Notes:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The DS2890 is the same chip in a TO-92 package with only 3 pins, thus allowing to use it as a pull-to-ground resistor only.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="G$1" symbol="DS2890P" x="0" y="-5.08" addlevel="always"/>
+<gate name="_1W" symbol="1W" x="-7.62" y="10.16" addlevel="request"/>
+<gate name="P" symbol="VDD-GND" x="-10.16" y="-2.54" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="TSOC6">
+<connects>
+<connect gate="G$1" pin="RH" pad="4"/>
+<connect gate="G$1" pin="RL" pad="6"/>
+<connect gate="G$1" pin="WI" pad="5"/>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="P" pin="VDD" pad="3"/>
+<connect gate="_1W" pin="1W" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS9503" prefix="ZD">
+<description>&lt;h2&gt;ESD Protection Diode with Resistors&lt;/h2&gt;
+&lt;p&gt;This ESD protection diode is designed especially for onewire host interfaces. Unlike the DS9502, it has two additional 5Ohm resitors in the 1W and GND line.&lt;/p&gt;
+&lt;p&gt;Pin 5 and 6 have to be connected to the host side, pin 1 und 2 to the network side. The 1W line is through pin 1 and 6, the GND line is through pin 2 and 5.&lt;/p&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="G$1" symbol="DS9503" x="0" y="0"/>
+</gates>
+<devices>
+<device name="P" package="TSOC6">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="P$3" pad="5"/>
+<connect gate="G$1" pin="P$4" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS2401" prefix="IC">
+<description>&lt;h2&gt;Silicon Serial Number&lt;/h2&gt;
+&lt;p&gt;This chip provides only the basic feature of &lt;em&gt;any&lt;/em&gt; onewire chip, the unique serial number. It is useful if built into an appliance and connected to a service connector inside to identify this special appliance or in custom-made onewire keys.&lt;/p&gt;
+&lt;h3&gt;Note:&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;If you plan a onewire network with several chips, you don't need the DS2401 device, as &lt;em&gt;any&lt;/em&gt; onewire chip besides from the host adapter chips features an unique serial number.&lt;/li&gt;&lt;/ul&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="G$1" symbol="IC" x="0" y="0" addlevel="always"/>
+<gate name="_1W" symbol="1W" x="-5.08" y="0" addlevel="request"/>
+<gate name="P" symbol="GND" x="0" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="TO92-">
+<connects>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="_1W" pin="1W" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="P" package="TSOC6">
+<connects>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="_1W" pin="1W" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="Z" package="SOT223">
+<connects>
+<connect gate="P" pin="GND" pad="4"/>
+<connect gate="_1W" pin="1W" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS9502" prefix="ZD">
+<description>&lt;h2&gt;ESD Protection Diode&lt;/h2&gt;
+&lt;p&gt;This ESD protection diode is designed especially for onewire enabled remote devices.&lt;/p&gt;
+&lt;p&gt;Pin 5 and 6 have to be connected to the host side, pin 1 und 2 to the network side. The 1W line is through pin 1 and 6, the GND line is through pin 2 and 5.&lt;/p&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="G$1" symbol="DS9502" x="5.08" y="0"/>
+</gates>
+<devices>
+<device name="P" package="TSOC6">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="P$3" pad="5"/>
+<connect gate="G$1" pin="P$4" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS2431" prefix="IC">
+<description>&lt;h2&gt;1024-Bit EEPROM&lt;/h2&gt;
+&lt;p&gt;This chip provides a 4x256 Bit EEPROM, which can be programmed@5V. Write protection and OTP emulation are available, too.&lt;/p&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="G$1" symbol="IC" x="0" y="0" addlevel="always"/>
+<gate name="_1W" symbol="1W" x="-5.08" y="0" addlevel="request"/>
+<gate name="P" symbol="GND" x="0" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="TO92-">
+<connects>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="_1W" pin="1W" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="P" package="TSOC6">
+<connects>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="_1W" pin="1W" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS2432" prefix="IC">
+<description>&lt;h2&gt;1024-Bit Protected EEPROM with SHA-1 Engine&lt;/h2&gt;
+&lt;p&gt;This chip is a cryptographic device, providing 1024 Bits of EEPROM memory which may be written only after supplying the correct 64 bit secret. the secret cannot be read back from the device.&lt;/p&gt;
+&lt;p&gt;The other features of this chip are like the DS2431.&lt;/p&gt;
+&lt;p&gt;Please note the SHA-1 hash algorithm is considered weak if the data is not properly "padded". If you don't understand anything of this, don't use this chip.&lt;/p&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="G$1" symbol="IC" x="0" y="0" addlevel="always"/>
+<gate name="_1W" symbol="1W" x="-5.08" y="0" addlevel="request"/>
+<gate name="P" symbol="GND" x="0" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="P" package="TSOC6">
+<connects>
+<connect gate="P" pin="GND" pad="4"/>
+<connect gate="_1W" pin="1W" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS2433" prefix="IC">
+<description>&lt;h2&gt;4096-Bit EEPROM&lt;/h2&gt;
+&lt;p&gt;This chip provides a 16x256 Bit EEPROM, which can be programmed@5V.&lt;/p&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="G$1" symbol="IC" x="0" y="0" addlevel="always"/>
+<gate name="_1W" symbol="1W" x="-5.08" y="0" addlevel="request"/>
+<gate name="P" symbol="GND" x="0" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="TO92-">
+<connects>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="_1W" pin="1W" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="S" package="SO08">
+<connects>
+<connect gate="P" pin="GND" pad="4"/>
+<connect gate="_1W" pin="1W" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS2480B" prefix="IC">
+<description>&lt;h2&gt;RS232 to 1-Wire Host Adapter/Line Driver with Load Sensor&lt;/h2&gt;
+&lt;p&gt;This device is a onewire host and UART interface in one chip. It provides the complete DC/AC requirements for onewire communication, including overdrive speed mode and 12V EPROM programming. On the UART side, it can operate at 9.6kBaud (default), 19.2kBaud, 57.6kBaud, and 115.2kBaud.&lt;/p&gt;
+&lt;p&gt;The RxD and TxD lines are operated at 0V/5V. The POL pin selects the RxD and TxD "polarity", that means straight-through or inverted. If POL is connected to GND, RxD and TxD behave properly for connection to inverted RS232 drivers, like the MC1488/1489 or MAX23x chips. If POL is connected to Vdd, RxD and TxD behave properly for direct connection to a 0V/5V UART chip.&lt;/p&gt;
+&lt;h3&gt;Important Notes:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;RxD and TxD are seen from the UART point of view, that means the DS2480B TxD pin is really an input and the DS2480B RxD pin is really an output.&lt;/li&gt;
+&lt;li&gt;Vpp must be connected to 5V/Vdd if EPROM programming is not required.&lt;/li&gt;
+&lt;li&gt;Vdd must be &lt;strong&gt;always&lt;/strong&gt; lower than or equal to Vpp, otherwise the chip will be damaged. Best idea is to provide a separate 12V-&gt;5V/5mA voltage regulator from Vpp to Vdd if EPROM programming is required.&lt;/p&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="G$1" symbol="DS2480" x="5.08" y="-7.62"/>
+</gates>
+<devices>
+<device name="" package="SO08">
+<connects>
+<connect gate="G$1" pin="1W" pad="2"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="POL" pad="6"/>
+<connect gate="G$1" pin="RXD" pad="8"/>
+<connect gate="G$1" pin="TXD" pad="7"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
+<connect gate="G$1" pin="VPP" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS2502" prefix="IC">
+<description>&lt;h2&gt;1024-Bit Add-Only EPROM&lt;/h2&gt;
+&lt;p&gt;This chip features a 4x256 bit one-time-programmable (OTP) EPROM. Write protection is available per page.&lt;/p&gt;
+&lt;h3&gt;Notes:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;12V must be applied to the 1W pin in a controlled fashion to program the EPROM. This is handled by e.g. the DS2480B host adapter chip automatically.&lt;/li&gt;
+&lt;li&gt;There are two additional variants of this chip; DS2502-E48, which comes with a preprogrammed valid Ethernet MAC address in the first page of the EPROM, and DS2502-E64, which comes with a preprogrammed valid IEEE1394 (Firewire) MAC address in the first page of the EPROM.&lt;/li&gt;
+&lt;li&gt;The DS2505/DS2506 are similar devices with 16384/65536 bits EPROM.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="G$1" symbol="IC" x="0" y="0" addlevel="always"/>
+<gate name="_1W" symbol="1W" x="-5.08" y="0" addlevel="request"/>
+<gate name="P" symbol="GND" x="0" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="TO92-">
+<connects>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="_1W" pin="1W" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="P" package="TSOC6">
+<connects>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="_1W" pin="1W" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="S" package="SO08">
+<connects>
+<connect gate="P" pin="GND" pad="4"/>
+<connect gate="_1W" pin="1W" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS2505" prefix="IC">
+<description>&lt;h2&gt;16384-Bit Add-Only EPROM&lt;/h2&gt;
+&lt;p&gt;This chip features a 64x256 bit one-time-programmable (OTP) EPROM. Write protection is available per page.&lt;/p&gt;
+&lt;h3&gt;Notes:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;12V must be applied to the 1W pin in a controlled fashion to program the EPROM. This is handled by e.g. the DS2480B host adapter chip automatically.&lt;/li&gt;
+&lt;li&gt;The DS2502/DS2506 are similar devices with 1024/65536 bits EPROM.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="G$1" symbol="IC" x="0" y="0" addlevel="always"/>
+<gate name="_1W" symbol="1W" x="-5.08" y="0" addlevel="request"/>
+<gate name="P" symbol="GND" x="0" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="TO92-">
+<connects>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="_1W" pin="1W" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="P" package="TSOC6">
+<connects>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="_1W" pin="1W" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS2506" prefix="IC">
+<description>&lt;h2&gt;65536-Bit Add-Only EPROM&lt;/h2&gt;
+&lt;p&gt;This chip features a 256x256 bit one-time-programmable (OTP) EPROM. Write protection is available per page.&lt;/p&gt;
+&lt;h3&gt;Notes:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;12V must be applied to the 1W pin in a controlled fashion to program the EPROM. This is handled by e.g. the DS2480B host adapter chip automatically.&lt;/li&gt;
+&lt;li&gt;The DS2502/DS2505 are similar devices with 1024/16384 bits EPROM.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="G$1" symbol="IC" x="0" y="0" addlevel="always"/>
+<gate name="_1W" symbol="1W" x="-5.08" y="0" addlevel="request"/>
+<gate name="P" symbol="GND" x="0" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="TO92-">
+<connects>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="_1W" pin="1W" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="S" package="SO08">
+<connects>
+<connect gate="P" pin="GND" pad="4"/>
+<connect gate="_1W" pin="1W" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS1822" prefix="IC">
+<description>&lt;h2&gt;Econo Digital Thermometer&lt;/h2&gt;
+&lt;p&gt;This chip provides a onewire thermosensor with approx. 2°C accuracy. A programmable over/undertemperure alarm is available.&lt;/p&gt;
+&lt;h3&gt;Notes:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Vdd must be applied for accurate measurements at low temperatures, as the parasite power circuit otherwise heats the sensor.&lt;/li&gt;
+&lt;li&gt;If parasite power is used, Vdd has to be connected to GND.&lt;/li&gt;
+&lt;li&gt;The DS18B20 and DS18S20 are similar chips with approx. 0.5°C accuracy.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="G$1" symbol="IC" x="0" y="0" addlevel="always"/>
+<gate name="_1W" symbol="1W" x="-5.08" y="0" addlevel="request"/>
+<gate name="P" symbol="VDD-GND" x="0" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="TO92-">
+<connects>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="P" pin="VDD" pad="3"/>
+<connect gate="_1W" pin="1W" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="Z" package="SO08">
+<connects>
+<connect gate="P" pin="GND" pad="5"/>
+<connect gate="P" pin="VDD" pad="3"/>
+<connect gate="_1W" pin="1W" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS18B20" prefix="IC">
+<description>&lt;h2&gt;Programmable Resolution Digital Thermometer&lt;/h2&gt;
+&lt;p&gt;This chip provides a onewire thermosensor with approx. 0.5°C accuracy. A programmable over/undertemperure alarm is available. The precision can be set from 9..12 bits.&lt;/p&gt;
+&lt;h3&gt;Notes:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Vdd must be applied for accurate measurements at low temperatures, as the parasite power circuit otherwise heats the sensor.&lt;/li&gt;
+&lt;li&gt;If parasite power is used, Vdd has to be connected to GND.&lt;/li&gt;
+&lt;li&gt;The DS1822 is a low-cost thermometer chip, the DS18S20 is similar to the DS18B20, but with 9 Bit precision only.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="_1W" symbol="1W" x="-5.08" y="0" addlevel="request"/>
+<gate name="A" symbol="IC" x="0" y="0" addlevel="always"/>
+<gate name="P" symbol="VDD-GND" x="0" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="TO92-">
+<connects>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="P" pin="VDD" pad="3"/>
+<connect gate="_1W" pin="1W" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="Z" package="SO08">
+<connects>
+<connect gate="P" pin="GND" pad="5"/>
+<connect gate="P" pin="VDD" pad="3"/>
+<connect gate="_1W" pin="1W" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="U" package="UMAX8">
+<connects>
+<connect gate="P" pin="GND" pad="4"/>
+<connect gate="P" pin="VDD" pad="8"/>
+<connect gate="_1W" pin="1W" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS18S20" prefix="IC">
+<description>&lt;h2&gt;High Precision Digital Thermometer&lt;/h2&gt;
+&lt;p&gt;This chip provides a onewire thermosensor with approx. 0.5°C accuracy.A programmable over/undertemperure alarm is available.&lt;/p&gt;
+&lt;h3&gt;Notes:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Vdd must be applied for accurate measurements at low temperatures, as the parasite power circuit otherwise heats the sensor.&lt;/li&gt;
+&lt;li&gt;If parasite power is used, Vdd has to be connected to GND.&lt;/li&gt;
+&lt;li&gt;The DS1822 is a low-cost thermometer chip, the DS18B20 is similar to the DS18S20, but with 9..12 Bit programmable precision.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="A" symbol="IC" x="0" y="0" addlevel="always"/>
+<gate name="_1W" symbol="1W" x="-5.08" y="0" addlevel="request"/>
+<gate name="P" symbol="VDD-GND" x="0" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="TO92-">
+<connects>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="P" pin="VDD" pad="3"/>
+<connect gate="_1W" pin="1W" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="Z" package="SO08">
+<connects>
+<connect gate="P" pin="GND" pad="5"/>
+<connect gate="P" pin="VDD" pad="3"/>
+<connect gate="_1W" pin="1W" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS2405" prefix="IC">
+<description>&lt;h2&gt;Addressable Switch&lt;/h2&gt;
+&lt;p&gt;This chip provides one open drain I/O pin with 4mA sinking capability. The input may be read out by software when the open drain transistor is set to "open".&lt;/p&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="G$1" symbol="OC" x="0" y="0" addlevel="always"/>
+<gate name="_1W" symbol="1W" x="-7.62" y="0" addlevel="request"/>
+<gate name="GND" symbol="GND" x="0" y="-5.08" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="TO92-">
+<connects>
+<connect gate="G$1" pin="IO" pad="3"/>
+<connect gate="GND" pin="GND" pad="1"/>
+<connect gate="_1W" pin="1W" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="P" package="TSOC6">
+<connects>
+<connect gate="G$1" pin="IO" pad="3"/>
+<connect gate="GND" pin="GND" pad="1"/>
+<connect gate="_1W" pin="1W" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="T" package="SOT223">
+<connects>
+<connect gate="G$1" pin="IO" pad="3"/>
+<connect gate="GND" pin="GND" pad="1"/>
+<connect gate="_1W" pin="1W" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS2413">
+<description>&lt;h2&gt;Dual Channel Addressable Switch&lt;/h2&gt;
+&lt;p&gt;This chip is similar to the DS2405 chip, but provides two PIO channels with 20mA sinking capability and an on-resistance of 20Ohm for each open drain output. Up to 28V can be switched.&lt;/p&gt;
+&lt;h3&gt;Note:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Both GND pins must be connected to 0V.&lt;/p&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="A" symbol="OC_POWER" x="0" y="7.62"/>
+<gate name="B" symbol="OC_POWER" x="0" y="-5.08"/>
+<gate name="GND@1" symbol="GND" x="-15.24" y="0" addlevel="request"/>
+<gate name="GND@0" symbol="GND" x="-15.24" y="12.7" addlevel="request"/>
+<gate name="_1W" symbol="1W" x="0" y="17.78" addlevel="request"/>
+</gates>
+<devices>
+<device name="P" package="TSOC6">
+<connects>
+<connect gate="A" pin="IO" pad="6"/>
+<connect gate="B" pin="IO" pad="4"/>
+<connect gate="GND@0" pin="GND" pad="1"/>
+<connect gate="GND@1" pin="GND" pad="5"/>
+<connect gate="_1W" pin="1W" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS2417" prefix="IC">
+<description>&lt;h2&gt;Time Chip With Interrupt&lt;/h2&gt;
+&lt;p&gt;This chip provides an RTC with time and date function. It operates with 2.5..5V at Vdd. The INT pin generates a low pulse every 1, 4, 32, 64, 2048, 4096, 65536, or 131072s (selectable by software).&lt;/p&gt;
+&lt;h3&gt;Notes:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;For proper operation the X1/X2 pins have to be connected to a 32768Hz crystal. The X1/X2 pins and the crystal should get a separate guard ring connected to ground the shortest way possible.&lt;/li&gt;
+&lt;li&gt;The DS2415 is a similar older chip without the INT feature and need for external circuitry. Use the DS2417 for new designs instead.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="G$1" symbol="DS2417" x="15.24" y="-10.16" addlevel="always"/>
+<gate name="_1W" symbol="1W" x="-7.62" y="10.16" addlevel="request"/>
+<gate name="P" symbol="VDD-GND" x="-10.16" y="-2.54" addlevel="request"/>
+</gates>
+<devices>
+<device name="P" package="TSOC6">
+<connects>
+<connect gate="G$1" pin="INT" pad="3"/>
+<connect gate="G$1" pin="X1" pad="5"/>
+<connect gate="G$1" pin="X2" pad="6"/>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="P" pin="VDD" pad="4"/>
+<connect gate="_1W" pin="1W" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1W_SUP">
+<description>&lt;h2&gt;Onewire "Supply" Pin&lt;/h2&gt;
+&lt;p&gt;Use this device to connect all the 1W lines on the board automatically while keeping them invisble in the schematic.&lt;/p&gt;
+&lt;h3&gt;Note:&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;This works like an additional power line.&lt;/li&gt;&lt;/ul&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="G$1" symbol="1W_SUP" x="0" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS2223" prefix="IC">
+<description>&lt;h2&gt;Econo RAM&lt;/h2&gt;
+&lt;p&gt;This chip is a 256Bit SRAM with external battery support. It's pupose is to save a few bits content over power-cycles of the machine it's build into.&lt;/p&gt;
+&lt;h3&gt;Notes:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Vdd can be applied to a 2.8..3V battery to save the RAM state even if the onewire parasite power fails or the onewire is disconnected.&lt;/li&gt;
+&lt;li&gt;The DS2224 is a similar chip with 32 Bit ROM and 224 Bit RAM&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Both the DS2223 and DS2224 chips seem discontinued by Maxim IC.&lt;/strong&gt; Use the DS2423 chip, which provides additional features instead. Please note the DS2423 is not pin-compatible to the DS2223!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Orginal device and description from Giovanni Varasano &amp;lt;giovanni.varasano@fastwebnet.it&amp;gt;&lt;br&gt;
+Improved by Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="G$1" symbol="IC" x="0" y="0" addlevel="always"/>
+<gate name="_1W" symbol="1W" x="-5.08" y="0" addlevel="request"/>
+<gate name="P" symbol="VDD-GND" x="0" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="TO92-">
+<connects>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="P" pin="VDD" pad="3"/>
+<connect gate="_1W" pin="1W" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="Z" package="SOT223">
+<connects>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="P" pin="VDD" pad="3"/>
+<connect gate="_1W" pin="1W" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS2404" prefix="IC">
+<description>&lt;h2&gt;Econo RAM Time Chip with Onewire and SPI interface&lt;/h2&gt;
+&lt;p&gt;This chip provides a real time clock and a battery operated/back-upped 4096-Bit SRAM. In addition, there is a interval timer and a power-cycle counter.&lt;/p&gt;
+&lt;p&gt;In addition to the onewire interface, this chip has a 3-Wire (SPI) Interface which operates up to 2MBaud speed. When this interface is used, the 1W pin may be used as a PIO pin. The RAM is dual-ported and both the SPI interface and the Onewire interface may be used at the same time, too, which makes this chip also useful as a SPI/Onewire interface chip with internal 4096-Bit data buffer.&lt;/p&gt;
+&lt;h3&gt;Notes:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;This chip has a lot of operation modes. Please read the datasheet if you plan to use it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Orginal device and description from Giovanni Varasano &amp;lt;giovanni.varasano@fastwebnet.it&amp;gt;&lt;br&gt;
+Improved by Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="G$1" symbol="DS2404" x="0" y="0" addlevel="always"/>
+<gate name="P1" symbol="VDD-GND" x="-22.86" y="0" addlevel="request"/>
+<gate name="P2" symbol="VDD-GND" x="-17.78" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="S" package="SO16">
+<connects>
+<connect gate="G$1" pin="1HZ" pad="11"/>
+<connect gate="G$1" pin="1W/PIO" pad="5"/>
+<connect gate="G$1" pin="IRQ" pad="2"/>
+<connect gate="G$1" pin="RST" pad="3"/>
+<connect gate="G$1" pin="SCLK" pad="6"/>
+<connect gate="G$1" pin="SDATA" pad="4"/>
+<connect gate="G$1" pin="VBATB" pad="9"/>
+<connect gate="G$1" pin="VBATO" pad="10"/>
+<connect gate="G$1" pin="X1" pad="15"/>
+<connect gate="G$1" pin="X2" pad="14"/>
+<connect gate="P1" pin="GND" pad="8"/>
+<connect gate="P1" pin="VDD" pad="1"/>
+<connect gate="P2" pin="GND" pad="13"/>
+<connect gate="P2" pin="VDD" pad="16"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="DIL16">
+<connects>
+<connect gate="G$1" pin="1HZ" pad="11"/>
+<connect gate="G$1" pin="1W/PIO" pad="5"/>
+<connect gate="G$1" pin="IRQ" pad="2"/>
+<connect gate="G$1" pin="RST" pad="3"/>
+<connect gate="G$1" pin="SCLK" pad="6"/>
+<connect gate="G$1" pin="SDATA" pad="4"/>
+<connect gate="G$1" pin="VBATB" pad="9"/>
+<connect gate="G$1" pin="VBATO" pad="10"/>
+<connect gate="G$1" pin="X1" pad="15"/>
+<connect gate="G$1" pin="X2" pad="14"/>
+<connect gate="P1" pin="GND" pad="8"/>
+<connect gate="P1" pin="VDD" pad="1"/>
+<connect gate="P2" pin="GND" pad="13"/>
+<connect gate="P2" pin="VDD" pad="16"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="B" package="SSOP16">
+<connects>
+<connect gate="G$1" pin="1HZ" pad="11"/>
+<connect gate="G$1" pin="1W/PIO" pad="5"/>
+<connect gate="G$1" pin="IRQ" pad="2"/>
+<connect gate="G$1" pin="RST" pad="3"/>
+<connect gate="G$1" pin="SCLK" pad="6"/>
+<connect gate="G$1" pin="SDATA" pad="4"/>
+<connect gate="G$1" pin="VBATB" pad="9"/>
+<connect gate="G$1" pin="VBATO" pad="10"/>
+<connect gate="G$1" pin="X1" pad="15"/>
+<connect gate="G$1" pin="X2" pad="14"/>
+<connect gate="P1" pin="GND" pad="8"/>
+<connect gate="P1" pin="VDD" pad="1"/>
+<connect gate="P2" pin="GND" pad="13"/>
+<connect gate="P2" pin="VDD" pad="16"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS2422" prefix="IC">
+<description>&lt;h2&gt;Temperature Datalogger with 8KB Datalog Memory&lt;/h2&gt;
+&lt;p&gt;This chip combines the core functions of a fully featured datalogger in a single chip. It includes a temperature sensor, realtime clock (RTC), memory, Onewire interface, and SPI interface for connection of an analog-to-digital converter (ADC), as well as control circuitry for a charge pump.The ADC and the charge pump are peripherals that can be added to build application-specific dataloggers. A total of 8192 byte or 4096 word precision readings taken at equidistant intervals ranging from 1s to 273 hrs can be stored automatically.&lt;/p&gt;
+&lt;h3&gt;Notes:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The datalogger has both a free-run and an operate-until-full mode, which can be selected by software.&lt;/li&gt;
+&lt;li&gt;A 2.8..5V (battery powered) Vdd has to be applied, as all the circuit but the Onewire part of the chip is operated from that supply.&lt;/li&gt;
+&lt;li&gt;This chip is designed to operate together with an MAX1086..1089 A/D converter and a MAX619 chargepump regulator. See the datasheet for details.&lt;/li&gt;
+&lt;li&gt;The TEST_SPLY and TEST_RX pin must be connected to GND, the TEST_CG pin must be left unconnected for normal operation.
+&lt;/ul&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Orginal device and description from Giovanni Varasano &amp;lt;giovanni.varasano@fastwebnet.it&amp;gt;&lt;br&gt;
+Improved by Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="G$1" symbol="DS2422" x="0" y="0" addlevel="always"/>
+<gate name="P" symbol="VDD-GND" x="-25.4" y="0" addlevel="request"/>
+<gate name="_1W" symbol="1W" x="2.54" y="17.78" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="SO24L">
+<connects>
+<connect gate="G$1" pin="AGND" pad="9"/>
+<connect gate="G$1" pin="ALARM" pad="11"/>
+<connect gate="G$1" pin="CNVST" pad="4"/>
+<connect gate="G$1" pin="PUMP_ONZ" pad="22"/>
+<connect gate="G$1" pin="SCLK" pad="2"/>
+<connect gate="G$1" pin="SDATA" pad="3"/>
+<connect gate="G$1" pin="TEST_CG" pad="24"/>
+<connect gate="G$1" pin="TEST_SPLY" pad="16"/>
+<connect gate="G$1" pin="TEXT_RX" pad="21"/>
+<connect gate="G$1" pin="VPAD" pad="1"/>
+<connect gate="G$1" pin="X1" pad="10"/>
+<connect gate="G$1" pin="X2" pad="12"/>
+<connect gate="P" pin="GND" pad="14"/>
+<connect gate="P" pin="VDD" pad="23"/>
+<connect gate="_1W" pin="1W" pad="13"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS2482-800" prefix="IC">
+<description>&lt;h2&gt;8 Channel I&lt;sup&gt;2&lt;/sup&gt;C to 1-Wire Host Adapter/Line Driver&lt;/h2&gt;
+This device is a onewire host and I&lt;sup&gt;2&lt;/sup&gt;C interface in one chip. It provides the complete DC/AC requirements for onewire communication, including overdrive speed mode, &lt;strong&gt;but, unlike the DS2480B chip, no 12V EPROM programming.&lt;/strong&gt;
+&lt;h3&gt;Notes:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Unlike the DS2482-100, no external cicuit is required for overdrive speed and 5V EEPROM programming.&lt;/li&gt;
+&lt;li&gt;The chip is really only a single onewire host with an additional 1-to-8 line selector. You may see it as a DS2482-100 / multi-DS2409 combo.&lt;/li&gt;
+&lt;li&gt;The lower three I&lt;sup&gt;2&lt;/sup&gt;C adress bits of the chip can be selected by external pins, so up to 8 chips may be connected to the same I&lt;sup&gt;2&lt;/sup&gt;C bus.
+&lt;/ul&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Orginal device and description from Giovanni Varasano &amp;lt;giovanni.varasano@fastwebnet.it&amp;gt;&lt;br&gt;
+Improved by Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="G$1" symbol="DS2482-800" x="0" y="0" addlevel="always"/>
+<gate name="P" symbol="VDD-GND" x="-20.32" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="SO16">
+<connects>
+<connect gate="G$1" pin="1W_0" pad="14"/>
+<connect gate="G$1" pin="1W_1" pad="15"/>
+<connect gate="G$1" pin="1W_2" pad="16"/>
+<connect gate="G$1" pin="1W_3" pad="1"/>
+<connect gate="G$1" pin="1W_4" pad="12"/>
+<connect gate="G$1" pin="1W_5" pad="11"/>
+<connect gate="G$1" pin="1W_6" pad="10"/>
+<connect gate="G$1" pin="1W_7" pad="9"/>
+<connect gate="G$1" pin="AD0" pad="8"/>
+<connect gate="G$1" pin="AD1" pad="7"/>
+<connect gate="G$1" pin="AD2" pad="6"/>
+<connect gate="G$1" pin="SCL" pad="2"/>
+<connect gate="G$1" pin="SDA" pad="3"/>
+<connect gate="P" pin="GND" pad="13"/>
+<connect gate="P" pin="VDD" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS2482-100" prefix="IC">
+<description>&lt;h2&gt;I&lt;sup&gt;2&lt;/sup&gt;C to 1-Wire Host Adapter/Line Driver&lt;/h2&gt;
+This device is a onewire host and I&lt;sup&gt;2&lt;/sup&gt;C interface in one chip. It provides the complete DC/AC requirements for onewire communication, including overdrive speed mode, &lt;strong&gt;but, unlike the DS2480B chip, no 12V EPROM programming.&lt;/strong&gt;
+&lt;h3&gt;Notes:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;For overdrive speed and 5V EEPROM programming, an external active pullup circuit must be connected to the 1W, VDD and PCT pin. See the datasheet for details.&lt;/li&gt;
+&lt;li&gt;The lower two I&lt;sup&gt;2&lt;/sup&gt;C adress bits of the chip can be selected by external pins, so up to 4 chips may be connected to the same I&lt;sup&gt;2&lt;/sup&gt;C bus.
+&lt;/ul&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Orginal device and description from Giovanni Varasano &amp;lt;giovanni.varasano@fastwebnet.it&amp;gt;&lt;br&gt;
+Improved by Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="G$1" symbol="DS2482-100" x="0" y="0" addlevel="always"/>
+<gate name="P" symbol="VDD-GND" x="-20.32" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="S" package="SO08">
+<connects>
+<connect gate="G$1" pin="1W" pad="2"/>
+<connect gate="G$1" pin="AD0" pad="8"/>
+<connect gate="G$1" pin="AD1" pad="7"/>
+<connect gate="G$1" pin="PCT" pad="6"/>
+<connect gate="G$1" pin="SCL" pad="4"/>
+<connect gate="G$1" pin="SDA" pad="5"/>
+<connect gate="P" pin="GND" pad="3"/>
+<connect gate="P" pin="VDD" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS2411" prefix="IC">
+<description>&lt;h2&gt;Silicon Serial Number with Vdd&lt;/h2&gt;
+&lt;p&gt;This chip provides only the basic feature of &lt;em&gt;any&lt;/em&gt; onewire chip, the unique serial number. It is useful if built into an appliance and connected to a service connector inside to identify this special appliance or in custom-made onewire keys.&lt;/p&gt;
+&lt;h3&gt;Note:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;If you plan a onewire network with several chips, you don't need the DS2411 device, as &lt;em&gt;any&lt;/em&gt; onewire chip besides from the host adapter chips features an unique serial number.&lt;/li&gt;
+&lt;li&gt;This chip is different from the DS2401 in having an external power supply pin which allows to operate it down to 1.5V. It is most useful in custom designs, where the Onewire host itself does provide ~2V high level only, or low power systems where the Onewire should not be used as a parasite power source.
+&lt;/ul&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="G$1" symbol="IC" x="0" y="0" addlevel="always"/>
+<gate name="_1W" symbol="1W" x="-5.08" y="0" addlevel="request"/>
+<gate name="P" symbol="VDD-GND" x="0" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="P" package="TSOC6">
+<connects>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="P" pin="VDD" pad="6"/>
+<connect gate="_1W" pin="1W" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="R" package="SOT23">
+<connects>
+<connect gate="P" pin="GND" pad="3"/>
+<connect gate="P" pin="VDD" pad="2"/>
+<connect gate="_1W" pin="1W" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS2436" prefix="IC">
+<description>&lt;h2&gt;Battery ID/Monitor&lt;/h2&gt;
+&lt;p&gt;This is an A/D converter, temperature sensor, EEPROM, SRAM, and a 16-Bit add-only counter in one chip. One may mount it directly into the battery pack to monitor temperature and voltage of.&lt;/p&gt;
+&lt;h3&gt;Notes:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The EEPROM data in memory page 0 (24 Bytes) is intended for battery descriptions and may be write protected after the first write. This write lock is not mandatory and can be disabled later.&lt;/li&gt;
+&lt;li&gt;The SRAM in memory page 2 (8 Bytes) is intended for storing additional status information about the battery. Please note its contents is probably lost on empty battery or on an unintentional short circuit of the battery. There is an additional 8-Byte EEPROM in memory page 1, which can be used to log additional battery status information over power cycles.&lt;/li&gt;
+&lt;li&gt;The DS2438 is a similar chip with even more features.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="G$1" symbol="IC" x="0" y="0" addlevel="always"/>
+<gate name="_1W" symbol="1W" x="-5.08" y="0" addlevel="request"/>
+<gate name="P" symbol="VDD-GND" x="0" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="B" package="TO92-">
+<connects>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="P" pin="VDD" pad="3"/>
+<connect gate="_1W" pin="1W" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="Z" package="SO08">
+<connects>
+<connect gate="P" pin="GND" pad="4"/>
+<connect gate="P" pin="VDD" pad="8"/>
+<connect gate="_1W" pin="1W" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS2438" prefix="IC">
+<description>&lt;h2&gt;Smart Battery Monitor&lt;/h2&gt;
+&lt;p&gt;This is an A/D converter, temperature sensor, EEPROM in one chip. One may mount it directly into the battery pack to monitor temperature and voltage of. The chip can monitor the loading of the battery through its current sensor pins, too. An additional A/D pin may be connected to additonal external circuit.&lt;/p&gt;
+&lt;h3&gt;Notes:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;This chip is a little more sophisticated than the DS2436. Please read the datasheet.&lt;/li&gt;
+&lt;li&gt;The DS2436 is a similar chip with less features.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="G$1" symbol="DS2438" x="0" y="0" addlevel="always"/>
+<gate name="_1W" symbol="1W" x="2.54" y="17.78" addlevel="request"/>
+<gate name="P" symbol="VDD-GND" x="-12.7" y="2.54" addlevel="request"/>
+</gates>
+<devices>
+<device name="Z" package="SO08">
+<connects>
+<connect gate="G$1" pin="AIN" pad="4"/>
+<connect gate="G$1" pin="I+" pad="2"/>
+<connect gate="G$1" pin="I-" pad="3"/>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="P" pin="VDD" pad="5"/>
+<connect gate="_1W" pin="1W" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>

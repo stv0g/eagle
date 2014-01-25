@@ -1,0 +1,10 @@
+[submodule "sparkfun"]
+	path = libraries/sparkfun
+	url = git://github.com/sparkfun/SparkFun-Eagle-Libraries.git
+[submodule "adafruit"]
+	path = libraries/adafruit
+	url = git://github.com/adafruit/Adafruit-Eagle-Library.git
+[submodule "cmonr"]
+	path = libraries/cmonr
+	url = git://github.com/cmonr/Eagle-Libraries.git
+

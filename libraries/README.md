@@ -7,9 +7,9 @@ This is my personal collection of Cadsoft EAGLE Libraries
 * http://www.element14.com/community/community/knode/cadsoft_eagle/eagle_cad_libraries
 * http://dangerousprototypes.com/docs/Dangerous_Prototypes_Cadsoft_Eagle_parts_library
 
-## Licence
+## License
 
-All these files are released if not otherwise noted under the GNU General Public Licence:
+All these files are released if not otherwise noted under the GNU General Public License:
 
 Copyright (C) 2014 Steffen Vogel
 

@@ -10,3 +10,6 @@
 [submodule "libraries/esden"]
 	path = libraries/esden
 	url = git@github.com:esden/pretty-eagle-libs.git
+[submodule "libraries/seeed"]
+	path = libraries/seeed
+	url = git@github.com:Seeed-Studio/EagleLibrary-seeed.git

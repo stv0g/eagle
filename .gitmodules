@@ -7,4 +7,6 @@
 [submodule "cmonr"]
 	path = libraries/cmonr
 	url = git://github.com/cmonr/Eagle-Libraries.git
-
+[submodule "libraries/esden"]
+	path = libraries/esden
+	url = git@github.com:esden/pretty-eagle-libs.git

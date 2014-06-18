@@ -1,9 +1,0 @@
-[submodule "sparkfun"]
-	path = sparkfun
-	url = https://github.com/sparkfun/SparkFun-Eagle-Libraries.git
-[submodule "adafruit"]
-	path = adafruit
-	url = https://github.com/adafruit/Adafruit-Eagle-Library.git
-[submodule "cmonr"]
-	path = cmonr
-	url = https://github.com/cmonr/Eagle-Libraries.git

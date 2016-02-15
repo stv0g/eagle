@@ -54,7 +54,7 @@ mlMinStopFrame = 2mil
 mlMaxStopFrame = 2mil
 mlMinCreamFrame = 0mil
 mlMaxCreamFrame = 0mil
-mlViaStopLimit = 25mil
+mlViaStopLimit = 100mil
 srRoundness = 0.000000
 srMinRoundness = 0mil
 srMaxRoundness = 0mil
@@ -68,4 +68,3 @@ checkFont = 1
 checkRestrict = 0
 useDiameter = 13
 maxErrors = 50
-

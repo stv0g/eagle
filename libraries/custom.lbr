@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1888,6 +1888,54 @@ package type P</description>
 <rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="51"/>
 <rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
 </package>
+<package name="MICRO_HDMI">
+<description>FCI Micro HDMI (10118242-001RLF)&lt;br/&gt;
+
+Digikey: &lt;a href="http://www.digikey.de/product-detail/de/10118242-001RLF/609-4617-1-ND/2785374"&gt;609-4617-1-ND&lt;/a&gt;</description>
+<smd name="P$1" x="1.795" y="6.47" dx="0.23" dy="0.85" layer="1"/>
+<smd name="P$2" x="1.595" y="5.19" dx="0.23" dy="0.85" layer="1"/>
+<smd name="P$3" x="1.395" y="6.47" dx="0.23" dy="0.85" layer="1"/>
+<smd name="P$4" x="1.195" y="5.19" dx="0.23" dy="0.85" layer="1"/>
+<smd name="P$5" x="0.995" y="6.47" dx="0.23" dy="0.85" layer="1"/>
+<smd name="P$6" x="0.795" y="5.19" dx="0.23" dy="0.85" layer="1"/>
+<smd name="P$7" x="0.595" y="6.47" dx="0.23" dy="0.85" layer="1"/>
+<smd name="P$8" x="0.395" y="5.19" dx="0.23" dy="0.85" layer="1"/>
+<smd name="P$9" x="0.195" y="6.47" dx="0.23" dy="0.85" layer="1"/>
+<smd name="P$10" x="-0.005" y="5.19" dx="0.23" dy="0.85" layer="1"/>
+<smd name="P$11" x="-0.205" y="6.47" dx="0.23" dy="0.85" layer="1"/>
+<smd name="P$12" x="-0.405" y="5.19" dx="0.23" dy="0.85" layer="1"/>
+<smd name="P$13" x="-0.605" y="6.47" dx="0.23" dy="0.85" layer="1"/>
+<smd name="P$14" x="-0.805" y="5.19" dx="0.23" dy="0.85" layer="1"/>
+<smd name="P$15" x="-1.005" y="6.47" dx="0.23" dy="0.85" layer="1"/>
+<smd name="P$16" x="-1.205" y="5.19" dx="0.23" dy="0.85" layer="1"/>
+<smd name="P$17" x="-1.405" y="6.47" dx="0.23" dy="0.85" layer="1"/>
+<smd name="P$18" x="-1.605" y="5.19" dx="0.23" dy="0.85" layer="1"/>
+<smd name="P$19" x="-1.805" y="6.47" dx="0.23" dy="0.85" layer="1"/>
+<text x="2.18" y="7.13" size="0.8128" layer="21">1</text>
+<wire x1="-2.15" y1="0.01" x2="-2.15" y2="0.5" width="0.127" layer="21"/>
+<wire x1="-2.15" y1="0.5" x2="2.15" y2="0.5" width="0.127" layer="21"/>
+<wire x1="2.15" y1="0.5" x2="2.15" y2="0.01" width="0.127" layer="21"/>
+<wire x1="-3.0861" y1="-0.0127" x2="-3.0861" y2="5.8039" width="0.127" layer="21"/>
+<wire x1="-3.0861" y1="5.8039" x2="3.1242" y2="5.8166" width="0.127" layer="21"/>
+<wire x1="3.1242" y1="5.8166" x2="3.1242" y2="-0.0127" width="0.127" layer="21"/>
+<wire x1="-3.0607" y1="1.1684" x2="-3.0607" y2="2.2184" width="1.5" layer="1"/>
+<wire x1="-3.0734" y1="-0.0254" x2="3.1369" y2="-0.0127" width="0.127" layer="21"/>
+<wire x1="-3.048" y1="1.1684" x2="-3.048" y2="2.2184" width="1.778" layer="29"/>
+<hole x="-3.0734" y="2.1336" drill="0.65"/>
+<hole x="-3.0734" y="1.2192" drill="0.65"/>
+<wire x1="3.1369" y1="1.3208" x2="3.1369" y2="2.3708" width="1.5" layer="1"/>
+<wire x1="3.1496" y1="1.3208" x2="3.1496" y2="2.3708" width="1.778" layer="29"/>
+<hole x="3.1242" y="2.286" drill="0.65"/>
+<hole x="3.1242" y="1.3716" drill="0.65"/>
+<wire x1="-3.0861" y1="4.7752" x2="-3.0861" y2="5.4188" width="1.5" layer="1"/>
+<wire x1="-3.0734" y1="4.8006" x2="-3.0734" y2="5.4442" width="1.778" layer="29"/>
+<hole x="-3.0988" y="5.0546" drill="0.65"/>
+<wire x1="3.0861" y1="4.7752" x2="3.0861" y2="5.4188" width="1.5" layer="1"/>
+<wire x1="3.0988" y1="4.7752" x2="3.0988" y2="5.4442" width="1.778" layer="29"/>
+<hole x="3.0734" y="5.0546" drill="0.65"/>
+<smd name="P$20" x="-4.445" y="5.08" dx="1.905" dy="1.905" layer="1" rot="R90"/>
+<smd name="P$21" x="4.445" y="5.08" dx="1.905" dy="1.905" layer="1" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LIS344ALH">
@@ -2892,6 +2940,31 @@ package type P</description>
 <pin name="2" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="3" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
+<symbol name="HDMI">
+<pin name="D2+" x="-15.24" y="7.62" length="middle"/>
+<pin name="D2~" x="-15.24" y="5.08" length="middle"/>
+<pin name="D2-" x="-15.24" y="2.54" length="middle"/>
+<pin name="D1+" x="-15.24" y="15.24" length="middle"/>
+<pin name="D1~" x="-15.24" y="12.7" length="middle"/>
+<pin name="D1-" x="-15.24" y="10.16" length="middle"/>
+<pin name="D0+" x="-15.24" y="22.86" length="middle"/>
+<pin name="D0~" x="-15.24" y="20.32" length="middle"/>
+<pin name="D0-" x="-15.24" y="17.78" length="middle"/>
+<pin name="CLK+" x="-15.24" y="-2.54" length="middle"/>
+<pin name="CLK~" x="-15.24" y="-5.08" length="middle"/>
+<pin name="CLK-" x="-15.24" y="-7.62" length="middle"/>
+<pin name="HEAC-" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="CEC" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="HEAC+" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="SCL" x="15.24" y="15.24" length="middle" rot="R180"/>
+<pin name="SDA" x="15.24" y="12.7" length="middle" rot="R180"/>
+<pin name="GND" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="+5V" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="25.4" x2="10.16" y2="25.4" width="0.254" layer="94"/>
+<wire x1="10.16" y1="25.4" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="25.4" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LIS344ALH">
@@ -3891,7 +3964,46 @@ GL-6B interfaces up to 8Mbit of 16-bit external Flash memory. When used with the
 </device>
 </devices>
 </deviceset>
+<deviceset name="HDMI">
+<gates>
+<gate name="G$1" symbol="HDMI" x="0" y="-7.62"/>
+</gates>
+<devices>
+<device name="_MICRO" package="MICRO_HDMI">
+<connects>
+<connect gate="G$1" pin="+5V" pad="P$19"/>
+<connect gate="G$1" pin="CEC" pad="P$15"/>
+<connect gate="G$1" pin="CLK+" pad="P$12"/>
+<connect gate="G$1" pin="CLK-" pad="P$14"/>
+<connect gate="G$1" pin="CLK~" pad="P$13"/>
+<connect gate="G$1" pin="D0+" pad="P$9"/>
+<connect gate="G$1" pin="D0-" pad="P$11"/>
+<connect gate="G$1" pin="D0~" pad="P$10"/>
+<connect gate="G$1" pin="D1+" pad="P$6"/>
+<connect gate="G$1" pin="D1-" pad="P$8"/>
+<connect gate="G$1" pin="D1~" pad="P$7"/>
+<connect gate="G$1" pin="D2+" pad="P$3"/>
+<connect gate="G$1" pin="D2-" pad="P$5"/>
+<connect gate="G$1" pin="D2~" pad="P$4"/>
+<connect gate="G$1" pin="GND" pad="P$16"/>
+<connect gate="G$1" pin="HEAC+" pad="P$2"/>
+<connect gate="G$1" pin="HEAC-" pad="P$1"/>
+<connect gate="G$1" pin="SCL" pad="P$17"/>
+<connect gate="G$1" pin="SDA" pad="P$18"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

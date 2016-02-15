@@ -12,4 +12,7 @@
 	url = git@github.com:esden/pretty-eagle-libs.git
 [submodule "libraries/seeed"]
 	path = libraries/seeed
-	url = git@github.com:Seeed-Studio/EagleLibrary-seeed.git
+	url = git@github.com:Seeed-Studio/Eagle_Library.git
+[submodule "libraries/seeed"]
+	path = libraries/seeed-opl
+	url = git@github.com:Seeed-Studio/OPL_Eagle_Library.git

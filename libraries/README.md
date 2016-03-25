@@ -6,12 +6,13 @@ This is my personal collection of Cadsoft EAGLE Libraries
 * http://www.cadsoftusa.com/download-eagle/libraries-dev/?lang=de
 * http://www.element14.com/community/community/knode/cadsoft_eagle/eagle_cad_libraries
 * http://dangerousprototypes.com/docs/Dangerous_Prototypes_Cadsoft_Eagle_parts_library
+* http://www.we-online.com/web/en/electronic_components/toolbox_pbs/Eagle_eiCan.php
 
 ## License
 
 All these files are released if not otherwise noted under the GNU General Public License:
 
-Copyright (C) 2014 Steffen Vogel
+Copyright (C) 2016 Steffen Vogel
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

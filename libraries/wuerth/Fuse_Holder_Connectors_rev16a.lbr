@@ -1,0 +1,1151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.6.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="yes"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="yes"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="yes"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>&lt;BR&gt;Wurth Elektronik - Fuse holders&lt;br&gt;&lt;Hr&gt;
+&lt;BR&gt;&lt;BR&gt; 
+&lt;TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0&gt;
+&lt;TR&gt;   
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;&lt;br&gt;
+      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt; &lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      ---------------------------&lt;BR&gt;
+&lt;B&gt;&lt;I&gt;&lt;span style='font-size:26pt;
+  color:#FF6600;'&gt;WE &lt;/span&gt;&lt;/i&gt;&lt;/b&gt;
+&lt;BR&gt;
+      ---------------------------&lt;BR&gt;&lt;b&gt;Würth Elektronik&lt;/b&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      ---------O---&lt;BR&gt;
+      ----O--------&lt;BR&gt;
+      ---------O---&lt;BR&gt;
+      ----O--------&lt;BR&gt;
+      ---------O---&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+   
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;
+      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+  &lt;/TR&gt;
+
+  &lt;TR&gt;
+    &lt;TD COLSPAN=7&gt;&amp;nbsp;
+    &lt;/TD&gt;
+  &lt;/TR&gt;
+  
+&lt;/TABLE&gt;
+&lt;B&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;More than you expect&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;/B&gt;
+
+&lt;HR&gt;&lt;BR&gt;
+&lt;b&gt;Würth Elektronik eiSos GmbH &amp; Co. KG&lt;/b&gt;&lt;br&gt;
+EMC &amp; Inductive Solutions&lt;br&gt;
+
+Max-Eyth-Str.1&lt;br&gt;
+D-74638 Waldenburg&lt;br&gt;
+&lt;br&gt;
+Tel: +49 (0)7942-945-0&lt;br&gt;
+Fax:+49 (0)7942-945-405&lt;br&gt;
+&lt;br&gt;
+&lt;a href="http://www.we-online.com/eagle"&gt;http://www.we-online.com/eagle &lt;/a&gt;&lt;br&gt;
+&lt;a href="mailto:libraries@we-online.com"&gt;libraries@we-online.com&lt;/a&gt; &lt;BR&gt;&lt;BR&gt;
+&lt;br&gt;&lt;HR&gt;&lt;BR&gt;
+Neither CadSoft nor WE-eiSos does warrant that this library is error-free or &lt;br&gt;
+that it meets your specific requirements.&lt;br&gt;&lt;BR&gt;
+Please contact us for more information.&lt;br&gt;&lt;BR&gt;&lt;br&gt;
+&lt;hr&gt;
+Eagle Version 6, Library Revision 2015b, 08.04.2015&lt;br&gt;
+&lt;HR&gt;
+Copyright: Würth Elektronik</description>
+<packages>
+<package name="696101000002">
+<description>WR-FSH PTF/15 FUSEHOLDER BLOCKS - PCB - CLIP COVER - THT</description>
+<pad name="1" x="-11.3" y="0" drill="1.5"/>
+<pad name="2" x="11.3" y="0" drill="1.5"/>
+<wire x1="-12.05" y1="-4.5" x2="-12.05" y2="4.5" width="0.127" layer="21"/>
+<wire x1="-12.05" y1="4.5" x2="12.05" y2="4.5" width="0.127" layer="21"/>
+<wire x1="12.05" y1="4.5" x2="12.05" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="12.05" y1="-4.5" x2="-12.05" y2="-4.5" width="0.127" layer="21"/>
+<text x="-12.05" y="-6.278" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-12.05" y="5.008" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="-13.3" y1="-4.75" x2="-13.3" y2="4.75" width="0.127" layer="39"/>
+<wire x1="-13.3" y1="4.75" x2="13.3" y2="4.75" width="0.127" layer="39"/>
+<wire x1="13.3" y1="4.75" x2="13.3" y2="-4.75" width="0.127" layer="39"/>
+<wire x1="13.3" y1="-4.75" x2="-13.3" y2="-4.75" width="0.127" layer="39"/>
+</package>
+<package name="696105003002">
+<description>WR-FSH PTF/75 FUSEHOLDER BLOCKS - PCB - CLIP COVER - THT</description>
+<pad name="1" x="-7.5" y="0" drill="1.5"/>
+<pad name="2" x="7.5" y="0" drill="1.5"/>
+<hole x="0" y="0" drill="2.6"/>
+<hole x="0" y="0" drill="2.6"/>
+<wire x1="-12.2" y1="-4.7" x2="-12.2" y2="4.7" width="0.127" layer="21"/>
+<wire x1="-12.2" y1="4.7" x2="12.2" y2="4.7" width="0.127" layer="21"/>
+<wire x1="12.2" y1="4.7" x2="12.2" y2="-4.7" width="0.127" layer="21"/>
+<wire x1="12.2" y1="-4.7" x2="-12.2" y2="-4.7" width="0.127" layer="21"/>
+<text x="-12.25" y="-6.478" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-12.25" y="5.208" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="-12.45" y1="-4.95" x2="-12.45" y2="4.95" width="0.127" layer="39"/>
+<wire x1="-12.45" y1="4.95" x2="12.45" y2="4.95" width="0.127" layer="39"/>
+<wire x1="12.45" y1="4.95" x2="12.45" y2="-4.95" width="0.127" layer="39"/>
+<wire x1="12.45" y1="-4.95" x2="-12.45" y2="-4.95" width="0.127" layer="39"/>
+</package>
+<package name="696106003002">
+<description>WR-FSH PTF/76 FUSEHOLDER BLOCKS - PCB - CLIP COVER - THT</description>
+<pad name="1" x="-7.5" y="0" drill="1.5"/>
+<pad name="2" x="7.5" y="0" drill="1.5"/>
+<wire x1="-12.2" y1="-4.7" x2="-12.2" y2="4.7" width="0.127" layer="21"/>
+<wire x1="-12.2" y1="4.7" x2="12.2" y2="4.7" width="0.127" layer="21"/>
+<wire x1="12.2" y1="4.7" x2="12.2" y2="-4.7" width="0.127" layer="21"/>
+<wire x1="12.2" y1="-4.7" x2="-12.2" y2="-4.7" width="0.127" layer="21"/>
+<text x="-12.25" y="-6.478" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-12.25" y="5.208" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="-12.45" y1="-4.95" x2="-12.45" y2="4.95" width="0.127" layer="39"/>
+<wire x1="-12.45" y1="4.95" x2="12.45" y2="4.95" width="0.127" layer="39"/>
+<wire x1="12.45" y1="4.95" x2="12.45" y2="-4.95" width="0.127" layer="39"/>
+<wire x1="12.45" y1="-4.95" x2="-12.45" y2="-4.95" width="0.127" layer="39"/>
+</package>
+<package name="696107003002">
+<description>WR-FSH PTF/77 FUSEHOLDER BLOCKS - PCB - CLIP COVER - THT</description>
+<pad name="1" x="-11.3" y="0" drill="1.5"/>
+<pad name="2" x="11.3" y="0" drill="1.5"/>
+<hole x="0" y="0" drill="2.6"/>
+<hole x="0" y="0" drill="2.6"/>
+<wire x1="-12.2" y1="-4.7" x2="-12.2" y2="4.7" width="0.127" layer="21"/>
+<wire x1="-12.2" y1="4.7" x2="12.2" y2="4.7" width="0.127" layer="21"/>
+<wire x1="12.2" y1="4.7" x2="12.2" y2="-4.7" width="0.127" layer="21"/>
+<wire x1="12.2" y1="-4.7" x2="-12.2" y2="-4.7" width="0.127" layer="21"/>
+<text x="-12.2" y="-6.478" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-12.2" y="5.208" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="-12.45" y1="-4.95" x2="-12.45" y2="4.95" width="0.127" layer="39"/>
+<wire x1="-12.45" y1="4.95" x2="12.45" y2="4.95" width="0.127" layer="39"/>
+<wire x1="12.45" y1="4.95" x2="12.45" y2="-4.95" width="0.127" layer="39"/>
+<wire x1="12.45" y1="-4.95" x2="-12.45" y2="-4.95" width="0.127" layer="39"/>
+</package>
+<package name="696108003002">
+<description>WR-FSH PTF/78 PTF78 FUSEHOLDER BLOCKS - PCB - CLIP COVER - THT</description>
+<pad name="1" x="-11.3" y="0" drill="1.5"/>
+<pad name="2" x="11.3" y="0" drill="1.5"/>
+<wire x1="-12.2" y1="-4.7" x2="-12.2" y2="4.7" width="0.127" layer="21"/>
+<wire x1="-12.2" y1="4.7" x2="12.2" y2="4.7" width="0.127" layer="21"/>
+<wire x1="12.2" y1="4.7" x2="12.2" y2="-4.7" width="0.127" layer="21"/>
+<wire x1="12.2" y1="-4.7" x2="-12.2" y2="-4.7" width="0.127" layer="21"/>
+<text x="-12.2" y="-6.478" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-12.2" y="5.208" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="-12.7" y1="-4.95" x2="-12.7" y2="4.95" width="0.127" layer="39"/>
+<wire x1="-12.7" y1="4.95" x2="12.7" y2="4.95" width="0.127" layer="39"/>
+<wire x1="12.7" y1="4.95" x2="12.7" y2="-4.95" width="0.127" layer="39"/>
+<wire x1="12.7" y1="-4.95" x2="-12.7" y2="-4.95" width="0.127" layer="39"/>
+</package>
+<package name="696309001002">
+<description>WR-FSH PTF/45 SHOCKSAFE FUSEHOLDERS - PCB - TURN¡¯N LOCK COVER - THT</description>
+<text x="-5.85" y="-8.898" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-5.85" y="7.628" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="-4.85" y1="-4.652003125" x2="-4.85" y2="4.644071875" width="0.127" layer="21" curve="268.7"/>
+<wire x1="-5.85" y1="-4.65" x2="-5.85" y2="4.65" width="0.127" layer="21"/>
+<pad name="1" x="-5" y="0" drill="1.3" diameter="1.8"/>
+<pad name="2" x="5" y="0" drill="1.3" diameter="1.8"/>
+<wire x1="-5.85" y1="-4.65" x2="-4.85" y2="-4.65" width="0.127" layer="21"/>
+<wire x1="-5.85" y1="4.65" x2="-4.85" y2="4.65" width="0.127" layer="21"/>
+<wire x1="-6.1" y1="-5" x2="-6.1" y2="5" width="0.127" layer="39"/>
+<wire x1="-6.1" y1="5" x2="-4.9" y2="5" width="0.127" layer="39"/>
+<wire x1="-6.1" y1="-5" x2="-4.9" y2="-5" width="0.127" layer="39"/>
+<wire x1="-4.9" y1="5" x2="-4.9" y2="-5" width="0.127" layer="39" curve="-265.537651"/>
+</package>
+<package name="696310001002">
+<description>&lt;b&gt;WR-FSH PTF/50 PTF50 SHOCKSAFE FUSEHOLDERS - PCB - TURN’N LOCK COVER - THT</description>
+<pad name="1" x="-5" y="0" drill="1.3"/>
+<pad name="2" x="5" y="0" drill="1.3"/>
+<wire x1="-21.5" y1="6.5" x2="6.6" y2="6.5" width="0.127" layer="21"/>
+<wire x1="6.6" y1="-6.5" x2="-21.5" y2="-6.5" width="0.127" layer="21"/>
+<text x="-21.5" y="-8.278" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-21.5" y="7.008" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="-26.5" y1="-5" x2="-26.5" y2="5" width="0.127" layer="21"/>
+<wire x1="-22.25" y1="-4.25" x2="-21.5" y2="-4.25" width="0.127" layer="21"/>
+<wire x1="-22.25" y1="-5" x2="-22.25" y2="-4.25" width="0.127" layer="21"/>
+<wire x1="-26.5" y1="-5" x2="-22.25" y2="-5" width="0.127" layer="21"/>
+<wire x1="6.6" y1="-6.5" x2="6.6" y2="6.5" width="0.127" layer="21"/>
+<wire x1="-21.5" y1="-6.5" x2="-21.5" y2="4.25" width="0.127" layer="21"/>
+<wire x1="-21.5" y1="4.25" x2="-21.5" y2="6.5" width="0.127" layer="21"/>
+<wire x1="-22.25" y1="4.25" x2="-22.25" y2="5" width="0.127" layer="21"/>
+<wire x1="-26.5" y1="5" x2="-22.25" y2="5" width="0.127" layer="21"/>
+<wire x1="-22.25" y1="4.25" x2="-21.5" y2="4.25" width="0.127" layer="21"/>
+<wire x1="-26.75" y1="-6.75" x2="-26.75" y2="6.75" width="0.127" layer="39"/>
+<wire x1="6.85" y1="-6.75" x2="-26.75" y2="-6.75" width="0.127" layer="39"/>
+<wire x1="-26.75" y1="6.75" x2="6.85" y2="6.75" width="0.127" layer="39"/>
+<wire x1="6.85" y1="-6.75" x2="6.85" y2="6.75" width="0.127" layer="39"/>
+</package>
+<package name="696103101002">
+<smd name="2" x="8.5" y="0" dx="6" dy="6" layer="1"/>
+<smd name="1" x="-8.5" y="0" dx="6" dy="6" layer="1"/>
+<wire x1="-11.35" y1="4.8" x2="11.35" y2="4.8" width="0.127" layer="51"/>
+<wire x1="-11.35" y1="-4.8" x2="11.35" y2="-4.8" width="0.127" layer="51"/>
+<wire x1="-12.65" y1="5.05" x2="12.65" y2="5.05" width="0.127" layer="39"/>
+<wire x1="12.65" y1="-5.05" x2="-12.65" y2="-5.05" width="0.127" layer="39"/>
+<wire x1="-12.65" y1="-5.05" x2="-12.65" y2="5.05" width="0.127" layer="39"/>
+<text x="-4.4" y="5.9" size="1.27" layer="25">&gt;Name</text>
+<text x="-4.2" y="-6.8" size="1.27" layer="27">&gt;Value</text>
+<wire x1="-11.35" y1="4.8" x2="-11.35" y2="-4.8" width="0.127" layer="51"/>
+<wire x1="11.35" y1="4.8" x2="11.35" y2="-4.8" width="0.127" layer="51"/>
+<wire x1="12.65" y1="-5.05" x2="12.65" y2="5.05" width="0.127" layer="39"/>
+<wire x1="-11.35" y1="3.14" x2="-11.35" y2="4.8" width="0.127" layer="21"/>
+<wire x1="-11.35" y1="4.8" x2="11.35" y2="4.8" width="0.127" layer="21"/>
+<wire x1="11.35" y1="4.8" x2="11.35" y2="3.14" width="0.127" layer="21"/>
+<wire x1="-11.34" y1="-3.14" x2="-11.35" y2="-3.14" width="0.127" layer="21"/>
+<wire x1="-11.35" y1="-3.14" x2="-11.35" y2="-4.8" width="0.127" layer="21"/>
+<wire x1="-11.35" y1="-4.8" x2="11.35" y2="-4.8" width="0.127" layer="21"/>
+<wire x1="11.35" y1="-4.8" x2="11.35" y2="-3.14" width="0.127" layer="21"/>
+<wire x1="-12.4" y1="4.7" x2="-12.4" y2="-4.7" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-12.4" y1="-4.7" x2="12.4" y2="-4.7" width="0.127" layer="21" style="shortdash"/>
+<wire x1="12.4" y1="-4.7" x2="12.4" y2="4.7" width="0.127" layer="21" style="shortdash"/>
+<wire x1="12.4" y1="4.7" x2="-12.4" y2="4.7" width="0.127" layer="21" style="shortdash"/>
+<text x="-12.38" y="-4.39" size="0.254" layer="21">The Edge of the  Cover BS613</text>
+</package>
+<package name="696103201002">
+<pad name="1" x="-11.25" y="0" drill="1.3"/>
+<pad name="2" x="11.25" y="0" drill="1.3"/>
+<wire x1="-12.65" y1="5.05" x2="12.65" y2="5.05" width="0.127" layer="39"/>
+<wire x1="12.65" y1="5.05" x2="12.65" y2="-5.05" width="0.127" layer="39"/>
+<wire x1="12.65" y1="-5.05" x2="-12.65" y2="-5.05" width="0.127" layer="39"/>
+<wire x1="-12.65" y1="-5.05" x2="-12.65" y2="5.05" width="0.127" layer="39"/>
+<text x="-5.8" y="6" size="1.27" layer="25">&gt;Name</text>
+<text x="-5.9" y="-6.7" size="1.27" layer="27">&gt;Value</text>
+<wire x1="-11.2" y1="4.8" x2="-11.2" y2="-4.8" width="0.127" layer="51"/>
+<wire x1="-11.2" y1="-4.8" x2="11.2" y2="-4.8" width="0.127" layer="51"/>
+<wire x1="11.2" y1="-4.8" x2="11.2" y2="4.8" width="0.127" layer="51"/>
+<wire x1="-11.18" y1="4.8" x2="11.2" y2="4.8" width="0.127" layer="51"/>
+<wire x1="-11.2" y1="1.15" x2="-11.2" y2="4.8" width="0.127" layer="21"/>
+<wire x1="-11.2" y1="4.8" x2="11.2" y2="4.8" width="0.127" layer="21"/>
+<wire x1="11.2" y1="4.8" x2="11.2" y2="1.15" width="0.127" layer="21"/>
+<wire x1="-11.2" y1="-1.15" x2="-11.2" y2="-4.8" width="0.127" layer="21"/>
+<wire x1="-11.2" y1="-4.8" x2="11.2" y2="-4.8" width="0.127" layer="21"/>
+<wire x1="11.2" y1="-4.8" x2="11.2" y2="-1.15" width="0.127" layer="21"/>
+<wire x1="-12.4" y1="4.7" x2="-12.4" y2="-4.7" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-12.4" y1="-4.7" x2="12.4" y2="-4.7" width="0.127" layer="21" style="shortdash"/>
+<wire x1="12.4" y1="-4.7" x2="12.4" y2="4.7" width="0.127" layer="21" style="shortdash"/>
+<wire x1="12.4" y1="4.7" x2="-12.4" y2="4.7" width="0.127" layer="21" style="shortdash"/>
+<text x="-12.36" y="-3.64" size="0.254" layer="21">The Edge of the  Cover BS613</text>
+</package>
+<package name="696212001002">
+<dimension x1="-0.2" y1="6.4" x2="-0.1" y2="-5.6" x3="-11.5" y3="0.4" textsize="3.5" layer="21" dtype="vertical"/>
+<circle x="0" y="0" radius="8.25" width="0.127" layer="39"/>
+<polygon width="0.127" layer="20">
+<vertex x="-3.099440625" y="-5.59623125"/>
+<vertex x="3.06755" y="-5.602790625"/>
+<vertex x="3.338659375" y="-5.45683125"/>
+<vertex x="3.570109375" y="-5.300759375"/>
+<vertex x="3.708359375" y="-5.20311875"/>
+<vertex x="3.760459375" y="-5.160590625"/>
+<vertex x="3.79721875" y="-5.133359375"/>
+<vertex x="3.835340625" y="-5.10613125"/>
+<vertex x="3.876190625" y="-5.07345"/>
+<vertex x="3.92793125" y="-5.036690625"/>
+<vertex x="4.13476875" y="-4.867690625"/>
+<vertex x="4.22221875" y="-4.79205"/>
+<vertex x="4.376640625" y="-4.65023125"/>
+<vertex x="4.56208125" y="-4.47063125"/>
+<vertex x="4.637859375" y="-4.3911"/>
+<vertex x="4.70023125" y="-4.324790625"/>
+<vertex x="4.773709375" y="-4.242609375"/>
+<vertex x="4.82495" y="-4.18596875"/>
+<vertex x="4.87996875" y="-4.120159375"/>
+<vertex x="4.98408125" y="-3.99285"/>
+<vertex x="5.09896875" y="-3.847740625"/>
+<vertex x="5.19013125" y="-3.723140625"/>
+<vertex x="5.31905" y="-3.53756875"/>
+<vertex x="5.45443125" y="-3.32558125"/>
+<vertex x="5.592259375" y="-3.0856"/>
+<vertex x="5.673440625" y="-2.94253125"/>
+<vertex x="5.7411" y="-2.8014"/>
+<vertex x="5.82035" y="-2.63126875"/>
+<vertex x="5.895740625" y="-2.45726875"/>
+<vertex x="6.003990625" y="-2.1866"/>
+<vertex x="6.104509375" y="-1.89273125"/>
+<vertex x="6.16056875" y="-1.68586875"/>
+<vertex x="6.21083125" y="-1.5022"/>
+<vertex x="6.24948125" y="-1.3224"/>
+<vertex x="6.30748125" y="-1.0324"/>
+<vertex x="6.33646875" y="-0.8294"/>
+<vertex x="6.37706875" y="-0.4292"/>
+<vertex x="6.3906" y="-0.09666875"/>
+<vertex x="6.3848" y="0.2784"/>
+<vertex x="6.36353125" y="0.609"/>
+<vertex x="6.29588125" y="1.10393125"/>
+<vertex x="6.243690625" y="1.3514"/>
+<vertex x="6.16321875" y="1.6845"/>
+<vertex x="6.09145" y="1.91755"/>
+<vertex x="6.015940625" y="2.14408125"/>
+<vertex x="5.96095" y="2.2923"/>
+<vertex x="5.8985" y="2.448909375"/>
+<vertex x="5.82113125" y="2.62416875"/>
+<vertex x="5.74516875" y="2.791"/>
+<vertex x="5.69285" y="2.896190625"/>
+<vertex x="5.606009375" y="3.0618"/>
+<vertex x="5.568790625" y="3.12815"/>
+<vertex x="5.33066875" y="3.532390625"/>
+<vertex x="5.09326875" y="3.86013125"/>
+<vertex x="4.941859375" y="4.045409375"/>
+<vertex x="4.80976875" y="4.203290625"/>
+<vertex x="4.65996875" y="4.372459375"/>
+<vertex x="4.468290625" y="4.56095"/>
+<vertex x="4.29755" y="4.72528125"/>
+<vertex x="4.157409375" y="4.84773125"/>
+<vertex x="3.962509375" y="5.010440625"/>
+<vertex x="3.780490625" y="5.150609375"/>
+<vertex x="3.58558125" y="5.28433125"/>
+<vertex x="3.459940625" y="5.369709375"/>
+<vertex x="3.18771875" y="5.534040625"/>
+<vertex x="2.96543125" y="5.66131875"/>
+<vertex x="2.74798125" y="5.766040625"/>
+<vertex x="2.53375" y="5.86593125"/>
+<vertex x="2.35818125" y="5.936809375"/>
+<vertex x="2.065009375" y="6.04798125"/>
+<vertex x="1.70903125" y="6.159140625"/>
+<vertex x="1.27411875" y="6.260640625"/>
+<vertex x="0.94768125" y="6.3192"/>
+<vertex x="0.688609375" y="6.352759375"/>
+<vertex x="0.44565" y="6.3729"/>
+<vertex x="0.053690625" y="6.39035"/>
+<vertex x="-0.18926875" y="6.38631875"/>
+<vertex x="-0.34498125" y="6.379609375"/>
+<vertex x="-0.8054" y="6.34068125"/>
+<vertex x="-1.10473125" y="6.29235"/>
+<vertex x="-1.496190625" y="6.213259375"/>
+<vertex x="-1.78383125" y="6.136690625"/>
+<vertex x="-2.05986875" y="6.046209375"/>
+<vertex x="-2.35215" y="5.9418"/>
+<vertex x="-2.628190625" y="5.82348125"/>
+<vertex x="-2.93206875" y="5.677309375"/>
+<vertex x="-3.15011875" y="5.55898125"/>
+<vertex x="-3.4076" y="5.403540625"/>
+<vertex x="-3.553740625" y="5.308409375"/>
+<vertex x="-3.69291875" y="5.213290625"/>
+<vertex x="-3.866890625" y="5.08568125"/>
+<vertex x="-4.087259375" y="4.90935"/>
+<vertex x="-4.25891875" y="4.75855"/>
+<vertex x="-4.444490625" y="4.59381875"/>
+<vertex x="-4.72516875" y="4.29916875"/>
+<vertex x="-4.90146875" y="4.09731875"/>
+<vertex x="-5.05688125" y="3.90243125"/>
+<vertex x="-5.2239" y="3.68201875"/>
+<vertex x="-5.37931875" y="3.443040625"/>
+<vertex x="-5.47675" y="3.28528125"/>
+<vertex x="-5.56953125" y="3.13215"/>
+<vertex x="-5.6832" y="2.923340625"/>
+<vertex x="-5.77598125" y="2.721490625"/>
+<vertex x="-5.850209375" y="2.566040625"/>
+<vertex x="-5.959240625" y="2.31315"/>
+<vertex x="-6.01026875" y="2.153059375"/>
+<vertex x="-6.100740625" y="1.88393125"/>
+<vertex x="-6.17265" y="1.656559375"/>
+<vertex x="-6.244559375" y="1.343340625"/>
+<vertex x="-6.28863125" y="1.11365"/>
+<vertex x="-6.348940625" y="0.705309375"/>
+<vertex x="-6.37678125" y="0.385140625"/>
+<vertex x="-6.38838125" y="0.02088125"/>
+<vertex x="-6.3791" y="-0.352659375"/>
+<vertex x="-6.33503125" y="-0.849159375"/>
+<vertex x="-6.28863125" y="-1.10436875"/>
+<vertex x="-6.226" y="-1.45006875"/>
+<vertex x="-6.11233125" y="-1.856090625"/>
+<vertex x="-6.014909375" y="-2.14378125"/>
+<vertex x="-5.94068125" y="-2.33635"/>
+<vertex x="-5.83398125" y="-2.5962"/>
+<vertex x="-5.68783125" y="-2.902459375"/>
+<vertex x="-5.513859375" y="-3.22495"/>
+<vertex x="-5.28885" y="-3.58456875"/>
+<vertex x="-5.12183125" y="-3.80961875"/>
+<vertex x="-4.93161875" y="-4.05323125"/>
+<vertex x="-4.699659375" y="-4.32236875"/>
+<vertex x="-4.52568125" y="-4.505659375"/>
+<vertex x="-4.238040625" y="-4.78175"/>
+<vertex x="-4.05015" y="-4.937190625"/>
+<vertex x="-3.80658125" y="-5.1344"/>
+<vertex x="-3.521259375" y="-5.33161875"/>
+<vertex x="-3.259559375" y="-5.49256875"/>
+<vertex x="-3.07163125" y="-5.596609375"/>
+</polygon>
+<dimension x1="-3.196128125" y1="-5.487009375" x2="3.196128125" y2="5.487009375" x3="3.196128125" y3="5.487009375" textsize="3.5" layer="20" dtype="diameter"/>
+<pad name="1" x="0" y="-0.07463125" drill="0.8" shape="square"/>
+<text x="9" y="2" size="1.27" layer="25">&gt;NAME</text>
+<text x="9" y="-1" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="0" y="0" radius="8" width="0.127" layer="21"/>
+<pad name="2" x="0" y="-0.07463125" drill="0.8" shape="square"/>
+</package>
+<package name="696213001002">
+<dimension x1="-0.2" y1="6.4" x2="-0.1" y2="-5.6" x3="-11.5" y3="0.4" textsize="3.5" layer="21" dtype="vertical"/>
+<circle x="0" y="0" radius="11.25" width="0.127" layer="39"/>
+<polygon width="0.127" layer="20">
+<vertex x="-3.099440625" y="-5.59623125"/>
+<vertex x="3.06755" y="-5.602790625"/>
+<vertex x="3.338659375" y="-5.45683125"/>
+<vertex x="3.570109375" y="-5.300759375"/>
+<vertex x="3.708359375" y="-5.20311875"/>
+<vertex x="3.760459375" y="-5.160590625"/>
+<vertex x="3.79721875" y="-5.133359375"/>
+<vertex x="3.835340625" y="-5.10613125"/>
+<vertex x="3.876190625" y="-5.07345"/>
+<vertex x="3.92793125" y="-5.036690625"/>
+<vertex x="4.13476875" y="-4.867690625"/>
+<vertex x="4.22221875" y="-4.79205"/>
+<vertex x="4.376640625" y="-4.65023125"/>
+<vertex x="4.56208125" y="-4.47063125"/>
+<vertex x="4.637859375" y="-4.3911"/>
+<vertex x="4.70023125" y="-4.324790625"/>
+<vertex x="4.773709375" y="-4.242609375"/>
+<vertex x="4.82495" y="-4.18596875"/>
+<vertex x="4.87996875" y="-4.120159375"/>
+<vertex x="4.98408125" y="-3.99285"/>
+<vertex x="5.09896875" y="-3.847740625"/>
+<vertex x="5.19013125" y="-3.723140625"/>
+<vertex x="5.31905" y="-3.53756875"/>
+<vertex x="5.45443125" y="-3.32558125"/>
+<vertex x="5.592259375" y="-3.0856"/>
+<vertex x="5.673440625" y="-2.94253125"/>
+<vertex x="5.7411" y="-2.8014"/>
+<vertex x="5.82035" y="-2.63126875"/>
+<vertex x="5.895740625" y="-2.45726875"/>
+<vertex x="6.003990625" y="-2.1866"/>
+<vertex x="6.104509375" y="-1.89273125"/>
+<vertex x="6.16056875" y="-1.68586875"/>
+<vertex x="6.21083125" y="-1.5022"/>
+<vertex x="6.24948125" y="-1.3224"/>
+<vertex x="6.30748125" y="-1.0324"/>
+<vertex x="6.33646875" y="-0.8294"/>
+<vertex x="6.37706875" y="-0.4292"/>
+<vertex x="6.3906" y="-0.09666875"/>
+<vertex x="6.3848" y="0.2784"/>
+<vertex x="6.36353125" y="0.609"/>
+<vertex x="6.29588125" y="1.10393125"/>
+<vertex x="6.243690625" y="1.3514"/>
+<vertex x="6.16321875" y="1.6845"/>
+<vertex x="6.09145" y="1.91755"/>
+<vertex x="6.015940625" y="2.14408125"/>
+<vertex x="5.96095" y="2.2923"/>
+<vertex x="5.8985" y="2.448909375"/>
+<vertex x="5.82113125" y="2.62416875"/>
+<vertex x="5.74516875" y="2.791"/>
+<vertex x="5.69285" y="2.896190625"/>
+<vertex x="5.606009375" y="3.0618"/>
+<vertex x="5.568790625" y="3.12815"/>
+<vertex x="5.33066875" y="3.532390625"/>
+<vertex x="5.09326875" y="3.86013125"/>
+<vertex x="4.941859375" y="4.045409375"/>
+<vertex x="4.80976875" y="4.203290625"/>
+<vertex x="4.65996875" y="4.372459375"/>
+<vertex x="4.468290625" y="4.56095"/>
+<vertex x="4.29755" y="4.72528125"/>
+<vertex x="4.157409375" y="4.84773125"/>
+<vertex x="3.962509375" y="5.010440625"/>
+<vertex x="3.780490625" y="5.150609375"/>
+<vertex x="3.58558125" y="5.28433125"/>
+<vertex x="3.459940625" y="5.369709375"/>
+<vertex x="3.18771875" y="5.534040625"/>
+<vertex x="2.96543125" y="5.66131875"/>
+<vertex x="2.74798125" y="5.766040625"/>
+<vertex x="2.53375" y="5.86593125"/>
+<vertex x="2.35818125" y="5.936809375"/>
+<vertex x="2.065009375" y="6.04798125"/>
+<vertex x="1.70903125" y="6.159140625"/>
+<vertex x="1.27411875" y="6.260640625"/>
+<vertex x="0.94768125" y="6.3192"/>
+<vertex x="0.688609375" y="6.352759375"/>
+<vertex x="0.44565" y="6.3729"/>
+<vertex x="0.053690625" y="6.39035"/>
+<vertex x="-0.18926875" y="6.38631875"/>
+<vertex x="-0.34498125" y="6.379609375"/>
+<vertex x="-0.8054" y="6.34068125"/>
+<vertex x="-1.10473125" y="6.29235"/>
+<vertex x="-1.496190625" y="6.213259375"/>
+<vertex x="-1.78383125" y="6.136690625"/>
+<vertex x="-2.05986875" y="6.046209375"/>
+<vertex x="-2.35215" y="5.9418"/>
+<vertex x="-2.628190625" y="5.82348125"/>
+<vertex x="-2.93206875" y="5.677309375"/>
+<vertex x="-3.15011875" y="5.55898125"/>
+<vertex x="-3.4076" y="5.403540625"/>
+<vertex x="-3.553740625" y="5.308409375"/>
+<vertex x="-3.69291875" y="5.213290625"/>
+<vertex x="-3.866890625" y="5.08568125"/>
+<vertex x="-4.087259375" y="4.90935"/>
+<vertex x="-4.25891875" y="4.75855"/>
+<vertex x="-4.444490625" y="4.59381875"/>
+<vertex x="-4.72516875" y="4.29916875"/>
+<vertex x="-4.90146875" y="4.09731875"/>
+<vertex x="-5.05688125" y="3.90243125"/>
+<vertex x="-5.2239" y="3.68201875"/>
+<vertex x="-5.37931875" y="3.443040625"/>
+<vertex x="-5.47675" y="3.28528125"/>
+<vertex x="-5.56953125" y="3.13215"/>
+<vertex x="-5.6832" y="2.923340625"/>
+<vertex x="-5.77598125" y="2.721490625"/>
+<vertex x="-5.850209375" y="2.566040625"/>
+<vertex x="-5.959240625" y="2.31315"/>
+<vertex x="-6.01026875" y="2.153059375"/>
+<vertex x="-6.100740625" y="1.88393125"/>
+<vertex x="-6.17265" y="1.656559375"/>
+<vertex x="-6.244559375" y="1.343340625"/>
+<vertex x="-6.28863125" y="1.11365"/>
+<vertex x="-6.348940625" y="0.705309375"/>
+<vertex x="-6.37678125" y="0.385140625"/>
+<vertex x="-6.38838125" y="0.02088125"/>
+<vertex x="-6.3791" y="-0.352659375"/>
+<vertex x="-6.33503125" y="-0.849159375"/>
+<vertex x="-6.28863125" y="-1.10436875"/>
+<vertex x="-6.226" y="-1.45006875"/>
+<vertex x="-6.11233125" y="-1.856090625"/>
+<vertex x="-6.014909375" y="-2.14378125"/>
+<vertex x="-5.94068125" y="-2.33635"/>
+<vertex x="-5.83398125" y="-2.5962"/>
+<vertex x="-5.68783125" y="-2.902459375"/>
+<vertex x="-5.513859375" y="-3.22495"/>
+<vertex x="-5.28885" y="-3.58456875"/>
+<vertex x="-5.12183125" y="-3.80961875"/>
+<vertex x="-4.93161875" y="-4.05323125"/>
+<vertex x="-4.699659375" y="-4.32236875"/>
+<vertex x="-4.52568125" y="-4.505659375"/>
+<vertex x="-4.238040625" y="-4.78175"/>
+<vertex x="-4.05015" y="-4.937190625"/>
+<vertex x="-3.80658125" y="-5.1344"/>
+<vertex x="-3.521259375" y="-5.33161875"/>
+<vertex x="-3.259559375" y="-5.49256875"/>
+<vertex x="-3.07163125" y="-5.596609375"/>
+</polygon>
+<dimension x1="-3.196128125" y1="-5.487009375" x2="3.196128125" y2="5.487009375" x3="3.196128125" y3="5.487009375" textsize="3.5" layer="20" dtype="diameter"/>
+<pad name="1" x="0" y="-0.07463125" drill="0.8" shape="square"/>
+<text x="13" y="2" size="1.27" layer="25">&gt;NAME</text>
+<text x="13" y="-2" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="0" y="0" radius="11" width="0.127" layer="21"/>
+<pad name="2" x="0" y="-0.07463125" drill="0.8" shape="square"/>
+</package>
+<package name="69631X001002">
+<dimension x1="-0.2" y1="6.4" x2="-0.1" y2="-5.6" x3="-11.5" y3="0.4" textsize="3.5" layer="21" dtype="vertical"/>
+<circle x="0" y="0" radius="8.25" width="0.127" layer="39"/>
+<polygon width="0.127" layer="20">
+<vertex x="-3.099440625" y="-5.59623125"/>
+<vertex x="3.06755" y="-5.602790625"/>
+<vertex x="3.338659375" y="-5.45683125"/>
+<vertex x="3.570109375" y="-5.300759375"/>
+<vertex x="3.708359375" y="-5.20311875"/>
+<vertex x="3.760459375" y="-5.160590625"/>
+<vertex x="3.79721875" y="-5.133359375"/>
+<vertex x="3.835340625" y="-5.10613125"/>
+<vertex x="3.876190625" y="-5.07345"/>
+<vertex x="3.92793125" y="-5.036690625"/>
+<vertex x="4.13476875" y="-4.867690625"/>
+<vertex x="4.22221875" y="-4.79205"/>
+<vertex x="4.376640625" y="-4.65023125"/>
+<vertex x="4.56208125" y="-4.47063125"/>
+<vertex x="4.637859375" y="-4.3911"/>
+<vertex x="4.70023125" y="-4.324790625"/>
+<vertex x="4.773709375" y="-4.242609375"/>
+<vertex x="4.82495" y="-4.18596875"/>
+<vertex x="4.87996875" y="-4.120159375"/>
+<vertex x="4.98408125" y="-3.99285"/>
+<vertex x="5.09896875" y="-3.847740625"/>
+<vertex x="5.19013125" y="-3.723140625"/>
+<vertex x="5.31905" y="-3.53756875"/>
+<vertex x="5.45443125" y="-3.32558125"/>
+<vertex x="5.592259375" y="-3.0856"/>
+<vertex x="5.673440625" y="-2.94253125"/>
+<vertex x="5.7411" y="-2.8014"/>
+<vertex x="5.82035" y="-2.63126875"/>
+<vertex x="5.895740625" y="-2.45726875"/>
+<vertex x="6.003990625" y="-2.1866"/>
+<vertex x="6.104509375" y="-1.89273125"/>
+<vertex x="6.16056875" y="-1.68586875"/>
+<vertex x="6.21083125" y="-1.5022"/>
+<vertex x="6.24948125" y="-1.3224"/>
+<vertex x="6.30748125" y="-1.0324"/>
+<vertex x="6.33646875" y="-0.8294"/>
+<vertex x="6.37706875" y="-0.4292"/>
+<vertex x="6.3906" y="-0.09666875"/>
+<vertex x="6.3848" y="0.2784"/>
+<vertex x="6.36353125" y="0.609"/>
+<vertex x="6.29588125" y="1.10393125"/>
+<vertex x="6.243690625" y="1.3514"/>
+<vertex x="6.16321875" y="1.6845"/>
+<vertex x="6.09145" y="1.91755"/>
+<vertex x="6.015940625" y="2.14408125"/>
+<vertex x="5.96095" y="2.2923"/>
+<vertex x="5.8985" y="2.448909375"/>
+<vertex x="5.82113125" y="2.62416875"/>
+<vertex x="5.74516875" y="2.791"/>
+<vertex x="5.69285" y="2.896190625"/>
+<vertex x="5.606009375" y="3.0618"/>
+<vertex x="5.568790625" y="3.12815"/>
+<vertex x="5.33066875" y="3.532390625"/>
+<vertex x="5.09326875" y="3.86013125"/>
+<vertex x="4.941859375" y="4.045409375"/>
+<vertex x="4.80976875" y="4.203290625"/>
+<vertex x="4.65996875" y="4.372459375"/>
+<vertex x="4.468290625" y="4.56095"/>
+<vertex x="4.29755" y="4.72528125"/>
+<vertex x="4.157409375" y="4.84773125"/>
+<vertex x="3.962509375" y="5.010440625"/>
+<vertex x="3.780490625" y="5.150609375"/>
+<vertex x="3.58558125" y="5.28433125"/>
+<vertex x="3.459940625" y="5.369709375"/>
+<vertex x="3.18771875" y="5.534040625"/>
+<vertex x="2.96543125" y="5.66131875"/>
+<vertex x="2.74798125" y="5.766040625"/>
+<vertex x="2.53375" y="5.86593125"/>
+<vertex x="2.35818125" y="5.936809375"/>
+<vertex x="2.065009375" y="6.04798125"/>
+<vertex x="1.70903125" y="6.159140625"/>
+<vertex x="1.27411875" y="6.260640625"/>
+<vertex x="0.94768125" y="6.3192"/>
+<vertex x="0.688609375" y="6.352759375"/>
+<vertex x="0.44565" y="6.3729"/>
+<vertex x="0.053690625" y="6.39035"/>
+<vertex x="-0.18926875" y="6.38631875"/>
+<vertex x="-0.34498125" y="6.379609375"/>
+<vertex x="-0.8054" y="6.34068125"/>
+<vertex x="-1.10473125" y="6.29235"/>
+<vertex x="-1.496190625" y="6.213259375"/>
+<vertex x="-1.78383125" y="6.136690625"/>
+<vertex x="-2.05986875" y="6.046209375"/>
+<vertex x="-2.35215" y="5.9418"/>
+<vertex x="-2.628190625" y="5.82348125"/>
+<vertex x="-2.93206875" y="5.677309375"/>
+<vertex x="-3.15011875" y="5.55898125"/>
+<vertex x="-3.4076" y="5.403540625"/>
+<vertex x="-3.553740625" y="5.308409375"/>
+<vertex x="-3.69291875" y="5.213290625"/>
+<vertex x="-3.866890625" y="5.08568125"/>
+<vertex x="-4.087259375" y="4.90935"/>
+<vertex x="-4.25891875" y="4.75855"/>
+<vertex x="-4.444490625" y="4.59381875"/>
+<vertex x="-4.72516875" y="4.29916875"/>
+<vertex x="-4.90146875" y="4.09731875"/>
+<vertex x="-5.05688125" y="3.90243125"/>
+<vertex x="-5.2239" y="3.68201875"/>
+<vertex x="-5.37931875" y="3.443040625"/>
+<vertex x="-5.47675" y="3.28528125"/>
+<vertex x="-5.56953125" y="3.13215"/>
+<vertex x="-5.6832" y="2.923340625"/>
+<vertex x="-5.77598125" y="2.721490625"/>
+<vertex x="-5.850209375" y="2.566040625"/>
+<vertex x="-5.959240625" y="2.31315"/>
+<vertex x="-6.01026875" y="2.153059375"/>
+<vertex x="-6.100740625" y="1.88393125"/>
+<vertex x="-6.17265" y="1.656559375"/>
+<vertex x="-6.244559375" y="1.343340625"/>
+<vertex x="-6.28863125" y="1.11365"/>
+<vertex x="-6.348940625" y="0.705309375"/>
+<vertex x="-6.37678125" y="0.385140625"/>
+<vertex x="-6.38838125" y="0.02088125"/>
+<vertex x="-6.3791" y="-0.352659375"/>
+<vertex x="-6.33503125" y="-0.849159375"/>
+<vertex x="-6.28863125" y="-1.10436875"/>
+<vertex x="-6.226" y="-1.45006875"/>
+<vertex x="-6.11233125" y="-1.856090625"/>
+<vertex x="-6.014909375" y="-2.14378125"/>
+<vertex x="-5.94068125" y="-2.33635"/>
+<vertex x="-5.83398125" y="-2.5962"/>
+<vertex x="-5.68783125" y="-2.902459375"/>
+<vertex x="-5.513859375" y="-3.22495"/>
+<vertex x="-5.28885" y="-3.58456875"/>
+<vertex x="-5.12183125" y="-3.80961875"/>
+<vertex x="-4.93161875" y="-4.05323125"/>
+<vertex x="-4.699659375" y="-4.32236875"/>
+<vertex x="-4.52568125" y="-4.505659375"/>
+<vertex x="-4.238040625" y="-4.78175"/>
+<vertex x="-4.05015" y="-4.937190625"/>
+<vertex x="-3.80658125" y="-5.1344"/>
+<vertex x="-3.521259375" y="-5.33161875"/>
+<vertex x="-3.259559375" y="-5.49256875"/>
+<vertex x="-3.07163125" y="-5.596609375"/>
+</polygon>
+<dimension x1="-3.196128125" y1="-5.487009375" x2="3.196128125" y2="5.487009375" x3="3.196128125" y3="5.487009375" textsize="3.5" layer="20" dtype="diameter"/>
+<pad name="1" x="0" y="-0.07463125" drill="0.8" shape="square"/>
+<text x="9" y="2" size="1.27" layer="25">&gt;NAME</text>
+<text x="9" y="-1" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="0" y="0" radius="8" width="0.127" layer="21"/>
+<pad name="2" x="0" y="-0.07463125" drill="0.8" shape="square"/>
+</package>
+</packages>
+<symbols>
+<symbol name="FUSE">
+<pin name="1" x="0" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="2" x="10.16" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<text x="0" y="4.27" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-6.35" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="2.54" y1="-1.27" x2="3.175" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="7.62" y1="1.27" x2="6.985" y2="1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-1.27" x2="7.62" y2="1.27" width="0.254" layer="94"/>
+<wire x1="3.175" y1="1.27" x2="3.175" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="3.175" y1="1.27" x2="2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="3.175" y1="-1.27" x2="6.985" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="6.985" y1="1.27" x2="6.985" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="6.985" y1="1.27" x2="3.175" y2="1.27" width="0.254" layer="94"/>
+<wire x1="6.985" y1="-1.27" x2="7.62" y2="-1.27" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="696101000002" prefix="J" uservalue="yes">
+<description>&lt;b&gt;WR-FSH PTF/15 FUSEHOLDER BLOCKS - PCB - CLIP COVER - THT
+;&lt;/b&gt;=&gt;Code : Con_FSH_Blocks_696101000002_696101000002
+&lt;p&gt;&lt;a href="http://katalog.we-online.de/media/images/eican/Con_FSH_Blocks_696101000002_pf2.jpg"&gt;
+&lt;img src="http://katalog.we-online.de/media/thumbs2/eican/thb_Con_FSH_Blocks_696101000002_pf2.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/em/datasheet/696101000002.pdf"&gt;http://katalog.we-online.de/em/datasheet/696101000002.pdf&lt;/a&gt;&lt;p&gt;
+Created 2014-10-08, Karrer Zheng&lt;br&gt;
+2014 (C) Wurth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="696101000002">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="696105003002" prefix="J" uservalue="yes">
+<description>&lt;b&gt;WR-FSH PTF/75 FUSEHOLDER BLOCKS - PCB - CLIP COVER - THT
+;&lt;/b&gt;=&gt;Code : Con_FSH_Blocks_696105003002_696105003002
+&lt;p&gt;&lt;a href="http://katalog.we-online.de/media/images/eican/Con_FSH_Blocks_696105003002_pf2.jpg"&gt;
+&lt;img src="http://katalog.we-online.de/media/thumbs2/eican/thb_Con_FSH_Blocks_696105003002_pf2.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/em/datasheet/696105003002.pdf"&gt;http://katalog.we-online.de/em/datasheet/696105003002.pdf&lt;/a&gt;&lt;p&gt;
+Created 2014-10-08, Karrer Zheng&lt;br&gt;
+2014 (C) Wurth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="696105003002">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="696106003002" prefix="J" uservalue="yes">
+<description>&lt;b&gt;WR-FSH PTF/76 FUSEHOLDER BLOCKS - PCB - CLIP COVER - THT
+;&lt;/b&gt;=&gt;Code : Con_FSH_Blocks_696106003002_696106003002
+&lt;p&gt;&lt;a href="http://katalog.we-online.de/media/images/eican/Con_FSH_Blocks_696106003002_pf2.jpg"&gt;
+&lt;img src="http://katalog.we-online.de/media/thumbs2/eican/thb_Con_FSH_Blocks_696106003002_pf2.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/em/datasheet/696106003002.pdf"&gt;http://katalog.we-online.de/em/datasheet/696106003002.pdf&lt;/a&gt;&lt;p&gt;
+Created 2014-10-08, Karrer Zheng&lt;br&gt;
+2014 (C) Wurth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="696106003002">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="696107003002" prefix="J" uservalue="yes">
+<description>&lt;b&gt;WR-FSH PTF/77 FUSEHOLDER BLOCKS - PCB - CLIP COVER - THT
+;&lt;/b&gt;=&gt;Code : Con_FSH_Blocks_696107003002_696107003002
+&lt;p&gt;&lt;a href="http://katalog.we-online.de/media/images/eican/Con_FSH_Blocks_696107003002_pf2.jpg"&gt;
+&lt;img src="http://katalog.we-online.de/media/thumbs2/eican/thb_Con_FSH_Blocks_696107003002_pf2.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/em/datasheet/696107003002.pdf"&gt;http://katalog.we-online.de/em/datasheet/696107003002.pdf&lt;/a&gt;&lt;p&gt;
+Created 2014-10-08, Karrer Zheng&lt;br&gt;
+2014 (C) Wurth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="696107003002">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="696108003002" prefix="J" uservalue="yes">
+<description>&lt;b&gt;WR-FSH PTF/78 PTF78 FUSEHOLDER BLOCKS - PCB - CLIP COVER - THT
+;&lt;/b&gt;=&gt;Code : Con_FSH_Blocks_696108003002_696108003002
+&lt;p&gt;&lt;a href="http://katalog.we-online.de/media/images/eican/Con_FSH_Blocks_696108003002_pf2.jpg"&gt;
+&lt;img src="http://katalog.we-online.de/media/thumbs2/eican/thb_Con_FSH_Blocks_696108003002_pf2.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/em/datasheet/696108003002.pdf"&gt;http://katalog.we-online.de/em/datasheet/696108003002.pdf&lt;/a&gt;&lt;p&gt;
+Created 2014-10-08, Karrer Zheng&lt;br&gt;
+2014 (C) Wurth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="696108003002">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="696309001002" prefix="J" uservalue="yes">
+<description>&lt;b&gt;WR-FSH PTF/45 SHOCKSAFE FUSEHOLDERS - PCB - TURN’N LOCK COVER - THT
+;&lt;/b&gt;=&gt;Code : Con_FSH_Shocksafe_696309001002_696309001002
+&lt;p&gt;&lt;a href="http://katalog.we-online.de/media/images/eican/Con_FSH_Shocksafe_696309001002_pf2.jpg"&gt;
+&lt;img src="http://katalog.we-online.de/media/thumbs2/eican/thb_Con_FSH_Shocksafe_696309001002_pf2.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/em/datasheet/696309001002.pdf"&gt;http://katalog.we-online.de/em/datasheet/696309001002.pdf&lt;/a&gt;&lt;p&gt;
+Created 2014-10-08, Karrer Zheng&lt;br&gt;
+2014 (C) Wurth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="696309001002">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="696310001002" prefix="J" uservalue="yes">
+<description>&lt;b&gt; WR-FSH - PTF/50 PTF50 SHOCKSAFE FUSEHOLDERS - PCB - TURN’N LOCK COVER - THT 
+;&lt;/b&gt;=&gt;Code : Con_FSH_Shocksafe_696310001002-696310001002
+&lt;p&gt;&lt;a href="http://katalog.we-online.de/media/images/eican/Con_FSH_Shocksafe_696310001002_pf2.jpg"&gt;
+&lt;img src="http://katalog.we-online.de/media/thumbs2/eican/thb_Con_FSH_Shocksafe_696310001002_pf2.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/em/datasheet/696310001002.pdf"&gt;http://katalog.we-online.de/em/datasheet/696310001002.pdf&lt;/a&gt;&lt;p&gt;
+Created 2014-10-08, Karrer Zheng&lt;br&gt;
+2014 (C) Wurth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="696310001002">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="696103101002" prefix="J" uservalue="yes">
+<description>&lt;br&gt;&lt;b&gt; &lt;br&gt;&lt;b&gt; FUSEHOLDER BLOCKS - PCB - CLIP COVER - SMT -
+GLOW WIRE PLASTIC - WR-FSH&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt;=&gt;ConFUSE 696103101002
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt; Characteristics
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt;INSULATOR: PETG35
+
+&lt;br&gt;FLAMMABILITY RATING: UL94V0
+
+&lt;br&gt;COLOR: BLACK
+
+&lt;br&gt;CONTACT / PLATING: ALLOY Cu + Ni &amp; Si / Ni+Sn
+
+&lt;br&gt;OPERATING TEMPERATURE:-30°C UP TO +120°C
+
+&lt;br&gt;COMPLIANCE: LEAD FREE AND ROHS
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt; ELECTRICAL UL VDE
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt;CURRENT RATING: 10A 10A
+
+&lt;br&gt;WORKING VOLTAGE: 250VAC 250VAC
+
+&lt;br&gt;WITHSTANDING VOLTAGE: 1,5KV 1,5KV
+
+&lt;br&gt;RATED POWER ACCEPTANCE: --- 4W
+
+&lt;br&gt;PROTECTION CLASS: I o II
+
+&lt;br&gt;CONTACT RESISTANCE: 5/10 mΩ MAX
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/v2/Family_p752_WR-FUSE_696121101001_4C.jpg" title="Enlarge picture"&gt;
+&lt;img src="http://katalog.we-online.de/media/images/v2/Family_p752_WR-FUSE_696121101001_4C.jpg"  width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/en/em/FSH_SMT_PCB_CLIP_COVER_696103101002/696103101002?m"&gt;http://katalog.we-online.de/en/em/FSH_SMT_PCB_CLIP_COVER_696103101002/696103101002?m&lt;/a&gt;&lt;p&gt;
+
+
+&lt;br&gt;&lt;/b&gt;2015 (C) Wurth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="-5.08" y="0"/>
+</gates>
+<devices>
+<device name="" package="696103101002">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="696103201002" prefix="J" uservalue="yes">
+<description>&lt;br&gt;&lt;b&gt;FUSEHOLDER BLOCKS - PCB - CLIP COVER - THR -
+ GLOW WIRE PLASTIC - WR-FSH&lt;br&gt;&lt;/b&gt;=&gt;ConFUSE 696103201002
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt; Characteristics
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt;INSULATOR: PETG35
+
+&lt;br&gt;FLAMMABILITY RATING: UL94V0
+
+&lt;br&gt;COLOR: BLACK
+
+&lt;br&gt;CONTACT / PLATING: ALLOY Cu + Ni &amp; Si / Ni+Sn
+
+&lt;br&gt;OPERATING TEMPERATURE:-30°C UP TO +120°C
+
+&lt;br&gt;COMPLIANCE: LEAD FREE AND ROHS
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt; ELECTRICAL UL VDE
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt;CURRENT RATING: 10A 10A
+
+&lt;br&gt;WORKING VOLTAGE: 250VAC 250VAC
+
+&lt;br&gt;WITHSTANDING VOLTAGE: 1,5KV 1,5KV
+
+&lt;br&gt;RATED POWER ACCEPTANCE: --- 4W
+
+&lt;br&gt;PROTECTION CLASS: I o II
+
+&lt;br&gt;CONTACT RESISTANCE: 5/10 mΩ MAX
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/v2/Family_p748_WR-FUSE_6961032010xx_4C.jpg" title="Enlarge picture"&gt;
+&lt;img src="http://katalog.we-online.de/media/images/v2/Family_p748_WR-FUSE_6961032010xx_4C.jpg"  width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/en/em/FSH_THR_PCB_CLIP_COVER_696103201002/696103201002?"&gt;http://katalog.we-online.de/en/em/FSH_THR_PCB_CLIP_COVER_696103201002/696103201002?&lt;/a&gt;&lt;p&gt;
+
+&lt;br&gt;&lt;/b&gt;2015 (C) Wurth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="696103201002">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="69621X001002" prefix="J" uservalue="yes">
+<description>&lt;b&gt; SHOCKSAFE FUSEHOLDERS - PANEL - SCREW’N LOCK COVER - THT - WR-FSH
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt; &lt;b&gt; TECHNICAL CHARACTERISTICS
+&lt;br&gt;
+&lt;br&gt;&lt;/b&gt;&lt;/b&gt;MATERIAL
+&lt;br&gt;INSULATOR: PBTG15
+&lt;br&gt;FLAMMABILITY RATING: UL94V0
+&lt;br&gt;COLOR: BLACK
+&lt;br&gt;CONTACT / PLATING: COPPER ALLOY / Ni+Sn
+&lt;br&gt;FUSE CONTACT: PHOSPHOR BRONZE / Ni+Sn
+&lt;br&gt;SPRING: INOX STEEL
+&lt;br&gt; &lt;b&gt; ELECTRICAL UL VDE
+&lt;br&gt;
+&lt;br&gt;&lt;/b&gt;&lt;/b&gt;ELECTRICAL UL VDE
+&lt;br&gt;CURRENT RATING: 10A 10A
+&lt;br&gt;WORKING VOLTAGE: 250VAC 250VAC
+&lt;br&gt;WITHSTANDING VOLTAGE: 1,5KV 3KV
+&lt;br&gt;RATED POWER ACCEPTANCE: --- 2,5W
+&lt;br&gt;PROTECTION CLASS: I o II
+&lt;br&gt;CONTACT RESISTANCE: 5/10 mΩ MAX
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;/b&gt;&lt;br&gt;&lt;a href="&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/v2/Family_FSH_Shocksafe_696212001002_pf2.jpg" title="Enlarge picture"&gt;
+&lt;img src="http://katalog.we-online.de/media/images/v2/Family_FSH_Shocksafe_696212001002_pf2.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/en/em/FSH_THT_PANEL_SCREW_AND_LOCK_COVER_69621X001002"&gt;http://katalog.we-online.de/en/em/FSH_THT_PANEL_SCREW_AND_LOCK_COVER_69621X001002&lt;/a&gt;&lt;p&gt;
+&lt;/b&gt;
+
+&lt;/b&gt;2015 (C) Wurth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="-5.08" y="0"/>
+</gates>
+<devices>
+<device name="696212001002" package="696212001002">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="696213001002" package="696213001002">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="69631X001002" prefix="J" uservalue="yes">
+<description>&lt;b&gt; SHOCKSAFE FUSEHOLDERS - PANEL - TURN’N LOCK COVER - THT - WR-FSH
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt; &lt;b&gt; TECHNICAL CHARACTERISTICS
+&lt;br&gt;
+&lt;br&gt;&lt;/b&gt;&lt;/b&gt;MATERIAL
+&lt;br&gt;INSULATOR: PBTG15
+&lt;br&gt;FLAMMABILITY RATING: UL94V0
+&lt;br&gt;COLOR: BLACK
+&lt;br&gt;CONTACT / PLATING: COPPER ALLOY / Ni+Sn
+&lt;br&gt;FUSE CONTACT: PHOSPHOR BRONZE / Ni+Sn
+&lt;br&gt;SPRING: INOX STEEL
+&lt;br&gt; &lt;b&gt; ELECTRICAL UL VDE
+&lt;br&gt;
+&lt;br&gt;&lt;/b&gt;&lt;/b&gt;ELECTRICAL UL VDE
+&lt;br&gt;CURRENT RATING: 10A 10A
+&lt;br&gt;WORKING VOLTAGE: 250VAC 250VAC
+&lt;br&gt;WITHSTANDING VOLTAGE: 1,5KV 3KV
+&lt;br&gt;RATED POWER ACCEPTANCE: --- 2,5W
+&lt;br&gt;PROTECTION CLASS: I o II
+&lt;br&gt;CONTACT RESISTANCE: 5/10 mΩ MAX
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;/b&gt;&lt;br&gt;&lt;a href="&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/v2/Family_WR-FSH_696315001002.jpg" title="Enlarge picture"&gt;
+&lt;img src="http://katalog.we-online.de/media/images/v2/Family_WR-FSH_696315001002.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/en/em/FSH_THT_PANEL_TURN_AND_LOCK_COVER_69631X001002"&gt;http://katalog.we-online.de/en/em/FSH_THT_PANEL_TURN_AND_LOCK_COVER_69631X001002&lt;/a&gt;&lt;p&gt;
+&lt;/b&gt;
+
+&lt;/b&gt;2015 (C) Wurth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="-5.08" y="0"/>
+</gates>
+<devices>
+<device name="" package="69631X001002">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>

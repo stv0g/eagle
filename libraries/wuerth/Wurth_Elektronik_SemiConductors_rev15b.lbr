@@ -1,0 +1,1137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.6.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.127" altunitdist="mm" altunit="mm"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="53" name="tPadExt" color="7" fill="1" visible="no" active="no"/>
+<layer number="54" name="bPadExt" color="7" fill="1" visible="no" active="no"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="250" name="Descript" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="251" name="SMDround" color="7" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>&lt;BR&gt;Wurth Elektronik - Step-Down Converter, LED Driver&lt;br&gt;&lt;Hr&gt;
+
+&lt;BR&gt;&lt;BR&gt; 
+&lt;TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0&gt;
+&lt;TR&gt;   
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;&lt;br&gt;
+      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt; &lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      ---------------------------&lt;BR&gt;
+&lt;B&gt;&lt;I&gt;&lt;span style='font-size:26pt;
+  color:#FF6600;'&gt;WE &lt;/span&gt;&lt;/i&gt;&lt;/b&gt;
+&lt;BR&gt;
+      ---------------------------&lt;BR&gt;&lt;b&gt;Würth Elektronik&lt;/b&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      ---------O---&lt;BR&gt;
+      ----O--------&lt;BR&gt;
+      ---------O---&lt;BR&gt;
+      ----O--------&lt;BR&gt;
+      ---------O---&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+   
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;
+      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+  &lt;/TR&gt;
+
+  &lt;TR&gt;
+    &lt;TD COLSPAN=7&gt;&amp;nbsp;
+    &lt;/TD&gt;
+  &lt;/TR&gt;
+  
+&lt;/TABLE&gt;
+&lt;B&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;More than you expect&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;/B&gt;
+
+&lt;HR&gt;&lt;BR&gt;
+&lt;b&gt;Würth Elektronik eiSos GmbH &amp; Co. KG&lt;/b&gt;&lt;br&gt;
+EMC &amp; Inductive Solutions&lt;br&gt;
+
+Max-Eyth-Str.1&lt;br&gt;
+D-74638 Waldenburg&lt;br&gt;
+&lt;br&gt;
+Tel: +49 (0)7942-945-0&lt;br&gt;
+Fax:+49 (0)7942-945-5000&lt;br&gt;
+&lt;br&gt;
+&lt;a href="http://www.we-online.com/eagle"&gt;http://www.we-online.com/eagle&lt;/a&gt;&lt;br&gt;
+&lt;a href="mailto:libraries@we-online.com"&gt;libraries@we-online.com&lt;/a&gt; &lt;BR&gt;&lt;BR&gt;
+&lt;br&gt;&lt;HR&gt;&lt;BR&gt;
+Neither CadSoft nor WE-eiSos does warrant that this library is error-free or &lt;br&gt;
+that it meets your specific requirements.&lt;br&gt;&lt;BR&gt;
+Please contact us for more information.&lt;br&gt;&lt;BR&gt;&lt;br&gt;
+&lt;HR&gt;
+Eagle Version 6, Library Revision 2015b, 08.04.2015&lt;br&gt;
+
+&lt;HR&gt;
+Copyright: Würth Elektronik</description>
+<packages>
+<package name="7PIN-PFM">
+<smd name="7" x="0" y="-3.81" dx="0.89" dy="3.06" layer="1" rot="R90"/>
+<smd name="6" x="0" y="-2.54" dx="0.89" dy="3.06" layer="1" rot="R90"/>
+<smd name="5" x="0" y="-1.27" dx="0.89" dy="3.06" layer="1" rot="R90"/>
+<smd name="8" x="7.305" y="0" dx="5.35" dy="8.54" layer="1" rot="R90"/>
+<smd name="4" x="0" y="0" dx="0.89" dy="3.06" layer="1" rot="R90"/>
+<smd name="3" x="0" y="1.27" dx="0.89" dy="3.06" layer="1" rot="R90"/>
+<smd name="2" x="0" y="2.54" dx="0.89" dy="3.06" layer="1" rot="R90"/>
+<smd name="1" x="0" y="3.81" dx="0.89" dy="3.06" layer="1" rot="R90"/>
+<text x="-1.778" y="6.096" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-1.778" y="7.239" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<wire x1="13.095" y1="5.33" x2="-1.78" y2="5.33" width="0.127" layer="39"/>
+<wire x1="-1.78" y1="5.33" x2="-1.78" y2="-5.33" width="0.127" layer="39"/>
+<wire x1="-1.78" y1="-5.33" x2="13.095" y2="-5.33" width="0.127" layer="39"/>
+<wire x1="13.095" y1="5.33" x2="13.095" y2="-5.33" width="0.127" layer="39"/>
+<wire x1="2.995" y1="5.08" x2="12.845" y2="5.08" width="0.127" layer="21"/>
+<wire x1="12.845" y1="5.08" x2="12.845" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="12.845" y1="-5.08" x2="2.995" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="2.995" y1="5.08" x2="2.995" y2="2.675" width="0.127" layer="21"/>
+<circle x="3.556" y="4.064" radius="0.283978125" width="0.127" layer="21"/>
+<circle x="11.938" y="-4.318" radius="0.283978125" width="0.127" layer="21"/>
+<wire x1="2.995" y1="-2.675" x2="2.995" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="2.995" y1="-2.675" x2="2.995" y2="2.675" width="0.127" layer="51"/>
+</package>
+<package name="TO263-7EP">
+<description>&lt;B&gt;VDRM - Variable Step Down Regulator Module&lt;BR&gt;&lt;/B&gt;
+
+Created on 2014-06-19</description>
+<smd name="4" x="-7.305" y="0" dx="3.06" dy="0.89" layer="1"/>
+<smd name="3" x="-7.305" y="1.27" dx="3.06" dy="0.89" layer="1"/>
+<smd name="2" x="-7.305" y="2.54" dx="3.06" dy="0.89" layer="1"/>
+<smd name="1" x="-7.305" y="3.81" dx="3.06" dy="0.89" layer="1"/>
+<smd name="5" x="-7.305" y="-1.27" dx="3.06" dy="0.89" layer="1"/>
+<smd name="6" x="-7.305" y="-2.54" dx="3.06" dy="0.89" layer="1"/>
+<smd name="7" x="-7.305" y="-3.81" dx="3.06" dy="0.89" layer="1"/>
+<smd name="8" x="0" y="0" dx="8.54" dy="5.35" layer="1"/>
+<wire x1="-4.31" y1="-5.08" x2="5.54" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="5.54" y1="-5.08" x2="5.54" y2="5.08" width="0.127" layer="21"/>
+<wire x1="5.54" y1="5.08" x2="-4.31" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-9.085" y1="5.33" x2="-9.085" y2="-5.33" width="0.127" layer="39"/>
+<wire x1="-9.085" y1="-5.33" x2="5.79" y2="-5.33" width="0.127" layer="39"/>
+<wire x1="5.79" y1="-5.33" x2="5.79" y2="5.33" width="0.127" layer="39"/>
+<wire x1="5.79" y1="5.33" x2="-9.085" y2="5.33" width="0.127" layer="39"/>
+<text x="-8.89" y="7.62" size="1.27" layer="25">&gt;NAME</text>
+<text x="-8.89" y="6.35" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="-3.683" y="4.318" radius="0.179603125" width="0.127" layer="21"/>
+<circle x="4.826" y="-4.445" radius="0.179603125" width="0.127" layer="21"/>
+<wire x1="-4.31" y1="5.08" x2="-4.31" y2="2.675" width="0.127" layer="21"/>
+<wire x1="-4.31" y1="-5.08" x2="-4.31" y2="-2.675" width="0.127" layer="21"/>
+<wire x1="-4.31" y1="2.675" x2="-4.31" y2="-2.675" width="0.127" layer="51"/>
+</package>
+<package name="BQFN-41">
+<smd name="6" x="0" y="-4.425" dx="0.95" dy="0.6" layer="1" rot="R90"/>
+<smd name="7" x="0.9" y="-4.425" dx="0.95" dy="0.6" layer="1" rot="R90"/>
+<smd name="8" x="1.8" y="-4.425" dx="0.95" dy="0.6" layer="1" rot="R90"/>
+<smd name="9" x="2.7" y="-4.425" dx="0.95" dy="0.6" layer="1" rot="R90"/>
+<smd name="5" x="-0.9" y="-4.425" dx="0.95" dy="0.6" layer="1" rot="R90"/>
+<smd name="4" x="-1.8" y="-4.425" dx="0.95" dy="0.6" layer="1" rot="R90"/>
+<smd name="3" x="-2.7" y="-4.425" dx="0.95" dy="0.6" layer="1" rot="R90"/>
+<smd name="2" x="-3.6" y="-4.425" dx="0.95" dy="0.6" layer="1" rot="R90"/>
+<smd name="10" x="3.6" y="-4.425" dx="0.95" dy="0.6" layer="1" rot="R90"/>
+<smd name="24" x="0" y="4.425" dx="0.95" dy="0.6" layer="1" rot="R90"/>
+<smd name="23" x="0.9" y="4.425" dx="0.95" dy="0.6" layer="1" rot="R90"/>
+<smd name="22" x="1.8" y="4.425" dx="0.95" dy="0.6" layer="1" rot="R90"/>
+<smd name="21" x="2.7" y="4.425" dx="0.95" dy="0.6" layer="1" rot="R90"/>
+<smd name="25" x="-0.9" y="4.425" dx="0.95" dy="0.6" layer="1" rot="R90"/>
+<smd name="26" x="-1.8" y="4.425" dx="0.95" dy="0.6" layer="1" rot="R90"/>
+<smd name="27" x="-2.7" y="4.425" dx="0.95" dy="0.6" layer="1" rot="R90"/>
+<smd name="28" x="-3.6" y="4.425" dx="0.95" dy="0.6" layer="1" rot="R90"/>
+<smd name="20" x="3.6" y="4.425" dx="0.95" dy="0.6" layer="1" rot="R90"/>
+<smd name="1" x="-5.05" y="-4.1" dx="1.7" dy="1.6" layer="1"/>
+<smd name="11" x="5.05" y="-4.1" dx="1.7" dy="1.6" layer="1"/>
+<smd name="29" x="-5.05" y="4.1" dx="1.7" dy="1.6" layer="1"/>
+<smd name="19" x="5.05" y="4.1" dx="1.7" dy="1.6" layer="1"/>
+<smd name="33" x="-5.425" y="0" dx="0.95" dy="0.6" layer="1" rot="R180"/>
+<smd name="32" x="-5.425" y="0.9" dx="0.95" dy="0.6" layer="1" rot="R180"/>
+<smd name="31" x="-5.425" y="1.8" dx="0.95" dy="0.6" layer="1" rot="R180"/>
+<smd name="30" x="-5.425" y="2.7" dx="0.95" dy="0.6" layer="1" rot="R180"/>
+<smd name="34" x="-5.425" y="-0.9" dx="0.95" dy="0.6" layer="1" rot="R180"/>
+<smd name="35" x="-5.425" y="-1.8" dx="0.95" dy="0.6" layer="1" rot="R180"/>
+<smd name="36" x="-5.425" y="-2.7" dx="0.95" dy="0.6" layer="1" rot="R180"/>
+<smd name="15" x="5.425" y="0" dx="0.95" dy="0.6" layer="1" rot="R180"/>
+<smd name="16" x="5.425" y="0.9" dx="0.95" dy="0.6" layer="1" rot="R180"/>
+<smd name="17" x="5.425" y="1.8" dx="0.95" dy="0.6" layer="1" rot="R180"/>
+<smd name="18" x="5.425" y="2.7" dx="0.95" dy="0.6" layer="1" rot="R180"/>
+<smd name="14" x="5.425" y="-0.9" dx="0.95" dy="0.6" layer="1" rot="R180"/>
+<smd name="13" x="5.425" y="-1.8" dx="0.95" dy="0.6" layer="1" rot="R180"/>
+<smd name="12" x="5.425" y="-2.7" dx="0.95" dy="0.6" layer="1" rot="R180"/>
+<smd name="40" x="4.06" y="2.33" dx="1.4" dy="1.24" layer="1" rot="R90"/>
+<smd name="41" x="1.32" y="2.65" dx="2.04" dy="3.05" layer="1" rot="R90"/>
+<smd name="39" x="3.37" y="-1.3" dx="3.1" dy="2.2" layer="1" rot="R90"/>
+<smd name="38" x="-0.11" y="-1.3" dx="3.1" dy="2.2" layer="1" rot="R90"/>
+<smd name="37" x="-3.3" y="-0.21" dx="2.25" dy="2.3" layer="1"/>
+<wire x1="-6.25" y1="5.25" x2="6.25" y2="5.25" width="0.127" layer="39"/>
+<wire x1="6.25" y1="-5.25" x2="-6.25" y2="-5.25" width="0.127" layer="39"/>
+<wire x1="-6.25" y1="-5.25" x2="-6.25" y2="5.25" width="0.127" layer="39"/>
+<text x="-6.35" y="7.62" size="1.27" layer="25">&gt;NAME</text>
+<text x="-6.35" y="6.35" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="6.25" y1="-5.25" x2="6.25" y2="5.25" width="0.127" layer="39"/>
+<wire x1="-5.5" y1="4.5" x2="5.5" y2="4.5" width="0.127" layer="51"/>
+<wire x1="-5.5" y1="4.5" x2="-5.5" y2="-4.5" width="0.127" layer="51"/>
+<wire x1="5.5" y1="4.5" x2="5.5" y2="-4.5" width="0.127" layer="51"/>
+<wire x1="-5.5" y1="-4.5" x2="5.5" y2="-4.5" width="0.127" layer="51"/>
+</package>
+<package name="FDSM_17395XX78">
+<description>&lt;b&gt;MagPC Power Module&lt;/b&gt;&lt;br&gt;
+FDSM - Fixed Step Down Regulator Module</description>
+<pad name="2" x="0" y="0" drill="0.9"/>
+<pad name="1" x="-2.54" y="0" drill="0.9" shape="square"/>
+<pad name="3" x="2.54" y="0" drill="0.9"/>
+<wire x1="-5.8" y1="-2" x2="5.25" y2="-2" width="0.254" layer="21"/>
+<wire x1="5.25" y1="-2" x2="5.8" y2="-2" width="0.254" layer="21"/>
+<wire x1="-5.8" y1="6.5" x2="5.25" y2="6.5" width="0.254" layer="21"/>
+<wire x1="5.25" y1="6.5" x2="5.8" y2="6.5" width="0.254" layer="21"/>
+<wire x1="-5.8" y1="6.5" x2="-5.8" y2="-2" width="0.2" layer="21"/>
+<wire x1="5.8" y1="6.5" x2="5.8" y2="-2" width="0.2" layer="21"/>
+<wire x1="-6.05" y1="6.75" x2="6.05" y2="6.75" width="0.2" layer="39"/>
+<wire x1="6.05" y1="6.75" x2="6.05" y2="-2.25" width="0.2" layer="39"/>
+<wire x1="6.05" y1="-2.25" x2="-6.05" y2="-2.25" width="0.2" layer="39"/>
+<wire x1="-6.05" y1="-2.25" x2="-6.05" y2="6.75" width="0.2" layer="39"/>
+<text x="-6.35" y="7.62" size="1.27" layer="25">&gt;NAME</text>
+<text x="-6.35" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-5.25" y1="6.5" x2="-5.25" y2="-2" width="0.2" layer="51"/>
+<wire x1="5.25" y1="6.5" x2="5.25" y2="-2" width="0.2" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="171020601">
+<description>&lt;P&gt; &lt;font color="#0000FF"&gt;&lt;B&gt; MagI³C-VDRM Variable Step Down Regulator Module&lt;/B&gt;&lt;/font&gt;&lt;/td&gt;
+
+&lt;PRE&gt;
+    The VDRM series of the MagI³C Power Modules Family comprise a fully integrated current mode DC/DC power supply with both the switching power
+stage, control circuitry and passive all in one package These devices also feature built-in compensation circuitry and a soft-start feature for a smooth, safe
+power up. The 7 PIN PFM is an industrial high power density package with a low profile and a small outline.
+The VDRM series offers high efficiency and delivers up to 2A of output current with accurate regulated output voltages. It operates from input voltage 6V to 42V.
+They are available in an innovative package that enhances thermal performance and allows for hand or machine soldering.
+The VDRM regulators also have on-board protection circuitry to guard against thermal and electrical damage. Thermal shut-down, over-current,overvoltage and 
+under-voltage protections safeguardthe regulator and include a short-circuit protection.
+
+&lt;table border="1"&gt;
+&lt;tr title="You are looking at Row 1" bgcolor="Silver"&gt;
+   &lt;td&gt;&lt;font color="#0000FF"&gt;&lt;B&gt; Description &lt;/B&gt;&lt;/font&gt;&lt;/td&gt;
+    &lt;td&gt; &lt;font color="#0000FF"&gt;&lt;B&gt; Values &lt;/B&gt;&lt;/font&gt;&lt;/td&gt;
+  &lt;tr title="You are looking at Row 1" bgcolor="white"&gt;
+    &lt;td&gt; Ui (V(DC))&lt;/td&gt;
+    &lt;td&gt;  6-42 &lt;/td&gt;
+    &lt;tr title="You are looking at Row 2" bgcolor="white"&gt;
+    &lt;td&gt; Uo (V(DC)&lt;/td&gt;
+    &lt;td&gt; 0.8-6.0 &lt;/td&gt;
+ &lt;tr title="You are looking at Row 1" bgcolor="white"&gt;
+    &lt;td&gt; i/o (A)&lt;/td&gt;
+    &lt;td&gt;   2&lt;/td&gt;
+  &lt;tr title="You are looking at Row 2" bgcolor="white"&gt;
+    &lt;td&gt; Po (W)&lt;/td&gt;
+    &lt;td&gt;  12&lt;/td&gt;
+&lt;/table&gt;</description>
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<text x="-10.16" y="8.89" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="6.35" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1VIN" x="-8.89" y="-7.62" length="short" direction="in" rot="R90"/>
+<pin name="2RDN" x="-6.35" y="-7.62" length="short" direction="in" rot="R90"/>
+<pin name="3EN" x="-3.81" y="-7.62" length="short" direction="in" rot="R90"/>
+<pin name="4AGND" x="-1.27" y="-7.62" length="short" direction="pwr" rot="R90"/>
+<pin name="8EP" x="8.89" y="-7.62" length="short" direction="pwr" rot="R90"/>
+<pin name="5SS" x="1.27" y="-7.62" length="short" rot="R90"/>
+<pin name="6FB" x="3.81" y="-7.62" length="short" direction="out" rot="R90"/>
+<pin name="7VOUT" x="6.35" y="-7.62" length="short" direction="out" rot="R90"/>
+</symbol>
+<symbol name="171032401">
+<description>&lt;P&gt; &lt;font color="#0000FF"&gt;&lt;B&gt; MagI³C-VDRM Variable Step Down Regulator Module&lt;/B&gt;&lt;/font&gt;&lt;/td&gt;
+
+&lt;PRE&gt;
+    The VDRM series of the MagI³C Power Modules Family comprise a fully integrated current mode DC/DC power supply with both the switching power
+stage, control circuitry and passive all in one package These devices also feature built-in compensation circuitry and a soft-start feature for a smooth, safe
+power up. The 7 PIN PFM is an industrial high power density package with a low profile and a small outline.
+The VDRM series offers high efficiency and delivers up to 2A of output current with accurate regulated output voltages. It operates from input voltage 6V to 42V.
+They are available in an innovative package that enhances thermal performance and allows for hand or machine soldering.
+The VDRM regulators also have on-board protection circuitry to guard against thermal and electrical damage. Thermal shut-down, over-current,overvoltage and 
+under-voltage protections safeguardthe regulator and include a short-circuit protection.
+
+&lt;table border="1"&gt;
+ 
+&lt;tr title="You are looking at Row 1" bgcolor="Silver"&gt;
+    &lt;td&gt;&lt;font color="#0000FF"&gt;&lt;B&gt; Description &lt;/B&gt;&lt;/font&gt;&lt;/td&gt;
+    &lt;td&gt; &lt;font color="#0000FF"&gt;&lt;B&gt; Values &lt;/B&gt;&lt;/font&gt;&lt;/td&gt;
+    &lt;tr title="You are looking at Row 1" bgcolor="white"&gt;
+    &lt;td&gt; Ui (V(DC))&lt;/td&gt;
+    &lt;td&gt;  6-42 &lt;/td&gt;
+  &lt;tr title="You are looking at Row 2" bgcolor="white"&gt;
+    &lt;td&gt; Uo (V(DC)&lt;/td&gt;
+    &lt;td&gt; 5.0-24.0 &lt;/td&gt;
+ &lt;tr title="You are looking at Row 1" bgcolor="white"&gt;
+    &lt;td&gt; i/o (A)&lt;/td&gt;
+    &lt;td&gt;    3&lt;/td&gt;
+  &lt;tr title="You are looking at Row 2" bgcolor="white"&gt;
+    &lt;td&gt; Po (W)&lt;/td&gt;
+    &lt;td&gt;   72&lt;/td&gt;
+ &lt;/table&gt;</description>
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<text x="-10.16" y="8.89" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="6.35" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1VIN" x="-8.89" y="-7.62" length="short" direction="in" rot="R90"/>
+<pin name="2RDN" x="-6.35" y="-7.62" length="short" direction="in" rot="R90"/>
+<pin name="3EN" x="-3.81" y="-7.62" length="short" direction="in" rot="R90"/>
+<pin name="4AGND" x="-1.27" y="-7.62" length="short" direction="pwr" rot="R90"/>
+<pin name="8EP" x="8.89" y="-7.62" length="short" direction="pwr" rot="R90"/>
+<pin name="5SS" x="1.27" y="-7.62" length="short" rot="R90"/>
+<pin name="6FB" x="3.81" y="-7.62" length="short" direction="out" rot="R90"/>
+<pin name="7VOUT" x="6.35" y="-7.62" length="short" direction="out" rot="R90"/>
+</symbol>
+<symbol name="172946001">
+<description>&lt;B&gt;LDHM-LED Step Down High Current Module</description>
+<wire x1="-10.16" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<pin name="1LED+" x="-8.89" y="-7.62" length="short" direction="in" rot="R90"/>
+<pin name="2LED+" x="-6.35" y="-7.62" length="short" rot="R90"/>
+<pin name="3DIM" x="-3.81" y="-7.62" length="short" rot="R90"/>
+<pin name="4GND" x="-1.27" y="-7.62" length="short" direction="pwr" rot="R90"/>
+<pin name="5VREF" x="1.27" y="-7.62" length="short" rot="R90"/>
+<pin name="6IADJ" x="3.81" y="-7.62" length="short" direction="out" rot="R90"/>
+<pin name="7LED-" x="6.35" y="-7.62" length="short" direction="out" rot="R90"/>
+<text x="-10.16" y="8.89" size="2.54" layer="95">&gt;NAME</text>
+<text x="-10.16" y="6.35" size="2.54" layer="96">&gt;VALUE</text>
+<pin name="8EP" x="8.89" y="-7.62" length="short" direction="pwr" rot="R90"/>
+</symbol>
+<symbol name="171012401">
+<description>&lt;P&gt; &lt;font color="#0000FF"&gt;&lt;B&gt; MagI³C-VDRM Variable Step Down Regulator Module&lt;/B&gt;&lt;/font&gt;&lt;/td&gt;</description>
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<text x="-8.89" y="8.89" size="1.778" layer="95">&gt;NAME</text>
+<text x="-8.89" y="6.35" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1VIN" x="-8.89" y="-7.62" length="short" direction="in" rot="R90"/>
+<pin name="2RON" x="-6.35" y="-7.62" length="short" direction="in" rot="R90"/>
+<pin name="3EN" x="-3.81" y="-7.62" length="short" direction="in" rot="R90"/>
+<pin name="4AGND" x="-1.27" y="-7.62" length="short" direction="pwr" rot="R90"/>
+<pin name="8EP" x="8.89" y="-7.62" length="short" direction="pwr" rot="R90"/>
+<pin name="5SS" x="1.27" y="-7.62" length="short" rot="R90"/>
+<pin name="6FB" x="3.81" y="-7.62" length="short" direction="out" rot="R90"/>
+<pin name="7VOUT" x="6.35" y="-7.62" length="short" direction="out" rot="R90"/>
+</symbol>
+<symbol name="171012402">
+<description>&lt;P&gt; &lt;font color="#0000FF"&gt;&lt;B&gt; MagI³C-VDRM Variable Step Down Regulator Module&lt;/B&gt;&lt;/font&gt;&lt;/td&gt;</description>
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<text x="-10.16" y="8.89" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="6.35" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1VIN" x="-8.89" y="-7.62" length="short" direction="in" rot="R90"/>
+<pin name="2RON" x="-6.35" y="-7.62" length="short" direction="in" rot="R90"/>
+<pin name="3EN" x="-3.81" y="-7.62" length="short" direction="in" rot="R90"/>
+<pin name="4AGND" x="-1.27" y="-7.62" length="short" direction="pwr" rot="R90"/>
+<pin name="8EP" x="8.89" y="-7.62" length="short" direction="pwr" rot="R90"/>
+<pin name="5SS" x="1.27" y="-7.62" length="short" rot="R90"/>
+<pin name="6FB" x="3.81" y="-7.62" length="short" direction="out" rot="R90"/>
+<pin name="7VOUT" x="6.35" y="-7.62" length="short" direction="out" rot="R90"/>
+</symbol>
+<symbol name="171021501">
+<pin name="2DNC" x="-31.82" y="8.89" length="middle"/>
+<wire x1="-26.67" y1="16.51" x2="26.67" y2="16.51" width="0.254" layer="94"/>
+<wire x1="26.67" y1="16.51" x2="26.67" y2="-16.51" width="0.254" layer="94"/>
+<wire x1="26.67" y1="-16.51" x2="-26.67" y2="-16.51" width="0.254" layer="94"/>
+<wire x1="-26.67" y1="-16.51" x2="-26.67" y2="16.51" width="0.254" layer="94"/>
+<pin name="3DNC" x="-31.82" y="6.35" length="middle"/>
+<pin name="4AGND" x="-31.82" y="3.81" length="middle"/>
+<pin name="5AGND" x="-31.82" y="1.27" length="middle"/>
+<pin name="6PH" x="-31.82" y="-1.27" length="middle"/>
+<pin name="7PH" x="-31.82" y="-3.81" length="middle"/>
+<pin name="8GND_PT" x="-31.82" y="-6.35" length="middle"/>
+<pin name="9GND_PT" x="-31.82" y="-8.89" length="middle"/>
+<pin name="10VOUT" x="-31.82" y="-11.43" length="middle"/>
+<pin name="20PGND" x="11.43" y="-21.66" length="middle" rot="R90"/>
+<pin name="21PH" x="13.97" y="-21.66" length="middle" rot="R90"/>
+<pin name="22PH" x="31.82" y="-11.43" length="middle" rot="R180"/>
+<pin name="23PH" x="31.82" y="-8.89" length="middle" rot="R180"/>
+<pin name="24PH" x="31.82" y="-6.35" length="middle" rot="R180"/>
+<pin name="25DNC" x="31.82" y="-3.81" length="middle" rot="R180"/>
+<pin name="26VIN" x="31.82" y="-1.27" length="middle" rot="R180"/>
+<pin name="27DL/UVLO" x="31.82" y="1.27" length="middle" rot="R180"/>
+<pin name="28SS/TRK" x="31.82" y="3.81" length="middle" rot="R180"/>
+<pin name="29SSCHO" x="31.82" y="6.35" length="middle" rot="R180"/>
+<pin name="30AGND" x="31.82" y="8.89" length="middle" rot="R180"/>
+<pin name="31RT/CLK" x="31.82" y="11.43" length="middle" rot="R180"/>
+<pin name="32AGND" x="11.43" y="21.66" length="middle" rot="R270"/>
+<pin name="33AGND" x="8.89" y="21.66" length="middle" rot="R270"/>
+<pin name="34AGND" x="6.35" y="21.66" length="middle" rot="R270"/>
+<pin name="35PG" x="3.81" y="21.66" length="middle" rot="R270"/>
+<pin name="36VADJ" x="1.27" y="21.66" length="middle" rot="R270"/>
+<pin name="1AGND" x="-31.82" y="11.43" length="middle"/>
+<pin name="12VOUT" x="-8.89" y="-21.66" length="middle" rot="R90"/>
+<pin name="13VOUT" x="-6.35" y="-21.66" length="middle" rot="R90"/>
+<pin name="14VOUT" x="-3.81" y="-21.66" length="middle" rot="R90"/>
+<pin name="15VOUT" x="-1.27" y="-21.66" length="middle" rot="R90"/>
+<pin name="16PGND" x="1.27" y="-21.66" length="middle" rot="R90"/>
+<pin name="17PGND" x="3.81" y="-21.66" length="middle" rot="R90"/>
+<pin name="18PGND" x="6.35" y="-21.66" length="middle" rot="R90"/>
+<pin name="19PGND" x="8.89" y="-21.66" length="middle" rot="R90"/>
+<pin name="40PGND" x="-8.89" y="21.66" length="middle" rot="R270"/>
+<pin name="41PH" x="-11.43" y="21.66" length="middle" rot="R270"/>
+<pin name="11VOUT" x="-11.43" y="-21.66" length="middle" rot="R90"/>
+<pin name="38PH" x="-3.81" y="21.66" length="middle" rot="R270"/>
+<pin name="39VOUT" x="-6.35" y="21.66" length="middle" rot="R270"/>
+<pin name="37AGND" x="-1.27" y="21.66" length="middle" rot="R270"/>
+<text x="-22.86" y="26.67" size="1.778" layer="95">&gt;NAME</text>
+<text x="-22.86" y="24.13" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="171050601">
+<description>&lt;P&gt; &lt;font color="#0000FF"&gt;&lt;B&gt; MagI³C-VDRM Variable Step Down Regulator Module&lt;/B&gt;&lt;/font&gt;&lt;/td&gt;</description>
+<wire x1="-10.16" y1="6.35" x2="-10.16" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-6.35" x2="10.16" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-6.35" x2="10.16" y2="6.35" width="0.254" layer="94"/>
+<wire x1="10.16" y1="6.35" x2="-10.16" y2="6.35" width="0.254" layer="94"/>
+<text x="-10.16" y="10.16" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1VIN" x="-8.89" y="-8.89" length="short" direction="in" rot="R90"/>
+<pin name="2SYNC" x="-6.35" y="-8.89" length="short" direction="in" rot="R90"/>
+<pin name="3EN" x="-3.81" y="-8.89" length="short" direction="in" rot="R90"/>
+<pin name="4AGND" x="-1.27" y="-8.89" length="short" direction="pwr" rot="R90"/>
+<pin name="8EP" x="8.89" y="-8.89" length="short" direction="pwr" rot="R90"/>
+<pin name="6SS/TRK" x="3.81" y="-8.89" length="short" rot="R90"/>
+<pin name="5FB" x="1.27" y="-8.89" length="short" direction="out" rot="R90"/>
+<pin name="7VOUT" x="6.35" y="-8.89" length="short" direction="out" rot="R90"/>
+</symbol>
+<symbol name="17395XX78">
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<pin name="1VIN" x="-2.54" y="7.62" length="short" direction="in" rot="R270"/>
+<pin name="2GND" x="0" y="7.62" length="short" direction="pwr" rot="R270"/>
+<pin name="3VOUT" x="2.54" y="7.62" length="short" direction="out" rot="R270"/>
+<text x="-6.35" y="11.43" size="1.27" layer="96">&gt;VALUE</text>
+<text x="-6.35" y="13.97" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="WE-LDHMI-172946001" prefix="U" uservalue="yes">
+<description>&lt;B&gt;VDRM - Variable Step Down Regulator Module&lt;BR&gt;&lt;/B&gt;
+- Peak efficiency up to 96%&lt;BR&gt;
+- Current capability up to 2.5A&lt;BR&gt;
+- Wide input voltage range: 7V-50V&lt;BR&gt;
+- Regulated output voltages: 2.5V-15V&lt;BR&gt;
+- Power package QFN&lt;BR&gt;
+- Switching frequency range: 300kHz-1MHz adjustable
+- External clock synchronisation&lt;BR&gt;
+- Built-in soft-start and tracking&lt;BR&gt;
+- Power Good signal and pre-bias output&lt;BR&gt;
+-Under voltage lockout protection (UVLO)&lt;BR&gt;
+- Voltage overshoot and over-current protection&lt;BR&gt;
+- Over temperature and current protection&lt;BR&gt;
+- Operating junction temperature: -40-85°C&lt;BR&gt;
+- EN55022 class B compliant&lt;BR&gt;
+&lt;B&gt; APPLICATIONS&lt;BR&gt;&lt;/B&gt;
+-- Point of Load DC-DC applications&lt;BR&gt;
+-- Servers, Data and Telecom&lt;BR&gt;
+-- System power supplies&lt;BR&gt;
+-- DSPs, FPGAs, MCUs and MPUs&lt;BR&gt;
+-- I/O interface&lt;BR&gt;
+
+&lt;br&gt;
+&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/pm/MagIC_LDHM_pf2.jpg" title="Enlarge picture"&gt;
+
+&lt;img src="http://katalog.we-online.de/media/thumbs2/pm/thb_MagIC_LDHM_pf2.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/en/pm/MagIC-LDHM/172946001"&gt;http://katalog.we-online.de/en/pm/MagIC-LDHM/172946001&lt;/a&gt;&lt;p&gt;
+&lt;B&gt;Created date 2014-06-19&lt;BR&gt;
+2014 (C) Würth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="172946001" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO263-7EP">
+<connects>
+<connect gate="G$1" pin="1LED+" pad="1"/>
+<connect gate="G$1" pin="2LED+" pad="2"/>
+<connect gate="G$1" pin="3DIM" pad="3"/>
+<connect gate="G$1" pin="4GND" pad="4"/>
+<connect gate="G$1" pin="5VREF" pad="5"/>
+<connect gate="G$1" pin="6IADJ" pad="6"/>
+<connect gate="G$1" pin="7LED-" pad="7"/>
+<connect gate="G$1" pin="8EP" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WE-VDRM-171012401" prefix="U" uservalue="yes">
+<description>&lt;P&gt; &lt;font color="#0000FF"&gt;&lt;B&gt; MagI³C-VDRM Variable Step Down Regulator Module&lt;/B&gt;&lt;/font&gt;&lt;/td&gt;
+
+&lt;PRE&gt;
+    The VDRM series of the MagI³C Power Modules
+Family comprise a fully integrated current mode
+DC/DC power supply with both the switching power
+stage, control circuitry and passive all in one package
+These devices also feature built-in compensation
+circuitry and a soft-start feature for a smooth, safe
+power up. The 7 PIN PFM is an industrial high power
+density package with a low profile and a small outline.
+The VDRM series offers high efficiency and delivers up
+to 1A of output current with accurate regulated output
+voltages. It operates from input voltage 6V to 42V.
+They are available in an innovative package that
+enhances thermal performance and allows for hand or
+machine soldering.
+The VDRM regulators also have on-board protection
+circuitry to guard against thermal and electrical
+damage. Thermal shut-down, over-current,
+overvoltage and under-voltage protections safeguard
+the regulator and include a short-circuit protection.
+&lt;/PRE&gt;
+&lt;font color="#0000FF"&gt;&lt;B&gt;Features:&lt;/B&gt;&lt;/font&gt;&lt;/td&gt;
+&lt;PRE&gt;
+ Peak efficiency up to 97%
+ Current capability up to 1A
+ Wide input voltage range: 6V-42V
+ Wide output voltage range:5-24V
+ Integrated inductor solution for quick time to market and ease of use
+ Single exposed pad for best-in-class thermal performance
+ Low output voltage ripple
+ Under voltage lockout Protection (UVLO)
+ Programmable soft-start and frequency
+ Thermal shut down, inrush current and output short current protection
+ Temperature range: -40 to 125°C
+ RoHS &amp; REACh compliant&lt;/PRE&gt;
+&lt;font color="#0000FF"&gt;&lt;B&gt;Application:&lt;/B&gt;&lt;/font&gt;&lt;/td&gt;
+&lt;PRE&gt;
+ Point of Load DC-DC applications
+ Servers, Data and Telecom
+ System power supplies
+ DSPs, FPGAs, MCUs and MPUs
+ I/O interface
+&lt;/PRE&gt;
+&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/pm/MagIC_2VDRM_pf2.jpg" title="Enlarge picture"&gt;
+
+&lt;img src="http://katalog.we-online.de/media/thumbs2/pm/thb_MagIC_2VDRM_pf2.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/en/pm/MagIC-VDRM/171012401"&gt;http://katalog.we-online.de/en/pm/MagIC-VDRM/171012401&lt;/a&gt;&lt;p&gt;</description>
+<gates>
+<gate name="G$1" symbol="171012401" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="7PIN-PFM">
+<connects>
+<connect gate="G$1" pin="1VIN" pad="1"/>
+<connect gate="G$1" pin="2RON" pad="2"/>
+<connect gate="G$1" pin="3EN" pad="3"/>
+<connect gate="G$1" pin="4AGND" pad="4"/>
+<connect gate="G$1" pin="5SS" pad="5"/>
+<connect gate="G$1" pin="6FB" pad="6"/>
+<connect gate="G$1" pin="7VOUT" pad="7"/>
+<connect gate="G$1" pin="8EP" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="COMPANY-URL" value="http://www.we-online.de"/>
+<attribute name="CREATED-DATE" value="JAN 2014" constant="no"/>
+<attribute name="DATASHEET-URL" value="http://katalog.we-online.de/pm/datasheet/171012401.pdf" constant="no"/>
+<attribute name="MANUFACTURER" value="Würth Elektronik eiSos GmbH"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WE-VDRM-171012402" prefix="U" uservalue="yes">
+<description>&lt;P&gt; &lt;font color="#0000FF"&gt;&lt;B&gt; MagI³C-VDRM Variable Step Down Regulator Module&lt;/B&gt;&lt;/font&gt;&lt;/td&gt;
+
+&lt;PRE&gt;
+    The VDRM series of the MagI³C Power Modules
+Family comprise a fully integrated current mode
+DC/DC power supply with both the switching power
+stage, control circuitry and passive all in one package
+These devices also feature built-in compensation
+circuitry and a soft-start feature for a smooth, safe
+power up. The 7 PIN PFM is an industrial high power
+density package with a low profile and a small outline.
+The VDRM series offers high efficiency and delivers up
+to 1.5A of output current with accurate regulated output
+voltages. It operates from input voltage 6V to 42V.
+They are available in an innovative package that
+enhances thermal performance and allows for hand or
+machine soldering.
+The VDRM regulators also have on-board protection
+circuitry to guard against thermal and electrical
+damage. Thermal shut-down, over-current,
+overvoltage and under-voltage protections safeguard
+the regulator and include a short-circuit protection.
+&lt;/PRE&gt;
+&lt;font color="#0000FF"&gt;&lt;B&gt;Features:&lt;/B&gt;&lt;/font&gt;&lt;/td&gt;
+&lt;PRE&gt;
+ Peak efficiency up to 97%
+ Current capability up to 1.5A
+ Wide input voltage range: 6V-42V
+ Wide output voltage range: 5V-24V
+ Integrated inductor solution for quick time to market and ease of use
+ Single exposed pad for best-in-class thermal performance
+ Low output voltage ripple
+ Under voltage lockout Protection (UVLO)
+ Programmable soft-start and frequency
+ Thermal shut down, inrush current and output short current protection
+ Temperature range: -40 to 125°C
+ RoHS &amp; REACh compliant&lt;/PRE&gt;
+&lt;font color="#0000FF"&gt;&lt;B&gt;Application:&lt;/B&gt;&lt;/font&gt;&lt;/td&gt;
+&lt;PRE&gt;
+ Point of Load DC-DC applications
+ Servers, Data and Telecom
+ System power supplies
+ DSPs, FPGAs, MCUs and MPUs
+ I/O interface
+&lt;/PRE&gt;
+&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/pm/MagIC_2VDRM_pf2.jpg" title="Enlarge picture"&gt;
+
+&lt;img src="http://katalog.we-online.de/media/thumbs2/pm/thb_MagIC_2VDRM_pf2.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/en/pm/MagIC-VDRM/171012402"&gt;http://katalog.we-online.de/en/pm/MagIC-VDRM/171012402&lt;/a&gt;&lt;p&gt;</description>
+<gates>
+<gate name="G$1" symbol="171012402" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="7PIN-PFM">
+<connects>
+<connect gate="G$1" pin="1VIN" pad="1"/>
+<connect gate="G$1" pin="2RON" pad="2"/>
+<connect gate="G$1" pin="3EN" pad="3"/>
+<connect gate="G$1" pin="4AGND" pad="4"/>
+<connect gate="G$1" pin="5SS" pad="5"/>
+<connect gate="G$1" pin="6FB" pad="6"/>
+<connect gate="G$1" pin="7VOUT" pad="7"/>
+<connect gate="G$1" pin="8EP" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="COMPANY-URL" value="http://www.we-online.de"/>
+<attribute name="CREATED-DATE" value="JAN 2014" constant="no"/>
+<attribute name="DATASHEET-URL" value="http://katalog.we-online.de/pm/datasheet/171012402.pdf" constant="no"/>
+<attribute name="MANUFACTURER" value="Würth Elektronik eiSos GmbH"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WE-VDRM-171020601" prefix="U" uservalue="yes">
+<description>&lt;P&gt; &lt;font color="#0000FF"&gt;&lt;B&gt; MagI³C-VDRM Variable Step Down Regulator Module&lt;/B&gt;&lt;/font&gt;&lt;/td&gt;
+
+&lt;PRE&gt;
+    The VDRM series of the MagI³C Power Modules
+Family comprise a fully integrated current mode
+DC/DC power supply with both the switching power
+stage, control circuitry and passive all in one package
+These devices also feature built-in compensation
+circuitry and a soft-start feature for a smooth, safe
+power up. The 7 PIN PFM is an industrial high power
+density package with a low profile and a small outline.
+The VDRM series offers high efficiency and delivers up
+to 2A of output current with accurate regulated output
+voltages. It operates from input voltage 6V to 42V.
+They are available in an innovative package that
+enhances thermal performance and allows for hand or
+machine soldering.
+The VDRM regulators also have on-board protection
+circuitry to guard against thermal and electrical
+damage. Thermal shut-down, over-current,
+overvoltage and under-voltage protections safeguard
+the regulator and include a short-circuit protection.
+&lt;/PRE&gt;
+&lt;font color="#0000FF"&gt;&lt;B&gt;Features:&lt;/B&gt;&lt;/font&gt;&lt;/td&gt;
+&lt;PRE&gt;
+ Peak efficiency up to 90%
+ Current capability up to 2A
+ Wide input voltage range: 6V-42V
+ Wide output voltage range: 0.8V-6V
+ Integrated inductor solution for quick time to market and ease of use
+ Single exposed pad for best-in-class thermal performance
+ Low output voltage ripple
+ Under voltage lockout Protection (UVLO)
+ Programmable soft-start and frequency
+ Thermal shut down, inrush current and output short current protection
+ Temperature range: -40 to 125°C
+ RoHS &amp; REACh compliant&lt;/PRE&gt;
+&lt;font color="#0000FF"&gt;&lt;B&gt;Application:&lt;/B&gt;&lt;/font&gt;&lt;/td&gt;
+&lt;PRE&gt;
+ Point of Load DC-DC applications
+ Servers, Data and Telecom
+ System power supplies
+ DSPs, FPGAs, MCUs and MPUs
+ I/O interface
+&lt;/PRE&gt;
+&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/pm/MagIC_2VDRM_pf2.jpg" title="Enlarge picture"&gt;
+
+&lt;img src="http://katalog.we-online.de/media/thumbs2/pm/thb_MagIC_2VDRM_pf2.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/en/pm/MagIC-VDRM/171020601"&gt;http://katalog.we-online.de/en/pm/MagIC-VDRM/171020601&lt;/a&gt;&lt;p&gt;</description>
+<gates>
+<gate name="G$1" symbol="171020601" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="7PIN-PFM">
+<connects>
+<connect gate="G$1" pin="1VIN" pad="1"/>
+<connect gate="G$1" pin="2RDN" pad="2"/>
+<connect gate="G$1" pin="3EN" pad="3"/>
+<connect gate="G$1" pin="4AGND" pad="4"/>
+<connect gate="G$1" pin="5SS" pad="5"/>
+<connect gate="G$1" pin="6FB" pad="6"/>
+<connect gate="G$1" pin="7VOUT" pad="7"/>
+<connect gate="G$1" pin="8EP" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="COMPANY-URL" value="http://www.we-online.de"/>
+<attribute name="CREATED-DATE" value="JAN 2014" constant="no"/>
+<attribute name="DATASHEET-URL" value="http://katalog.we-online.de/pm/datasheet/171020601.pdf" constant="no"/>
+<attribute name="MANUFACTURER" value="Würth Elektronik eiSos GmbH"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WE-VDRM-171021501" prefix="U" uservalue="yes">
+<description>&lt;b&gt;&lt;pre&gt;MagI³C Power Module Product Family
+VDRM - Variable Step Down Regulator Module&lt;/b&gt;
+
+
+&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/pm/MagIC_2VDRM_pf2.jpg" title="Enlarge picture"&gt;
+
+&lt;img src="http://katalog.we-online.de/media/thumbs2/pm/thb_MagIC_2VDRM_pf2.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/en/pm/MagIC-VDRM/171021501"&gt;http://katalog.we-online.de/en/pm/MagIC-VDRM/171021501&lt;/a&gt;&lt;p&gt;
+Updated on  2014-07-11&lt;br&gt;
+2014 (C) Würth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="171021501" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BQFN-41">
+<connects>
+<connect gate="G$1" pin="10VOUT" pad="10"/>
+<connect gate="G$1" pin="11VOUT" pad="11"/>
+<connect gate="G$1" pin="12VOUT" pad="12"/>
+<connect gate="G$1" pin="13VOUT" pad="13"/>
+<connect gate="G$1" pin="14VOUT" pad="14"/>
+<connect gate="G$1" pin="15VOUT" pad="15"/>
+<connect gate="G$1" pin="16PGND" pad="16"/>
+<connect gate="G$1" pin="17PGND" pad="17"/>
+<connect gate="G$1" pin="18PGND" pad="18"/>
+<connect gate="G$1" pin="19PGND" pad="19"/>
+<connect gate="G$1" pin="1AGND" pad="1"/>
+<connect gate="G$1" pin="20PGND" pad="20"/>
+<connect gate="G$1" pin="21PH" pad="21"/>
+<connect gate="G$1" pin="22PH" pad="22"/>
+<connect gate="G$1" pin="23PH" pad="23"/>
+<connect gate="G$1" pin="24PH" pad="24"/>
+<connect gate="G$1" pin="25DNC" pad="25"/>
+<connect gate="G$1" pin="26VIN" pad="26"/>
+<connect gate="G$1" pin="27DL/UVLO" pad="27"/>
+<connect gate="G$1" pin="28SS/TRK" pad="28"/>
+<connect gate="G$1" pin="29SSCHO" pad="29"/>
+<connect gate="G$1" pin="2DNC" pad="2"/>
+<connect gate="G$1" pin="30AGND" pad="30"/>
+<connect gate="G$1" pin="31RT/CLK" pad="31"/>
+<connect gate="G$1" pin="32AGND" pad="32"/>
+<connect gate="G$1" pin="33AGND" pad="33"/>
+<connect gate="G$1" pin="34AGND" pad="34"/>
+<connect gate="G$1" pin="35PG" pad="35"/>
+<connect gate="G$1" pin="36VADJ" pad="36"/>
+<connect gate="G$1" pin="37AGND" pad="37"/>
+<connect gate="G$1" pin="38PH" pad="38"/>
+<connect gate="G$1" pin="39VOUT" pad="39"/>
+<connect gate="G$1" pin="3DNC" pad="3"/>
+<connect gate="G$1" pin="40PGND" pad="40"/>
+<connect gate="G$1" pin="41PH" pad="41"/>
+<connect gate="G$1" pin="4AGND" pad="4"/>
+<connect gate="G$1" pin="5AGND" pad="5"/>
+<connect gate="G$1" pin="6PH" pad="6"/>
+<connect gate="G$1" pin="7PH" pad="7"/>
+<connect gate="G$1" pin="8GND_PT" pad="8"/>
+<connect gate="G$1" pin="9GND_PT" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WE-VDRM-171032401" prefix="U" uservalue="yes">
+<description>&lt;P&gt; &lt;font color="#0000FF"&gt;&lt;B&gt; MagI³C-VDRM Variable Step Down Regulator Module&lt;/B&gt;&lt;/font&gt;&lt;/td&gt;
+
+&lt;PRE&gt;
+    The VDRM series of the MagI³C Power Modules
+Family comprise a fully integrated current mode
+DC/DC power supply with both the switching power
+stage, control circuitry and passive all in one package
+These devices also feature built-in compensation
+circuitry and a soft-start feature for a smooth, safe
+power up. The 7 PIN PFM is an industrial high power
+density package with a low profile and a small outline.
+The VDRM series offers high efficiency and delivers up
+to 3A of output current with accurate regulated output
+voltages. It operates from input voltage 6V to 42V.
+They are available in an innovative package that
+enhances thermal performance and allows for hand or
+machine soldering.
+The VDRM regulators also have on-board protection
+circuitry to guard against thermal and electrical
+damage. Thermal shut-down, over-current,
+overvoltage and under-voltage protections safeguard
+the regulator and include a short-circuit protection.
+&lt;/PRE&gt;
+&lt;font color="#0000FF"&gt;&lt;B&gt;Features:&lt;/B&gt;&lt;/font&gt;&lt;/td&gt;
+&lt;PRE&gt;
+ Peak efficiency up to 97%
+ Current capability up to 3A
+ Wide input voltage range: 6V-42V
+ Wide output voltage range: 5V-24V
+ Integrated inductor solution for quick time to market and ease of use
+ Single exposed pad for best-in-class thermal performance
+ Low output voltage ripple
+ Under voltage lockout Protection (UVLO)
+ Programmable soft-start and frequency
+ Thermal shut down, inrush current and output short current protection
+ Temperature range: -40 to 125°C
+ RoHS &amp; REACh compliant&lt;/PRE&gt;
+&lt;font color="#0000FF"&gt;&lt;B&gt;Application:&lt;/B&gt;&lt;/font&gt;&lt;/td&gt;
+&lt;PRE&gt;
+ Point of Load DC-DC applications
+ Servers, Data and Telecom
+ System power supplies
+ DSPs, FPGAs, MCUs and MPUs
+ I/O interface
+&lt;/PRE&gt;
+
+&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/pm/MagIC_2VDRM_pf2.jpg" title="Enlarge picture"&gt;
+
+&lt;img src="http://katalog.we-online.de/media/thumbs2/pm/thb_MagIC_2VDRM_pf2.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/en/pm/MagIC-VDRM/171032401"&gt;http://katalog.we-online.de/en/pm/MagIC-VDRM/171032401&lt;/a&gt;&lt;p&gt;</description>
+<gates>
+<gate name="G$1" symbol="171032401" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="7PIN-PFM">
+<connects>
+<connect gate="G$1" pin="1VIN" pad="1"/>
+<connect gate="G$1" pin="2RDN" pad="2"/>
+<connect gate="G$1" pin="3EN" pad="3"/>
+<connect gate="G$1" pin="4AGND" pad="4"/>
+<connect gate="G$1" pin="5SS" pad="5"/>
+<connect gate="G$1" pin="6FB" pad="6"/>
+<connect gate="G$1" pin="7VOUT" pad="7"/>
+<connect gate="G$1" pin="8EP" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="COMPANY-URL" value="http://www.we-online.de"/>
+<attribute name="CREATED-DATE" value="JAN 2014" constant="no"/>
+<attribute name="DATASHEET-URL" value="http://katalog.we-online.de/pm/datasheet/171032401.pdf" constant="no"/>
+<attribute name="MANUFACTURER" value="Würth Elektronik eiSos GmbH"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WE-VDRM-171050601" prefix="U" uservalue="yes">
+<description>&lt;P&gt; &lt;font color="#0000FF"&gt;&lt;B&gt; MagI³C-VDRM Variable Step Down Regulator Module&lt;/B&gt;&lt;/font&gt;&lt;/td&gt;
+
+&lt;PRE&gt;
+    The VDRM series of the MagI³C Power Modules
+Family comprise a fully integrated current mode
+DC/DC power supply with both the switching power
+stage, control circuitry and passive all in one package
+These devices also feature built-in compensation
+circuitry and a soft-start feature for a smooth, safe
+power up. The 7 PIN PFM is an industrial high power
+density package with a low profile and a small outline.
+The VDRM series offers high efficiency and delivers up
+to 5A of output current with accurate regulated output
+voltages. It operates from input voltage 6V to 42V.
+They are available in an innovative package that
+enhances thermal performance and allows for hand or
+machine soldering.
+The VDRM regulators also have on-board protection
+circuitry to guard against thermal and electrical
+damage. Thermal shut-down, over-current,
+overvoltage and under-voltage protections safeguard
+the regulator and include a short-circuit protection.
+&lt;/PRE&gt;
+&lt;font color="#0000FF"&gt;&lt;B&gt;Features:&lt;/B&gt;&lt;/font&gt;&lt;/td&gt;
+&lt;PRE&gt;
+ Peak efficiency up to 90%
+ Current capability up to 5A
+ Wide input voltage range: 6V-36V
+ Wide output voltage range: 0.8V-6V
+ Integrated inductor solution for quick time to market and ease of use
+ Single exposed pad for best-in-class thermal performance
+ Low output voltage ripple
+ Under voltage lockout Protection (UVLO)
+ Programmable soft-start and frequency
+ Thermal shut down, inrush current and output short current protection
+ Temperature range: -40 to 125°C
+ RoHS &amp; REACh compliant&lt;/PRE&gt;
+&lt;font color="#0000FF"&gt;&lt;B&gt;Application:&lt;/B&gt;&lt;/font&gt;&lt;/td&gt;
+&lt;PRE&gt;
+ Point of Load DC-DC applications
+ Servers, Data and Telecom
+ System power supplies
+ DSPs, FPGAs, MCUs and MPUs
+ I/O interface
+&lt;/PRE&gt;
+
+&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/pm/MagIC_2VDRM_pf2.jpg" title="Enlarge picture"&gt;
+
+&lt;img src="http://katalog.we-online.de/media/thumbs2/pm/thb_MagIC_2VDRM_pf2.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/en/pm/MagIC-VDRM/171050601"&gt;http://katalog.we-online.de/en/pm/MagIC-VDRM/171050601&lt;/a&gt;&lt;p&gt;</description>
+<gates>
+<gate name="G$1" symbol="171050601" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="7PIN-PFM">
+<connects>
+<connect gate="G$1" pin="1VIN" pad="1"/>
+<connect gate="G$1" pin="2SYNC" pad="2"/>
+<connect gate="G$1" pin="3EN" pad="3"/>
+<connect gate="G$1" pin="4AGND" pad="4"/>
+<connect gate="G$1" pin="5FB" pad="5"/>
+<connect gate="G$1" pin="6SS/TRK" pad="6"/>
+<connect gate="G$1" pin="7VOUT" pad="7"/>
+<connect gate="G$1" pin="8EP" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="COMPANY-URL" value="http://www.we-online.de"/>
+<attribute name="CREATED-DATE" value="JAN 2014" constant="no"/>
+<attribute name="DATASHEET-URL" value="http://katalog-live.we-online.de/pm/datasheet/171050601.pdf" constant="no"/>
+<attribute name="MANUFACTURER" value="Würth Elektronik eiSos GmbH"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WE-FDSM-173950378" uservalue="yes">
+<description>&lt;b&gt;MagPC Power Module&lt;/b&gt;&lt;br&gt;
+FDSM - Fixed Step Down Regulator Module&lt;br&gt;
+&lt;br&gt;
+
+&lt;b&gt;DESCRIPTION&lt;/b&gt;&lt;br&gt;
+&lt;br&gt;
+
+The FDSM series of the MagPC power module family is a fixed output voltage, fully integrated de/de power sup­ ply. The module integrates the switching power stage, control circuitry and inductor all in one package.&lt;br&gt;
+
+The module requires no extemal components for ope­ ration. Input and output capacitors are integrated. De­ sign effort and complexity is reduced to a minimum.&lt;br&gt;
+
+The FDSM ensures fast time to market and low deve­ lopment costs.&lt;br&gt;
+
+It is pin compatible with the common 78xx linear re­ gulator series. The high efficiency reduces the power dissipation and in many cases heatsinks and assembly parts are no longer necessary.&lt;br&gt;
+
+Typicai12V to 3.3V conversion achieves 85% efficien­cy. 12Vto 5V conversion achieves 92%.The standard THT package allows for easy assembly.&lt;br&gt;
+&lt;br&gt;
+
+&lt;b&gt;FEATURES&lt;/b&gt;&lt;br&gt;
+&lt;br&gt;
+
+•Peak efficiency up to 95%&lt;br&gt;
+•6V to 28V input voltage range&lt;br&gt;
+•3.3V or 5V fixed output voltage&lt;br&gt;
+•500mA output current&lt;br&gt;
+•Low output voltage ripple {typ. 1OmV)&lt;br&gt;
+•Short circuit protection&lt;br&gt;
+•-40°C to 85°C ambient operating temperature range&lt;br&gt;
+•Thermal shutdown&lt;br&gt;
+•Integrated capacitors and inductor&lt;br&gt;
+•Pulse skipping for high efficiency at light loads&lt;br&gt;
+•Fixed 570kHz switching frequency&lt;br&gt;
+•Output overvoltage protection&lt;br&gt;
+•RoHS &amp; REACH compliant&lt;br&gt;
+•UL94V-O package material&lt;br&gt;
+&lt;br&gt;
+
+&lt;b&gt;TYPICAL APPLICATIONS&lt;br&gt;&lt;/b&gt;
+&lt;br&gt;
+
+•Point-of-Load from 18V, 15V, 12V, 9V rail&lt;br&gt;
+•Replacement for linear regulators&lt;br&gt;
+•Interface and microcontroller supply&lt;br&gt;
+•General purpose&lt;br&gt;
+
+
+
+&lt;br&gt;
+&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/thumbs2/pm/thb_MagIC_FDSM_pf2.jpg" title="Enlarge picture"&gt;
+
+&lt;img src="http://katalog.we-online.de/media/thumbs2/pm/thb_MagIC_FDSM_pf2.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
+
+Details see: &lt;a href="http://katalog.we-online.de/en/pm/MagI%C2%B3C-FDSM/173950378"&gt;http://katalog.we-online.de/en/pm/MagI%C2%B3C-FDSM/173950378&lt;/a&gt;&lt;p&gt;
+&lt;B&gt;Created date 2014-11-19&lt;BR&gt;
+2014 (C) Würth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="17395XX78" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FDSM_17395XX78">
+<connects>
+<connect gate="G$1" pin="1VIN" pad="1"/>
+<connect gate="G$1" pin="2GND" pad="2"/>
+<connect gate="G$1" pin="3VOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WE-FDSM-173950578" uservalue="yes">
+<description>&lt;b&gt;MagPC Power Module&lt;/b&gt;&lt;br&gt;
+FDSM - Fixed Step Down Regulator Module&lt;br&gt;
+&lt;br&gt;
+
+&lt;b&gt;DESCRIPTION&lt;/b&gt;&lt;br&gt;
+&lt;br&gt;
+
+The FDSM series of the MagPC power module family is a fixed output voltage, fully integrated de/de power sup­ ply. The module integrates the switching power stage, control circuitry and inductor all in one package.&lt;br&gt;
+
+The module requires no extemal components for ope­ ration. Input and output capacitors are integrated. De­ sign effort and complexity is reduced to a minimum.&lt;br&gt;
+
+The FDSM ensures fast time to market and low deve­ lopment costs.&lt;br&gt;
+
+It is pin compatible with the common 78xx linear re­ gulator series. The high efficiency reduces the power dissipation and in many cases heatsinks and assembly parts are no longer necessary.&lt;br&gt;
+
+Typicai12V to 3.3V conversion achieves 85% efficien­cy. 12Vto 5V conversion achieves 92%.The standard THT package allows for easy assembly.&lt;br&gt;
+&lt;br&gt;
+
+&lt;b&gt;FEATURES&lt;/b&gt;&lt;br&gt;
+&lt;br&gt;
+
+•Peak efficiency up to 95%&lt;br&gt;
+•6V to 28V input voltage range&lt;br&gt;
+•3.3V or 5V fixed output voltage&lt;br&gt;
+•500mA output current&lt;br&gt;
+•Low output voltage ripple {typ. 1OmV)&lt;br&gt;
+•Short circuit protection&lt;br&gt;
+•-40°C to 85°C ambient operating temperature range&lt;br&gt;
+•Thermal shutdown&lt;br&gt;
+•Integrated capacitors and inductor&lt;br&gt;
+•Pulse skipping for high efficiency at light loads&lt;br&gt;
+•Fixed 570kHz switching frequency&lt;br&gt;
+•Output overvoltage protection&lt;br&gt;
+•RoHS &amp; REACH compliant&lt;br&gt;
+•UL94V-O package material&lt;br&gt;
+&lt;br&gt;
+
+&lt;b&gt;TYPICAL APPLICATIONS&lt;br&gt;&lt;/b&gt;
+&lt;br&gt;
+
+•Point-of-Load from 18V, 15V, 12V, 9V rail&lt;br&gt;
+•Replacement for linear regulators&lt;br&gt;
+•Interface and microcontroller supply&lt;br&gt;
+•General purpose&lt;br&gt;
+
+&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/thumbs2/pm/thb_MagIC_FDSM_pf2.jpg" title="Enlarge picture"&gt;
+
+&lt;img src="http://katalog.we-online.de/media/thumbs2/pm/thb_MagIC_FDSM_pf2.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
+
+Details see: &lt;a href="http://katalog.we-online.de/en/pm/MagI%C2%B3C-FDSM/173950378"&gt;http://katalog.we-online.de/en/pm/MagI%C2%B3C-FDSM/173950578&lt;/a&gt;&lt;p&gt;
+&lt;B&gt;Created date 2014-11-19&lt;BR&gt;
+2014 (C) Würth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="17395XX78" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FDSM_17395XX78">
+<connects>
+<connect gate="G$1" pin="1VIN" pad="1"/>
+<connect gate="G$1" pin="2GND" pad="2"/>
+<connect gate="G$1" pin="3VOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>

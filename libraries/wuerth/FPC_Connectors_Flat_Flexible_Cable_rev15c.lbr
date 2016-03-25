@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -69,7 +69,7 @@
 <layer number="98" name="Guide" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
-<description>&lt;BR&gt;Würth Elektronik -- Electronic Interconnect &amp; Electromechanical Solutions&lt;br&gt;&lt;Hr&gt;
+<description>&lt;BR&gt;Wurth Elektronik   FPC Connector and FFC Cable&lt;br&gt;&lt;Hr&gt;
 &lt;BR&gt;&lt;BR&gt; 
 &lt;TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0&gt;
 &lt;TR&gt;   
@@ -135,7 +135,7 @@ Neither CadSoft nor WE-eiSos does warrant that this library is error-free or &lt
 that it meets your specific requirements.&lt;br&gt;&lt;BR&gt;
 Please contact us for more information.&lt;br&gt;&lt;BR&gt;&lt;br&gt;
 &lt;hr&gt;
-Version 6.0,   January 13-th 2015
+Eagle Version 6, Library Revision 2015b, 08.04.2015&lt;br&gt;
 &lt;HR&gt;
 Copyright: Würth Elektronik</description>
 <packages>
@@ -1723,8 +1723,8 @@ Copyright: Würth Elektronik</description>
 <smd name="4" x="-7.54" y="1.1" dx="0.6" dy="2.2" layer="1"/>
 <smd name="6" x="-5.54" y="1.1" dx="0.6" dy="2.2" layer="1"/>
 <smd name="3" x="-8.54" y="1.1" dx="0.6" dy="2.2" layer="1"/>
-<smd name="Z2" x="6.74" y="-1.29" dx="1.8" dy="2.6" layer="1"/>
-<smd name="Z1" x="-13.95" y="-1.36" dx="1.8" dy="2.6" layer="1"/>
+<smd name="Z2" x="6.06" y="-1.3" dx="1.8" dy="2.6" layer="1"/>
+<smd name="Z1" x="-13.14" y="-1.3" dx="1.8" dy="2.6" layer="1"/>
 <smd name="2" x="-9.54" y="1.1" dx="0.6" dy="2.2" layer="1"/>
 <smd name="1" x="-10.54" y="1.1" dx="0.6" dy="2.2" layer="1"/>
 <smd name="7" x="-4.54" y="1.1" dx="0.6" dy="2.2" layer="1"/>
@@ -1736,7 +1736,7 @@ Copyright: Würth Elektronik</description>
 <smd name="13" x="1.46" y="1.1" dx="0.6" dy="2.2" layer="1"/>
 <smd name="14" x="2.46" y="1.1" dx="0.6" dy="2.2" layer="1"/>
 <smd name="15" x="3.46" y="1.1" dx="0.6" dy="2.2" layer="1"/>
-<text x="-15.0216" y="3.9785" size="1.27" layer="25">&gt;NAME</text>
+<text x="-14.9616" y="4.8885" size="1.27" layer="25">&gt;NAME</text>
 <text x="-14.9616" y="-7.3834" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="68611814122">
@@ -5356,6 +5356,770 @@ Copyright: Würth Elektronik</description>
 <wire x1="-5.75" y1="-2.25" x2="5.75" y2="-2.25" width="0.127" layer="39"/>
 <wire x1="5.75" y1="-2.25" x2="5.75" y2="2.25" width="0.127" layer="39"/>
 <wire x1="5.75" y1="2.25" x2="-5.75" y2="2.25" width="0.127" layer="39"/>
+</package>
+<package name="687106182122">
+<smd name="1" x="-1.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="2" x="-0.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="3" x="-0.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="4" x="0.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="5" x="0.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="6" x="1.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="Z1" x="-2.25" y="-1.25" dx="0.8" dy="0.4" layer="1" rot="R90"/>
+<smd name="Z2" x="2.25" y="-1.25" dx="0.8" dy="0.4" layer="1" rot="R90"/>
+<wire x1="-1.325" y1="1.65" x2="1.325" y2="1.65" width="0.127" layer="51"/>
+<wire x1="-2.235" y1="-1.45" x2="2.235" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="1.45" x2="-2.5" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="2.5" y1="1.45" x2="2.5" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-0.95" x2="-2.235" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="2.235" y1="-0.95" x2="2.5" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="1.45" x2="-1.325" y2="1.45" width="0.127" layer="51"/>
+<wire x1="1.325" y1="1.45" x2="2.5" y2="1.45" width="0.127" layer="51"/>
+<wire x1="-2.75" y1="1.9" x2="2.75" y2="1.9" width="0.127" layer="39"/>
+<wire x1="2.75" y1="1.9" x2="2.75" y2="-1.9" width="0.127" layer="39"/>
+<wire x1="2.75" y1="-1.9" x2="-2.75" y2="-1.9" width="0.127" layer="39"/>
+<wire x1="-2.75" y1="-1.9" x2="-2.75" y2="1.9" width="0.127" layer="39"/>
+<text x="-3.101" y="2.731" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.93" y="-3.852" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-1.325" y1="1.65" x2="-1.325" y2="1.45" width="0.127" layer="51"/>
+<wire x1="1.325" y1="1.65" x2="1.325" y2="1.45" width="0.127" layer="51"/>
+<wire x1="-2.235" y1="-0.95" x2="-2.235" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="2.235" y1="-0.95" x2="2.235" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="1.56" y1="1.45" x2="2.5" y2="1.45" width="0.127" layer="21"/>
+<wire x1="2.489" y1="1.397" x2="2.5" y2="1.45" width="0.127" layer="21"/>
+<wire x1="2.5" y1="1.45" x2="2.5" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="-1.56" y1="1.45" x2="-2.5" y2="1.45" width="0.127" layer="21"/>
+<wire x1="-2.48" y1="1.451" x2="-2.5" y2="1.45" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="1.45" x2="-2.5" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="-1.9" y1="-1.45" x2="1.9" y2="-1.45" width="0.127" layer="21"/>
+<polygon width="0.127" layer="43">
+<vertex x="-2.35" y="1.3"/>
+<vertex x="-1.6" y="1.3"/>
+<vertex x="-1.6" y="0.65"/>
+<vertex x="1.6" y="0.65"/>
+<vertex x="1.6" y="1.3"/>
+<vertex x="2.35" y="1.3"/>
+<vertex x="2.35" y="-0.65"/>
+<vertex x="1.85" y="-0.65"/>
+<vertex x="1.85" y="-1.3"/>
+<vertex x="-1.85" y="-1.3"/>
+<vertex x="-1.85" y="-0.65"/>
+<vertex x="-2.35" y="-0.65"/>
+</polygon>
+</package>
+<package name="687108182122">
+<smd name="1" x="-1.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="2" x="-1.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="3" x="-0.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="6" x="0.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="7" x="1.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="8" x="1.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="Z1" x="-2.75" y="-1.25" dx="0.8" dy="0.4" layer="1" rot="R90"/>
+<smd name="Z2" x="2.75" y="-1.25" dx="0.8" dy="0.4" layer="1" rot="R90"/>
+<wire x1="-1.825" y1="1.65" x2="1.825" y2="1.65" width="0.127" layer="51"/>
+<wire x1="-2.735" y1="-1.45" x2="2.735" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="-3" y1="1.45" x2="-3" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="3" y1="1.45" x2="3" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-2.735" y1="-1.45" x2="-2.735" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="2.735" y1="-1.45" x2="2.735" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-3" y1="-0.95" x2="-2.735" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="2.735" y1="-0.95" x2="3" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-3" y1="1.45" x2="-1.825" y2="1.45" width="0.127" layer="51"/>
+<wire x1="1.825" y1="1.45" x2="3" y2="1.45" width="0.127" layer="51"/>
+<wire x1="-3.25" y1="1.9" x2="3.25" y2="1.9" width="0.127" layer="39"/>
+<wire x1="3.25" y1="1.9" x2="3.25" y2="-1.9" width="0.127" layer="39"/>
+<wire x1="3.25" y1="-1.9" x2="-3.25" y2="-1.9" width="0.127" layer="39"/>
+<wire x1="-3.25" y1="-1.9" x2="-3.25" y2="1.9" width="0.127" layer="39"/>
+<text x="-3.133" y="2.699" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.962" y="-3.884" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-1.825" y1="1.65" x2="-1.825" y2="1.45" width="0.127" layer="51"/>
+<wire x1="1.825" y1="1.65" x2="1.825" y2="1.45" width="0.127" layer="51"/>
+<wire x1="-2.06" y1="1.45" x2="-3" y2="1.45" width="0.127" layer="21"/>
+<wire x1="-3" y1="1.45" x2="-3" y2="-0.68" width="0.127" layer="21"/>
+<wire x1="-2.4" y1="-1.45" x2="2.4" y2="-1.45" width="0.127" layer="21"/>
+<wire x1="3" y1="1.45" x2="2.06" y2="1.45" width="0.127" layer="21"/>
+<wire x1="3" y1="1.45" x2="3" y2="-0.68" width="0.127" layer="21"/>
+<smd name="4" x="-0.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="5" x="0.25" y="1.26" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<polygon width="0.127" layer="43">
+<vertex x="-2.85" y="1.3"/>
+<vertex x="-2.1" y="1.3"/>
+<vertex x="-2.1" y="0.65"/>
+<vertex x="2.1" y="0.65"/>
+<vertex x="2.1" y="1.3"/>
+<vertex x="2.85" y="1.3"/>
+<vertex x="2.85" y="-0.65"/>
+<vertex x="2.35" y="-0.65"/>
+<vertex x="2.35" y="-1.3"/>
+<vertex x="-2.35" y="-1.3"/>
+<vertex x="-2.35" y="-0.65"/>
+<vertex x="-2.85" y="-0.65"/>
+</polygon>
+</package>
+<package name="687110182122">
+<smd name="1" x="-2.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="2" x="-1.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="3" x="-1.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="8" x="1.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="9" x="1.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="10" x="2.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="Z1" x="-3.25" y="-1.25" dx="0.8" dy="0.4" layer="1" rot="R90"/>
+<smd name="Z2" x="3.25" y="-1.25" dx="0.8" dy="0.4" layer="1" rot="R90"/>
+<wire x1="-2.325" y1="1.65" x2="2.325" y2="1.65" width="0.127" layer="51"/>
+<wire x1="-3.235" y1="-1.45" x2="3.235" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="1.45" x2="-3.5" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="3.5" y1="1.45" x2="3.5" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-3.235" y1="-1.45" x2="-3.235" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="3.235" y1="-1.45" x2="3.235" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="-0.95" x2="-3.235" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="3.235" y1="-0.95" x2="3.5" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="1.45" x2="-2.325" y2="1.45" width="0.127" layer="51"/>
+<wire x1="2.325" y1="1.45" x2="3.5" y2="1.45" width="0.127" layer="51"/>
+<wire x1="-2.325" y1="1.65" x2="-2.325" y2="1.45" width="0.127" layer="51"/>
+<wire x1="2.325" y1="1.65" x2="2.325" y2="1.45" width="0.127" layer="51"/>
+<wire x1="-3.75" y1="1.9" x2="3.75" y2="1.9" width="0.127" layer="39"/>
+<wire x1="3.75" y1="1.9" x2="3.75" y2="-1.9" width="0.127" layer="39"/>
+<wire x1="3.75" y1="-1.9" x2="-3.75" y2="-1.9" width="0.127" layer="39"/>
+<wire x1="-3.75" y1="-1.9" x2="-3.75" y2="1.9" width="0.127" layer="39"/>
+<text x="-3.103" y="2.699" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.932" y="-3.884" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-2.56" y1="1.45" x2="-3.5" y2="1.45" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="1.45" x2="-3.5" y2="-0.68" width="0.127" layer="21"/>
+<wire x1="3.5" y1="1.45" x2="2.56" y2="1.45" width="0.127" layer="21"/>
+<wire x1="3.5" y1="1.45" x2="3.5" y2="-0.68" width="0.127" layer="21"/>
+<wire x1="-2.9" y1="-1.45" x2="2.9" y2="-1.45" width="0.127" layer="21"/>
+<smd name="4" x="-0.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="5" x="-0.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="6" x="0.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="7" x="0.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<polygon width="0.127" layer="43">
+<vertex x="-2.6" y="1.3"/>
+<vertex x="-3.35" y="1.3"/>
+<vertex x="-3.35" y="-0.65"/>
+<vertex x="-2.85" y="-0.65"/>
+<vertex x="-2.85" y="-1.3"/>
+<vertex x="2.85" y="-1.3"/>
+<vertex x="2.85" y="-0.65"/>
+<vertex x="3.35" y="-0.65"/>
+<vertex x="3.35" y="1.3"/>
+<vertex x="2.6" y="1.3"/>
+<vertex x="2.6" y="0.65"/>
+<vertex x="-2.6" y="0.65"/>
+</polygon>
+</package>
+<package name="687112182122">
+<smd name="1" x="-2.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="2" x="-2.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="3" x="-1.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="10" x="1.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="11" x="2.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="12" x="2.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="Z1" x="-3.75" y="-1.25" dx="0.8" dy="0.4" layer="1" rot="R90"/>
+<smd name="Z2" x="3.75" y="-1.25" dx="0.8" dy="0.4" layer="1" rot="R90"/>
+<wire x1="-2.825" y1="1.65" x2="2.825" y2="1.65" width="0.127" layer="51"/>
+<wire x1="-3.735" y1="-1.45" x2="3.735" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="-4" y1="1.45" x2="-4" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="4" y1="1.45" x2="4" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-3.735" y1="-1.45" x2="-3.735" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="3.735" y1="-1.45" x2="3.735" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-4" y1="-0.95" x2="-3.735" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="3.735" y1="-0.95" x2="4" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-4" y1="1.45" x2="-2.825" y2="1.45" width="0.127" layer="51"/>
+<wire x1="2.825" y1="1.45" x2="4" y2="1.45" width="0.127" layer="51"/>
+<wire x1="-2.825" y1="1.65" x2="-2.825" y2="1.45" width="0.127" layer="51"/>
+<wire x1="2.825" y1="1.65" x2="2.825" y2="1.45" width="0.127" layer="51"/>
+<wire x1="-4.25" y1="1.9" x2="4.25" y2="1.9" width="0.127" layer="39"/>
+<wire x1="4.25" y1="1.9" x2="4.25" y2="-1.9" width="0.127" layer="39"/>
+<wire x1="4.25" y1="-1.9" x2="-4.25" y2="-1.9" width="0.127" layer="39"/>
+<wire x1="-4.25" y1="-1.9" x2="-4.25" y2="1.9" width="0.127" layer="39"/>
+<text x="-3.133" y="2.699" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.962" y="-3.884" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-3.06" y1="1.45" x2="-4" y2="1.45" width="0.127" layer="21"/>
+<wire x1="-4" y1="1.45" x2="-4" y2="-0.68" width="0.127" layer="21"/>
+<wire x1="4" y1="1.45" x2="3.06" y2="1.45" width="0.127" layer="21"/>
+<wire x1="4" y1="1.45" x2="4" y2="-0.68" width="0.127" layer="21"/>
+<wire x1="-3.4" y1="-1.45" x2="3.4" y2="-1.45" width="0.127" layer="21"/>
+<smd name="4" x="-1.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="5" x="-0.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="6" x="-0.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="7" x="0.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="8" x="0.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="9" x="1.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<polygon width="0.127" layer="43">
+<vertex x="-3.85" y="1.3"/>
+<vertex x="-3.1" y="1.3"/>
+<vertex x="-3.1" y="0.65"/>
+<vertex x="3.1" y="0.65"/>
+<vertex x="3.1" y="1.3"/>
+<vertex x="3.85" y="1.3"/>
+<vertex x="3.85" y="-0.65"/>
+<vertex x="3.35" y="-0.65"/>
+<vertex x="3.35" y="-1.3"/>
+<vertex x="-3.35" y="-1.3"/>
+<vertex x="-3.35" y="-0.65"/>
+<vertex x="-3.85" y="-0.65"/>
+</polygon>
+</package>
+<package name="687114182122">
+<smd name="1" x="-3.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="2" x="-2.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="3" x="-2.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="12" x="2.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="13" x="2.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="14" x="3.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="Z1" x="-4.25" y="-1.25" dx="0.8" dy="0.4" layer="1" rot="R90"/>
+<smd name="Z2" x="4.25" y="-1.25" dx="0.8" dy="0.4" layer="1" rot="R90"/>
+<wire x1="-3.325" y1="1.65" x2="3.325" y2="1.65" width="0.127" layer="51"/>
+<wire x1="-4.235" y1="-1.45" x2="4.235" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="-4.5" y1="1.45" x2="-4.5" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="4.5" y1="1.45" x2="4.5" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-4.235" y1="-1.45" x2="-4.235" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="4.235" y1="-1.45" x2="4.235" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-4.5" y1="-0.95" x2="-4.235" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="4.235" y1="-0.95" x2="4.5" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-4.5" y1="1.45" x2="-3.325" y2="1.45" width="0.127" layer="51"/>
+<wire x1="3.325" y1="1.45" x2="4.5" y2="1.45" width="0.127" layer="51"/>
+<wire x1="-3.325" y1="1.65" x2="-3.325" y2="1.45" width="0.127" layer="51"/>
+<wire x1="3.325" y1="1.65" x2="3.325" y2="1.45" width="0.127" layer="51"/>
+<wire x1="-3.55" y1="1.45" x2="-4.5" y2="1.45" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="1.46" x2="-4.5" y2="1.45" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="1.45" x2="-4.5" y2="-0.68" width="0.127" layer="21"/>
+<wire x1="-3.885" y1="-1.45" x2="3.885" y2="-1.45" width="0.127" layer="21"/>
+<wire x1="3.55" y1="1.45" x2="4.5" y2="1.45" width="0.127" layer="21"/>
+<wire x1="4.5" y1="1.45" x2="4.5" y2="-0.68" width="0.127" layer="21"/>
+<wire x1="-4.75" y1="1.9" x2="4.75" y2="1.9" width="0.127" layer="39"/>
+<wire x1="4.75" y1="1.9" x2="4.75" y2="-1.9" width="0.127" layer="39"/>
+<wire x1="4.75" y1="-1.9" x2="-4.75" y2="-1.9" width="0.127" layer="39"/>
+<wire x1="-4.75" y1="-1.9" x2="-4.75" y2="1.9" width="0.127" layer="39"/>
+<text x="-3.133" y="2.818" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.962" y="-3.765" size="1.27" layer="27">&gt;VALUE</text>
+<smd name="4" x="-1.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="5" x="-1.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="6" x="-0.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="7" x="-0.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="8" x="0.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="9" x="0.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="10" x="1.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="11" x="1.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<polygon width="0.127" layer="43">
+<vertex x="-3.6" y="1.3"/>
+<vertex x="-4.35" y="1.3"/>
+<vertex x="-4.35" y="-0.65"/>
+<vertex x="-3.85" y="-0.65"/>
+<vertex x="-3.85" y="-1.3"/>
+<vertex x="3.85" y="-1.3"/>
+<vertex x="3.85" y="-0.75"/>
+<vertex x="3.85" y="-0.65"/>
+<vertex x="4.35" y="-0.65"/>
+<vertex x="4.35" y="1.3"/>
+<vertex x="3.6" y="1.3"/>
+<vertex x="3.6" y="0.75"/>
+<vertex x="3.6" y="0.7"/>
+<vertex x="3.6" y="0.65"/>
+<vertex x="-3.6" y="0.65"/>
+</polygon>
+</package>
+<package name="687116182122">
+<smd name="1" x="-3.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="2" x="-3.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="3" x="-2.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="14" x="2.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="15" x="3.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="16" x="3.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="Z1" x="-4.75" y="-1.25" dx="0.8" dy="0.4" layer="1" rot="R90"/>
+<smd name="Z2" x="4.75" y="-1.25" dx="0.8" dy="0.4" layer="1" rot="R90"/>
+<wire x1="-3.825" y1="1.65" x2="3.825" y2="1.65" width="0.127" layer="51"/>
+<wire x1="-4.735" y1="-1.45" x2="4.735" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="-5" y1="1.45" x2="-5" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="5" y1="1.45" x2="5" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-4.735" y1="-1.45" x2="-4.735" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="4.735" y1="-1.45" x2="4.735" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-5" y1="-0.95" x2="-4.735" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="4.735" y1="-0.95" x2="5" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-5" y1="1.45" x2="-3.825" y2="1.45" width="0.127" layer="51"/>
+<wire x1="3.825" y1="1.45" x2="5" y2="1.45" width="0.127" layer="51"/>
+<wire x1="-3.825" y1="1.65" x2="-3.825" y2="1.45" width="0.127" layer="51"/>
+<wire x1="3.825" y1="1.65" x2="3.825" y2="1.45" width="0.127" layer="51"/>
+<wire x1="-5.25" y1="1.9" x2="5.25" y2="1.9" width="0.127" layer="39"/>
+<wire x1="5.25" y1="1.9" x2="5.25" y2="-1.9" width="0.127" layer="39"/>
+<wire x1="5.25" y1="-1.9" x2="-5.25" y2="-1.9" width="0.127" layer="39"/>
+<wire x1="-5.25" y1="-1.9" x2="-5.25" y2="1.9" width="0.127" layer="39"/>
+<text x="-3.073" y="2.669" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.902" y="-3.914" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-4.06" y1="1.45" x2="-5" y2="1.45" width="0.127" layer="21"/>
+<wire x1="-5" y1="1.45" x2="-5" y2="-0.68" width="0.127" layer="21"/>
+<wire x1="5" y1="1.45" x2="4.06" y2="1.45" width="0.127" layer="21"/>
+<wire x1="5" y1="1.45" x2="5" y2="-0.68" width="0.127" layer="21"/>
+<wire x1="-4.4" y1="-1.45" x2="4.4" y2="-1.45" width="0.127" layer="21"/>
+<smd name="4" x="-2.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="5" x="-1.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="6" x="-1.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="7" x="-0.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="8" x="-0.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="9" x="0.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="10" x="0.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="11" x="1.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="12" x="1.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="13" x="2.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<polygon width="0.127" layer="43">
+<vertex x="-4.1" y="1.3"/>
+<vertex x="-4.85" y="1.3"/>
+<vertex x="-4.85" y="-0.65"/>
+<vertex x="-4.35" y="-0.65"/>
+<vertex x="-4.35" y="-1.3"/>
+<vertex x="4.35" y="-1.3"/>
+<vertex x="4.35" y="-0.7"/>
+<vertex x="4.35" y="-0.65"/>
+<vertex x="4.85" y="-0.65"/>
+<vertex x="4.85" y="1.3"/>
+<vertex x="4.1" y="1.3"/>
+<vertex x="4.1" y="0.7"/>
+<vertex x="4.1" y="0.65"/>
+<vertex x="-4.1" y="0.65"/>
+</polygon>
+</package>
+<package name="687117182122">
+<smd name="1" x="-4" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="2" x="-3.5" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="3" x="-3" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="15" x="3" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="16" x="3.5" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="17" x="4" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="Z1" x="-5" y="-1.25" dx="0.8" dy="0.4" layer="1" rot="R90"/>
+<smd name="Z2" x="5" y="-1.25" dx="0.8" dy="0.4" layer="1" rot="R90"/>
+<wire x1="-4.075" y1="1.65" x2="4.075" y2="1.65" width="0.127" layer="51"/>
+<wire x1="-4.985" y1="-1.45" x2="4.985" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="-5.25" y1="1.45" x2="-5.25" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="5.25" y1="1.45" x2="5.25" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-4.985" y1="-1.45" x2="-4.985" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="4.985" y1="-1.45" x2="4.985" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-5.25" y1="-0.95" x2="-4.985" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="4.985" y1="-0.95" x2="5.25" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-5.25" y1="1.45" x2="-4.075" y2="1.45" width="0.127" layer="51"/>
+<wire x1="4.075" y1="1.45" x2="5.25" y2="1.45" width="0.127" layer="51"/>
+<wire x1="-4.075" y1="1.65" x2="-4.075" y2="1.45" width="0.127" layer="51"/>
+<wire x1="4.075" y1="1.65" x2="4.075" y2="1.45" width="0.127" layer="51"/>
+<wire x1="-5.5" y1="1.9" x2="5.5" y2="1.9" width="0.127" layer="39"/>
+<wire x1="5.5" y1="1.9" x2="5.5" y2="-1.9" width="0.127" layer="39"/>
+<wire x1="5.5" y1="-1.9" x2="-5.5" y2="-1.9" width="0.127" layer="39"/>
+<wire x1="-5.5" y1="-1.9" x2="-5.5" y2="1.9" width="0.127" layer="39"/>
+<text x="-3.133" y="2.669" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.962" y="-3.914" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-4.3" y1="1.45" x2="-5.25" y2="1.45" width="0.127" layer="21"/>
+<wire x1="-5.25" y1="1.45" x2="-5.25" y2="-0.68" width="0.127" layer="21"/>
+<wire x1="5.25" y1="1.45" x2="4.3" y2="1.45" width="0.127" layer="21"/>
+<wire x1="5.25" y1="1.45" x2="5.25" y2="-0.68" width="0.127" layer="21"/>
+<wire x1="-4.64" y1="-1.45" x2="4.64" y2="-1.45" width="0.127" layer="21"/>
+<smd name="4" x="-2.5" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="5" x="-2" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="6" x="-1.5" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="7" x="-1" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="8" x="-0.5" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="9" x="0" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="10" x="0.5" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="11" x="1" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="12" x="1.5" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="13" x="2" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="14" x="2.5" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<polygon width="0.127" layer="43">
+<vertex x="-4.35" y="1.3"/>
+<vertex x="-5.1" y="1.3"/>
+<vertex x="-5.1" y="-0.65"/>
+<vertex x="-4.6" y="-0.65"/>
+<vertex x="-4.6" y="-1.3"/>
+<vertex x="4.6" y="-1.3"/>
+<vertex x="4.6" y="-0.65"/>
+<vertex x="5.1" y="-0.65"/>
+<vertex x="5.1" y="1.3"/>
+<vertex x="4.35" y="1.3"/>
+<vertex x="4.35" y="0.65"/>
+<vertex x="-4.35" y="0.65"/>
+</polygon>
+</package>
+<package name="687118182122">
+<smd name="1" x="-4.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="2" x="-3.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="3" x="-3.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="16" x="3.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="17" x="3.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="18" x="4.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="Z1" x="-5.25" y="-1.25" dx="0.8" dy="0.4" layer="1" rot="R90"/>
+<smd name="Z2" x="5.25" y="-1.25" dx="0.8" dy="0.4" layer="1" rot="R90"/>
+<wire x1="-4.325" y1="1.65" x2="4.325" y2="1.65" width="0.127" layer="51"/>
+<wire x1="-5.235" y1="-1.45" x2="5.235" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="-5.5" y1="1.45" x2="-5.5" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="5.5" y1="1.45" x2="5.5" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-5.235" y1="-1.45" x2="-5.235" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="5.235" y1="-1.45" x2="5.235" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-5.5" y1="-0.95" x2="-5.235" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="5.235" y1="-0.95" x2="5.5" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-5.5" y1="1.45" x2="-4.325" y2="1.45" width="0.127" layer="51"/>
+<wire x1="4.325" y1="1.45" x2="5.5" y2="1.45" width="0.127" layer="51"/>
+<wire x1="-4.325" y1="1.65" x2="-4.325" y2="1.45" width="0.127" layer="51"/>
+<wire x1="4.325" y1="1.65" x2="4.325" y2="1.45" width="0.127" layer="51"/>
+<wire x1="-5.75" y1="1.9" x2="5.75" y2="1.9" width="0.127" layer="39"/>
+<wire x1="5.75" y1="1.9" x2="5.75" y2="-1.9" width="0.127" layer="39"/>
+<wire x1="5.75" y1="-1.9" x2="-5.75" y2="-1.9" width="0.127" layer="39"/>
+<wire x1="-5.75" y1="-1.9" x2="-5.75" y2="1.9" width="0.127" layer="39"/>
+<text x="-3.133" y="2.699" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.962" y="-3.884" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-4.56" y1="1.45" x2="-5.5" y2="1.45" width="0.127" layer="21"/>
+<wire x1="-5.5" y1="1.45" x2="-5.5" y2="-0.68" width="0.127" layer="21"/>
+<wire x1="5.5" y1="1.45" x2="4.56" y2="1.45" width="0.127" layer="21"/>
+<wire x1="5.5" y1="1.45" x2="5.5" y2="-0.68" width="0.127" layer="21"/>
+<wire x1="-4.89" y1="-1.45" x2="4.89" y2="-1.45" width="0.127" layer="21"/>
+<smd name="4" x="-2.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="5" x="-2.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="6" x="-1.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="7" x="-1.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="8" x="-0.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="9" x="-0.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="10" x="0.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="11" x="0.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="12" x="1.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="13" x="1.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="14" x="2.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="15" x="2.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<polygon width="0.127" layer="43">
+<vertex x="-4.6" y="1.3"/>
+<vertex x="-5.35" y="1.3"/>
+<vertex x="-5.35" y="-0.65"/>
+<vertex x="-4.85" y="-0.65"/>
+<vertex x="-4.85" y="-1.3"/>
+<vertex x="4.85" y="-1.3"/>
+<vertex x="4.85" y="-0.7"/>
+<vertex x="4.85" y="-0.65"/>
+<vertex x="5.35" y="-0.65"/>
+<vertex x="5.35" y="1.3"/>
+<vertex x="4.6" y="1.3"/>
+<vertex x="4.6" y="0.65"/>
+<vertex x="-4.6" y="0.65"/>
+</polygon>
+</package>
+<package name="687120182122">
+<smd name="1" x="-4.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="2" x="-4.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="3" x="-3.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="18" x="3.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="19" x="4.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="20" x="4.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="Z1" x="-5.75" y="-1.25" dx="0.8" dy="0.4" layer="1" rot="R90"/>
+<smd name="Z2" x="5.75" y="-1.25" dx="0.8" dy="0.4" layer="1" rot="R90"/>
+<wire x1="-4.825" y1="1.65" x2="4.825" y2="1.65" width="0.127" layer="51"/>
+<wire x1="-5.735" y1="-1.45" x2="5.735" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="-6" y1="1.45" x2="-6" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="6" y1="1.45" x2="6" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-5.735" y1="-1.45" x2="-5.735" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="5.735" y1="-1.45" x2="5.735" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-6" y1="-0.95" x2="-5.735" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="5.735" y1="-0.95" x2="6" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-6" y1="1.45" x2="-4.825" y2="1.45" width="0.127" layer="51"/>
+<wire x1="4.825" y1="1.45" x2="6" y2="1.45" width="0.127" layer="51"/>
+<wire x1="-4.825" y1="1.65" x2="-4.825" y2="1.45" width="0.127" layer="51"/>
+<wire x1="4.825" y1="1.65" x2="4.825" y2="1.45" width="0.127" layer="51"/>
+<wire x1="-6.25" y1="1.9" x2="6.25" y2="1.9" width="0.127" layer="39"/>
+<wire x1="6.25" y1="1.9" x2="6.25" y2="-1.9" width="0.127" layer="39"/>
+<wire x1="6.25" y1="-1.9" x2="-6.25" y2="-1.9" width="0.127" layer="39"/>
+<wire x1="-6.25" y1="-1.9" x2="-6.25" y2="1.9" width="0.127" layer="39"/>
+<text x="-3.133" y="2.699" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.962" y="-3.884" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-5.06" y1="1.45" x2="-6" y2="1.45" width="0.127" layer="21"/>
+<wire x1="-6" y1="1.45" x2="-6" y2="-0.68" width="0.127" layer="21"/>
+<wire x1="6" y1="1.45" x2="5.06" y2="1.45" width="0.127" layer="21"/>
+<wire x1="6" y1="1.45" x2="6" y2="-0.68" width="0.127" layer="21"/>
+<wire x1="-5.4" y1="-1.45" x2="5.4" y2="-1.45" width="0.127" layer="21"/>
+<smd name="4" x="-3.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="5" x="-2.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="6" x="-2.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="7" x="-1.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="8" x="-1.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="9" x="-0.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="10" x="-0.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="11" x="0.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="12" x="0.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="13" x="1.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="14" x="1.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="15" x="2.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="16" x="2.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="17" x="3.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<polygon width="0.127" layer="43">
+<vertex x="-5.1" y="1.3"/>
+<vertex x="-5.85" y="1.3"/>
+<vertex x="-5.85" y="-0.65"/>
+<vertex x="-5.35" y="-0.65"/>
+<vertex x="-5.35" y="-1.3"/>
+<vertex x="5.35" y="-1.3"/>
+<vertex x="5.35" y="-0.65"/>
+<vertex x="5.85" y="-0.65"/>
+<vertex x="5.85" y="1.3"/>
+<vertex x="5.1" y="1.3"/>
+<vertex x="5.1" y="0.65"/>
+<vertex x="-5.1" y="0.65"/>
+</polygon>
+</package>
+<package name="687122182122">
+<smd name="1" x="-5.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="2" x="-4.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="3" x="-4.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="20" x="4.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="21" x="4.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="22" x="5.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="Z1" x="-6.25" y="-1.25" dx="0.8" dy="0.4" layer="1" rot="R90"/>
+<smd name="Z2" x="6.25" y="-1.25" dx="0.8" dy="0.4" layer="1" rot="R90"/>
+<wire x1="-5.325" y1="1.65" x2="5.325" y2="1.65" width="0.127" layer="51"/>
+<wire x1="-6.235" y1="-1.45" x2="6.235" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="-6.5" y1="1.45" x2="-6.5" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="6.5" y1="1.45" x2="6.5" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-6.235" y1="-1.45" x2="-6.235" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="6.235" y1="-1.45" x2="6.235" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-6.5" y1="-0.95" x2="-6.235" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="6.235" y1="-0.95" x2="6.5" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-6.5" y1="1.45" x2="-5.325" y2="1.45" width="0.127" layer="51"/>
+<wire x1="5.325" y1="1.45" x2="6.5" y2="1.45" width="0.127" layer="51"/>
+<wire x1="-5.325" y1="1.65" x2="-5.325" y2="1.45" width="0.127" layer="51"/>
+<wire x1="5.325" y1="1.65" x2="5.325" y2="1.45" width="0.127" layer="51"/>
+<wire x1="-6.75" y1="1.9" x2="6.75" y2="1.9" width="0.127" layer="39"/>
+<wire x1="6.75" y1="1.9" x2="6.75" y2="-1.9" width="0.127" layer="39"/>
+<wire x1="6.75" y1="-1.9" x2="-6.75" y2="-1.9" width="0.127" layer="39"/>
+<wire x1="-6.75" y1="-1.9" x2="-6.75" y2="1.9" width="0.127" layer="39"/>
+<text x="-3.103" y="2.699" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.932" y="-3.884" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-5.56" y1="1.45" x2="-6.5" y2="1.45" width="0.127" layer="21"/>
+<wire x1="-6.5" y1="1.45" x2="-6.5" y2="-0.67" width="0.127" layer="21"/>
+<wire x1="6.5" y1="1.45" x2="5.56" y2="1.45" width="0.127" layer="21"/>
+<wire x1="6.5" y1="1.45" x2="6.5" y2="-0.68" width="0.127" layer="21"/>
+<wire x1="-5.88" y1="-1.45" x2="5.88" y2="-1.45" width="0.127" layer="21"/>
+<smd name="4" x="-3.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="5" x="-3.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="6" x="-2.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="7" x="-2.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="8" x="-1.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="9" x="-1.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="10" x="-0.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="11" x="-0.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="12" x="0.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="13" x="0.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="14" x="1.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="15" x="1.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="16" x="2.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="17" x="2.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="18" x="3.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="19" x="3.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<polygon width="0.127" layer="43">
+<vertex x="-5.6" y="1.3"/>
+<vertex x="-6.35" y="1.3"/>
+<vertex x="-6.35" y="-0.65"/>
+<vertex x="-5.85" y="-0.65"/>
+<vertex x="-5.85" y="-1.3"/>
+<vertex x="5.85" y="-1.3"/>
+<vertex x="5.85" y="-0.65"/>
+<vertex x="6.35" y="-0.65"/>
+<vertex x="6.35" y="1.3"/>
+<vertex x="5.6" y="1.3"/>
+<vertex x="5.6" y="0.65"/>
+<vertex x="-5.6" y="0.65"/>
+</polygon>
+</package>
+<package name="687124182122">
+<smd name="1" x="-5.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="2" x="-5.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="3" x="-4.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="22" x="4.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="23" x="5.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="24" x="5.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="Z1" x="-6.75" y="-1.25" dx="0.8" dy="0.4" layer="1" rot="R90"/>
+<smd name="Z2" x="6.75" y="-1.25" dx="0.8" dy="0.4" layer="1" rot="R90"/>
+<wire x1="-5.825" y1="1.65" x2="5.825" y2="1.65" width="0.127" layer="51"/>
+<wire x1="-6.735" y1="-1.45" x2="6.735" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="-7" y1="1.45" x2="-7" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="7" y1="1.45" x2="7" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-6.735" y1="-1.45" x2="-6.735" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="6.735" y1="-1.45" x2="6.735" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-7" y1="-0.95" x2="-6.735" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="6.735" y1="-0.95" x2="7" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-7" y1="1.45" x2="-5.825" y2="1.45" width="0.127" layer="51"/>
+<wire x1="5.825" y1="1.45" x2="7" y2="1.45" width="0.127" layer="51"/>
+<wire x1="-5.825" y1="1.65" x2="-5.825" y2="1.45" width="0.127" layer="51"/>
+<wire x1="5.825" y1="1.65" x2="5.825" y2="1.45" width="0.127" layer="51"/>
+<wire x1="-7.25" y1="1.9" x2="7.25" y2="1.9" width="0.127" layer="39"/>
+<wire x1="7.25" y1="1.9" x2="7.25" y2="-1.9" width="0.127" layer="39"/>
+<wire x1="7.25" y1="-1.9" x2="-7.25" y2="-1.9" width="0.127" layer="39"/>
+<wire x1="-7.25" y1="-1.9" x2="-7.25" y2="1.9" width="0.127" layer="39"/>
+<text x="-3.073" y="2.699" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.902" y="-3.884" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-6.06" y1="1.45" x2="-7" y2="1.45" width="0.127" layer="21"/>
+<wire x1="-7" y1="1.45" x2="-7" y2="-0.68" width="0.127" layer="21"/>
+<wire x1="7" y1="1.45" x2="6.06" y2="1.45" width="0.127" layer="21"/>
+<wire x1="7" y1="1.45" x2="7" y2="-0.68" width="0.127" layer="21"/>
+<wire x1="-6.38" y1="-1.45" x2="6.38" y2="-1.45" width="0.127" layer="21"/>
+<smd name="4" x="-4.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="5" x="-3.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="6" x="-3.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="7" x="-2.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="8" x="-2.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="9" x="-1.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="10" x="-1.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="11" x="-0.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="12" x="-0.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="13" x="0.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="14" x="0.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="15" x="1.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="16" x="1.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="17" x="2.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="18" x="2.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="19" x="3.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="20" x="3.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="21" x="4.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<polygon width="0.127" layer="43">
+<vertex x="-6.1" y="1.3"/>
+<vertex x="-6.85" y="1.3"/>
+<vertex x="-6.85" y="-0.65"/>
+<vertex x="-6.35" y="-0.65"/>
+<vertex x="-6.35" y="-1.3"/>
+<vertex x="6.35" y="-1.3"/>
+<vertex x="6.35" y="-0.6"/>
+<vertex x="6.85" y="-0.6"/>
+<vertex x="6.85" y="1.3"/>
+<vertex x="6.1" y="1.3"/>
+<vertex x="6.1" y="0.65"/>
+<vertex x="-6.1" y="0.65"/>
+</polygon>
+</package>
+<package name="687126182122">
+<smd name="1" x="-6.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="2" x="-5.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="3" x="-5.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="24" x="5.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="25" x="5.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="26" x="6.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="Z1" x="-7.25" y="-1.25" dx="0.8" dy="0.4" layer="1" rot="R90"/>
+<smd name="Z2" x="7.25" y="-1.25" dx="0.8" dy="0.4" layer="1" rot="R90"/>
+<wire x1="-6.325" y1="1.65" x2="6.325" y2="1.65" width="0.127" layer="51"/>
+<wire x1="-7.235" y1="-1.45" x2="7.235" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="-7.5" y1="1.45" x2="-7.5" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="7.5" y1="1.45" x2="7.5" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-7.235" y1="-1.45" x2="-7.235" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="7.235" y1="-1.45" x2="7.235" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-7.5" y1="-0.95" x2="-7.235" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="7.235" y1="-0.95" x2="7.5" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-7.5" y1="1.45" x2="-6.325" y2="1.45" width="0.127" layer="51"/>
+<wire x1="6.325" y1="1.45" x2="7.5" y2="1.45" width="0.127" layer="51"/>
+<wire x1="-6.325" y1="1.65" x2="-6.325" y2="1.45" width="0.127" layer="51"/>
+<wire x1="6.325" y1="1.65" x2="6.325" y2="1.45" width="0.127" layer="51"/>
+<wire x1="-7.75" y1="1.9" x2="7.75" y2="1.9" width="0.127" layer="39"/>
+<wire x1="7.75" y1="1.9" x2="7.75" y2="-1.9" width="0.127" layer="39"/>
+<wire x1="7.75" y1="-1.9" x2="-7.75" y2="-1.9" width="0.127" layer="39"/>
+<wire x1="-7.75" y1="-1.9" x2="-7.75" y2="1.9" width="0.127" layer="39"/>
+<text x="-3.103" y="2.729" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.932" y="-3.854" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-6.56" y1="1.45" x2="-7.5" y2="1.45" width="0.127" layer="21"/>
+<wire x1="-7.5" y1="1.45" x2="-7.5" y2="-0.68" width="0.127" layer="21"/>
+<wire x1="7.5" y1="1.45" x2="6.56" y2="1.45" width="0.127" layer="21"/>
+<wire x1="7.5" y1="1.45" x2="7.5" y2="-0.68" width="0.127" layer="21"/>
+<wire x1="-6.88" y1="-1.45" x2="6.88" y2="-1.45" width="0.127" layer="21"/>
+<smd name="4" x="-4.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="5" x="-4.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="6" x="-3.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="7" x="-3.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="8" x="-2.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="9" x="-2.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="10" x="-1.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="11" x="-1.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="12" x="-0.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="13" x="-0.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="14" x="0.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="15" x="0.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="16" x="1.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="17" x="1.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="18" x="2.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="19" x="2.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="20" x="3.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="21" x="3.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="22" x="4.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="23" x="4.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<polygon width="0.127" layer="43">
+<vertex x="-6.6" y="1.3"/>
+<vertex x="-7.35" y="1.3"/>
+<vertex x="-7.35" y="-0.65"/>
+<vertex x="-6.85" y="-0.65"/>
+<vertex x="-6.85" y="-1.3"/>
+<vertex x="6.85" y="-1.3"/>
+<vertex x="6.85" y="-0.65"/>
+<vertex x="7.35" y="-0.65"/>
+<vertex x="7.35" y="1.3"/>
+<vertex x="6.6" y="1.3"/>
+<vertex x="6.6" y="0.65"/>
+<vertex x="-6.6" y="0.65"/>
+</polygon>
+</package>
+<package name="687128182122">
+<smd name="1" x="-6.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="2" x="-6.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="3" x="-5.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="26" x="5.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="27" x="6.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="28" x="6.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="Z1" x="-7.75" y="-1.25" dx="0.8" dy="0.4" layer="1" rot="R90"/>
+<smd name="Z2" x="7.75" y="-1.25" dx="0.8" dy="0.4" layer="1" rot="R90"/>
+<wire x1="-6.825" y1="1.65" x2="6.825" y2="1.65" width="0.127" layer="51"/>
+<wire x1="-7.735" y1="-1.45" x2="7.735" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="-8" y1="1.45" x2="-8" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="8" y1="1.45" x2="8" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-7.735" y1="-1.45" x2="-7.735" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="7.735" y1="-1.45" x2="7.735" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-8" y1="-0.95" x2="-7.735" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="7.735" y1="-0.95" x2="8" y2="-0.95" width="0.127" layer="51"/>
+<wire x1="-8" y1="1.45" x2="-6.825" y2="1.45" width="0.127" layer="51"/>
+<wire x1="6.825" y1="1.45" x2="8" y2="1.45" width="0.127" layer="51"/>
+<wire x1="-6.825" y1="1.65" x2="-6.825" y2="1.45" width="0.127" layer="51"/>
+<wire x1="6.825" y1="1.65" x2="6.825" y2="1.45" width="0.127" layer="51"/>
+<wire x1="-8.25" y1="1.9" x2="8.25" y2="1.9" width="0.127" layer="39"/>
+<wire x1="8.25" y1="1.9" x2="8.25" y2="-1.9" width="0.127" layer="39"/>
+<wire x1="8.25" y1="-1.9" x2="-8.25" y2="-1.9" width="0.127" layer="39"/>
+<wire x1="-8.25" y1="-1.9" x2="-8.25" y2="1.9" width="0.127" layer="39"/>
+<text x="-3.133" y="2.699" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.962" y="-3.884" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-7.06" y1="1.45" x2="-8" y2="1.45" width="0.127" layer="21"/>
+<wire x1="-8" y1="1.45" x2="-8" y2="-0.68" width="0.127" layer="21"/>
+<wire x1="8" y1="1.45" x2="7.06" y2="1.45" width="0.127" layer="21"/>
+<wire x1="8" y1="1.45" x2="8" y2="-0.68" width="0.127" layer="21"/>
+<wire x1="-7.38" y1="-1.45" x2="7.38" y2="-1.45" width="0.127" layer="21"/>
+<smd name="4" x="-5.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="5" x="-4.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="6" x="-4.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="7" x="-3.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="8" x="-3.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="9" x="-2.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="10" x="-2.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="11" x="-1.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="12" x="-1.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="13" x="-0.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="14" x="-0.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="15" x="0.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="16" x="0.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="17" x="1.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="18" x="1.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="19" x="2.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="20" x="2.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="21" x="3.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="22" x="3.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="23" x="4.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="24" x="4.75" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="25" x="5.25" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<polygon width="0.127" layer="43">
+<vertex x="-7.1" y="1.3"/>
+<vertex x="-7.85" y="1.3"/>
+<vertex x="-7.85" y="-0.65"/>
+<vertex x="-7.35" y="-0.65"/>
+<vertex x="-7.35" y="-1.3"/>
+<vertex x="7.35" y="-1.3"/>
+<vertex x="7.35" y="-0.7"/>
+<vertex x="7.35" y="-0.65"/>
+<vertex x="7.85" y="-0.65"/>
+<vertex x="7.85" y="1.3"/>
+<vertex x="7.1" y="1.3"/>
+<vertex x="7.1" y="0.65"/>
+<vertex x="-7.1" y="0.65"/>
+</polygon>
 </package>
 </packages>
 <symbols>
@@ -14021,6 +14785,1169 @@ Created 2014-10-08, Karrer Zheng&lt;br&gt;
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="5" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="687106182122" uservalue="yes">
+<description>&lt;br&gt;&lt;b&gt; CONFPCI - 0.5 MM PITCH HORIZONTAL DUAL CONTACT,
+BACK FLIP ACTUATOR&lt;/b&gt;=&gt;Code : ConFPC-687106182122
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt; Characteristics
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt; INSULATOR: LCP
+
+&lt;br&gt; FLAMABILITY RATING: UL94-V0
+
+&lt;br&gt;COLOUR: IVORY
+
+&lt;br&gt;CONTACT MATERIAL: PHOSPHOR BRONZE
+
+&lt;br&gt;CONTACT PLATING: 80 μ’’ MAT TIN OVER 50 μ’’ NICKEL
+
+&lt;br&gt;CONTACT TYPE: STAMPED
+
+&lt;br&gt;TAB MATERIAL: BRASS
+
+&lt;br&gt;TAB PLATING: 80 μ’’ MAT TIN OVER 50 μ’’ NICKEL
+
+&lt;br&gt;TAB TYPE: STAMPED
+
+&lt;br&gt;ACTUATOR MATERIAL: PA9T
+
+&lt;br&gt;ACTUATOR COLOUR: BLACK
+
+&lt;br&gt;QUALITY CLASS: 20 MATING CYCLES
+
+&lt;br&gt;PITCH: 0.50 MM
+
+&lt;br&gt; PACKAGING:TAPE AND REEL
+
+&lt;br&gt; COMPLIANCE: ROHS AND HALOGEN FREE
+
+&lt;br&gt;OPERATING TEMPERATURE: -40°C UP TO +105°C
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+&lt;br&gt;&lt;b&gt; ELECTRICAL
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt; CURRENT RATING: 0.5A
+
+&lt;br&gt;WORKING VOLTAGE: 50 VAC
+
+&lt;br&gt;WITHSTANDING VOLTAGE: 0.25 KVAC/min
+
+&lt;br&gt;CONTATC RESISTANCE: 30 mOHM&lt;br&gt;INSULATION RESISTANCE: &gt;500 MΩ
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/v2/Family_05_SMT_ZIF_Horizontal_p294_WR-FPC_6871xx182122_4C.jpg" title="Enlarge picture"&gt;
+&lt;img src="http://katalog.we-online.de/media/images/v2/Family_05_SMT_ZIF_Horizontal_p294_WR-FPC_6871xx182122_4C.jpg"  width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/en/em/FPC_0_5_SMT_ZIF_HORIZONTAL_DUAL_CONTACT_BACK_LOCKING_6871XX182122"&gt;http://katalog.we-online.de/en/em/FPC_0_5_SMT_ZIF_HORIZONTAL_DUAL_CONTACT_BACK_LOCKING_6871XX182122&lt;/a&gt;&lt;p&gt;
+
+
+&lt;br&gt;&lt;/b&gt;2015 (C) Wurth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="SINGLEROW-6" x="-6.35" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="687106182122">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="687108182122" uservalue="yes">
+<description>&lt;br&gt; CONFPCI - 0.5 MM PITCH HORIZONTAL DUAL CONTACT,
+BACK FLIP ACTUATOR&lt;/b&gt;=&gt;Code : ConFPC-687108182122
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt; Characteristics
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt; INSULATOR: LCP
+
+&lt;br&gt; FLAMABILITY RATING: UL94-V0
+
+&lt;br&gt;COLOUR: IVORY
+
+&lt;br&gt;CONTACT MATERIAL: PHOSPHOR BRONZE
+
+&lt;br&gt;CONTACT PLATING: 80 μ’’ MAT TIN OVER 50 μ’’ NICKEL
+
+&lt;br&gt;CONTACT TYPE: STAMPED
+
+&lt;br&gt;TAB MATERIAL: BRASS
+
+&lt;br&gt;TAB PLATING: 80 μ’’ MAT TIN OVER 50 μ’’ NICKEL
+
+&lt;br&gt;TAB TYPE: STAMPED
+
+&lt;br&gt;ACTUATOR MATERIAL: PA9T
+
+&lt;br&gt;ACTUATOR COLOUR: BLACK
+
+&lt;br&gt;QUALITY CLASS: 20 MATING CYCLES
+
+&lt;br&gt;PITCH: 0.50 MM
+
+&lt;br&gt; PACKAGING:TAPE AND REEL
+
+&lt;br&gt; COMPLIANCE: ROHS AND HALOGEN FREE
+
+&lt;br&gt;OPERATING TEMPERATURE: -40°C UP TO +105°C
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+&lt;br&gt;&lt;b&gt; ELECTRICAL
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt; CURRENT RATING: 0.5A
+
+&lt;br&gt;WORKING VOLTAGE: 50 VAC
+
+&lt;br&gt;WITHSTANDING VOLTAGE: 0.25 KVAC/min
+
+&lt;br&gt;CONTATC RESISTANCE: 30 mOHM&lt;br&gt;INSULATION RESISTANCE: &gt;500 MΩ
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/v2/Family_05_SMT_ZIF_Horizontal_p294_WR-FPC_6871xx182122_4C.jpg" title="Enlarge picture"&gt;
+&lt;img src="http://katalog.we-online.de/media/images/v2/Family_05_SMT_ZIF_Horizontal_p294_WR-FPC_6871xx182122_4C.jpg"  width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/en/em/FPC_0_5_SMT_ZIF_HORIZONTAL_DUAL_CONTACT_BACK_LOCKING_6871XX182122"&gt;http://katalog.we-online.de/en/em/FPC_0_5_SMT_ZIF_HORIZONTAL_DUAL_CONTACT_BACK_LOCKING_6871XX182122&lt;/a&gt;&lt;p&gt;
+
+
+&lt;br&gt;&lt;/b&gt;2015 (C) Wurth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="SINGLEROW-8" x="-6.35" y="7.62"/>
+</gates>
+<devices>
+<device name="" package="687108182122">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="687110182122" uservalue="yes">
+<description>&lt;br&gt; CONFPCI - 0.5 MM PITCH HORIZONTAL DUAL CONTACT,
+BACK FLIP ACTUATOR&lt;/b&gt;=&gt;Code : ConFPC-687110182122
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt; Characteristics
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt; INSULATOR: LCP
+
+&lt;br&gt; FLAMABILITY RATING: UL94-V0
+
+&lt;br&gt;COLOUR: IVORY
+
+&lt;br&gt;CONTACT MATERIAL: PHOSPHOR BRONZE
+
+&lt;br&gt;CONTACT PLATING: 80 μ’’ MAT TIN OVER 50 μ’’ NICKEL
+
+&lt;br&gt;CONTACT TYPE: STAMPED
+
+&lt;br&gt;TAB MATERIAL: BRASS
+
+&lt;br&gt;TAB PLATING: 80 μ’’ MAT TIN OVER 50 μ’’ NICKEL
+
+&lt;br&gt;TAB TYPE: STAMPED
+
+&lt;br&gt;ACTUATOR MATERIAL: PA9T
+
+&lt;br&gt;ACTUATOR COLOUR: BLACK
+
+&lt;br&gt;QUALITY CLASS: 20 MATING CYCLES
+
+&lt;br&gt;PITCH: 0.50 MM
+
+&lt;br&gt; PACKAGING:TAPE AND REEL
+
+&lt;br&gt; COMPLIANCE: ROHS AND HALOGEN FREE
+
+&lt;br&gt;OPERATING TEMPERATURE: -40°C UP TO +105°C
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+&lt;br&gt;&lt;b&gt; ELECTRICAL
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt; CURRENT RATING: 0.5A
+
+&lt;br&gt;WORKING VOLTAGE: 50 VAC
+
+&lt;br&gt;WITHSTANDING VOLTAGE: 0.25 KVAC/min
+
+&lt;br&gt;CONTATC RESISTANCE: 30 mOHM&lt;br&gt;INSULATION RESISTANCE: &gt;500 MΩ
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/v2/Family_05_SMT_ZIF_Horizontal_p294_WR-FPC_6871xx182122_4C.jpg" title="Enlarge picture"&gt;
+&lt;img src="http://katalog.we-online.de/media/images/v2/Family_05_SMT_ZIF_Horizontal_p294_WR-FPC_6871xx182122_4C.jpg"  width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/en/em/FPC_0_5_SMT_ZIF_HORIZONTAL_DUAL_CONTACT_BACK_LOCKING_6871XX182122"&gt;http://katalog.we-online.de/en/em/FPC_0_5_SMT_ZIF_HORIZONTAL_DUAL_CONTACT_BACK_LOCKING_6871XX182122&lt;/a&gt;&lt;p&gt;
+
+
+&lt;br&gt;&lt;/b&gt;2015 (C) Wurth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="SINGLEROW-10" x="-6.35" y="11.43"/>
+</gates>
+<devices>
+<device name="" package="687110182122">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="687112182122" uservalue="yes">
+<description>&lt;br&gt; CONFPCI - 0.5 MM PITCH HORIZONTAL DUAL CONTACT,
+BACK FLIP ACTUATOR&lt;/b&gt;=&gt;Code : ConFPC-687128182122
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt; Characteristics
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt; INSULATOR: LCP
+
+&lt;br&gt; FLAMABILITY RATING: UL94-V0
+
+&lt;br&gt;COLOUR: IVORY
+
+&lt;br&gt;CONTACT MATERIAL: PHOSPHOR BRONZE
+
+&lt;br&gt;CONTACT PLATING: 80 μ’’ MAT TIN OVER 50 μ’’ NICKEL
+
+&lt;br&gt;CONTACT TYPE: STAMPED
+
+&lt;br&gt;TAB MATERIAL: BRASS
+
+&lt;br&gt;TAB PLATING: 80 μ’’ MAT TIN OVER 50 μ’’ NICKEL
+
+&lt;br&gt;TAB TYPE: STAMPED
+
+&lt;br&gt;ACTUATOR MATERIAL: PA9T
+
+&lt;br&gt;ACTUATOR COLOUR: BLACK
+
+&lt;br&gt;QUALITY CLASS: 20 MATING CYCLES
+
+&lt;br&gt;PITCH: 0.50 MM
+
+&lt;br&gt; PACKAGING:TAPE AND REEL
+
+&lt;br&gt; COMPLIANCE: ROHS AND HALOGEN FREE
+
+&lt;br&gt;OPERATING TEMPERATURE: -40°C UP TO +105°C
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+&lt;br&gt;&lt;b&gt; ELECTRICAL
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt; CURRENT RATING: 0.5A
+
+&lt;br&gt;WORKING VOLTAGE: 50 VAC
+
+&lt;br&gt;WITHSTANDING VOLTAGE: 0.25 KVAC/min
+
+&lt;br&gt;CONTATC RESISTANCE: 30 mOHM&lt;br&gt;INSULATION RESISTANCE: &gt;500 MΩ
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/v2/Family_05_SMT_ZIF_Horizontal_p294_WR-FPC_6871xx182122_4C.jpg" title="Enlarge picture"&gt;
+&lt;img src="http://katalog.we-online.de/media/images/v2/Family_05_SMT_ZIF_Horizontal_p294_WR-FPC_6871xx182122_4C.jpg"  width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/en/em/FPC_0_5_SMT_ZIF_HORIZONTAL_DUAL_CONTACT_BACK_LOCKING_6871XX182122"&gt;http://katalog.we-online.de/en/em/FPC_0_5_SMT_ZIF_HORIZONTAL_DUAL_CONTACT_BACK_LOCKING_6871XX182122&lt;/a&gt;&lt;p&gt;
+
+
+&lt;br&gt;&lt;/b&gt;2015 (C) Wurth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="SINGLEROW-12" x="-6.35" y="13.97"/>
+</gates>
+<devices>
+<device name="" package="687112182122">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="687114182122" uservalue="yes">
+<description>&lt;br&gt; CONFPCI - 0.5 MM PITCH HORIZONTAL DUAL CONTACT,
+BACK FLIP ACTUATOR&lt;/b&gt;=&gt;Code : ConFPC-687148182122
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt; Characteristics
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt; INSULATOR: LCP
+
+&lt;br&gt; FLAMABILITY RATING: UL94-V0
+
+&lt;br&gt;COLOUR: IVORY
+
+&lt;br&gt;CONTACT MATERIAL: PHOSPHOR BRONZE
+
+&lt;br&gt;CONTACT PLATING: 80 μ’’ MAT TIN OVER 50 μ’’ NICKEL
+
+&lt;br&gt;CONTACT TYPE: STAMPED
+
+&lt;br&gt;TAB MATERIAL: BRASS
+
+&lt;br&gt;TAB PLATING: 80 μ’’ MAT TIN OVER 50 μ’’ NICKEL
+
+&lt;br&gt;TAB TYPE: STAMPED
+
+&lt;br&gt;ACTUATOR MATERIAL: PA9T
+
+&lt;br&gt;ACTUATOR COLOUR: BLACK
+
+&lt;br&gt;QUALITY CLASS: 20 MATING CYCLES
+
+&lt;br&gt;PITCH: 0.50 MM
+
+&lt;br&gt; PACKAGING:TAPE AND REEL
+
+&lt;br&gt; COMPLIANCE: ROHS AND HALOGEN FREE
+
+&lt;br&gt;OPERATING TEMPERATURE: -40°C UP TO +105°C
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+&lt;br&gt;&lt;b&gt; ELECTRICAL
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt; CURRENT RATING: 0.5A
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt;WORKING VOLTAGE: 50 VAC
+
+&lt;br&gt;WITHSTANDING VOLTAGE: 0.25 KVAC/min
+
+&lt;br&gt;CONTATC RESISTANCE: 30 mOHM&lt;br&gt;INSULATION RESISTANCE: &gt;500 MΩ
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/v2/Family_05_SMT_ZIF_Horizontal_p294_WR-FPC_6871xx182122_4C.jpg" title="Enlarge picture"&gt;
+&lt;img src="http://katalog.we-online.de/media/images/v2/Family_05_SMT_ZIF_Horizontal_p294_WR-FPC_6871xx182122_4C.jpg"  width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/en/em/FPC_0_5_SMT_ZIF_HORIZONTAL_DUAL_CONTACT_BACK_LOCKING_6871XX182122"&gt;http://katalog.we-online.de/en/em/FPC_0_5_SMT_ZIF_HORIZONTAL_DUAL_CONTACT_BACK_LOCKING_6871XX182122&lt;/a&gt;&lt;p&gt;
+
+
+&lt;br&gt;&lt;/b&gt;2015 (C) Wurth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="SINGLEROW-14" x="-6.35" y="16.51"/>
+</gates>
+<devices>
+<device name="" package="687114182122">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="687116182122" uservalue="yes">
+<description>&lt;br&gt; CONFPCI - 0.5 MM PITCH HORIZONTAL DUAL CONTACT,
+BACK FLIP ACTUATOR&lt;/b&gt;=&gt;Code : ConFPC-687116182122
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt; Characteristics
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt; INSULATOR: LCP
+
+&lt;br&gt; FLAMABILITY RATING: UL94-V0
+
+&lt;br&gt;COLOUR: IVORY
+
+&lt;br&gt;CONTACT MATERIAL: PHOSPHOR BRONZE
+
+&lt;br&gt;CONTACT PLATING: 80 μ’’ MAT TIN OVER 50 μ’’ NICKEL
+
+&lt;br&gt;CONTACT TYPE: STAMPED
+
+&lt;br&gt;TAB MATERIAL: BRASS
+
+&lt;br&gt;TAB PLATING: 80 μ’’ MAT TIN OVER 50 μ’’ NICKEL
+
+&lt;br&gt;TAB TYPE: STAMPED
+
+&lt;br&gt;ACTUATOR MATERIAL: PA9T
+
+&lt;br&gt;ACTUATOR COLOUR: BLACK
+
+&lt;br&gt;QUALITY CLASS: 20 MATING CYCLES
+
+&lt;br&gt;PITCH: 0.50 MM
+
+&lt;br&gt; PACKAGING:TAPE AND REEL
+
+&lt;br&gt; COMPLIANCE: ROHS AND HALOGEN FREE
+
+&lt;br&gt;OPERATING TEMPERATURE: -40°C UP TO +105°C
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt; ELECTRICAL
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt; CURRENT RATING: 0.5A
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt;WORKING VOLTAGE: 50 VAC
+
+&lt;br&gt;WITHSTANDING VOLTAGE: 0.25 KVAC/min
+
+&lt;br&gt;CONTATC RESISTANCE: 30 mOHM&lt;br&gt;INSULATION RESISTANCE: &gt;500 MΩ
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/v2/Family_05_SMT_ZIF_Horizontal_p294_WR-FPC_6871xx182122_4C.jpg" title="Enlarge picture"&gt;
+&lt;img src="http://katalog.we-online.de/media/images/v2/Family_05_SMT_ZIF_Horizontal_p294_WR-FPC_6871xx182122_4C.jpg"  width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/en/em/FPC_0_5_SMT_ZIF_HORIZONTAL_DUAL_CONTACT_BACK_LOCKING_6871XX182122"&gt;http://katalog.we-online.de/en/em/FPC_0_5_SMT_ZIF_HORIZONTAL_DUAL_CONTACT_BACK_LOCKING_6871XX182122&lt;/a&gt;&lt;p&gt;
+
+
+&lt;br&gt;&lt;/b&gt;2015 (C) Wurth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="SINGLEROW-16" x="-6.35" y="19.05"/>
+</gates>
+<devices>
+<device name="" package="687116182122">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="15" pad="15"/>
+<connect gate="G$1" pin="16" pad="16"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="687117182122" uservalue="yes">
+<description>&lt;br&gt; CONFPCI - 0.5 MM PITCH HORIZONTAL DUAL CONTACT,
+BACK FLIP ACTUATOR&lt;/b&gt;=&gt;Code : ConFPC-6871178182122
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt; Characteristics
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt; INSULATOR: LCP
+
+&lt;br&gt; FLAMABILITY RATING: UL94-V0
+
+&lt;br&gt;COLOUR: IVORY
+
+&lt;br&gt;CONTACT MATERIAL: PHOSPHOR BRONZE
+
+&lt;br&gt;CONTACT PLATING: 80 μ’’ MAT TIN OVER 50 μ’’ NICKEL
+
+&lt;br&gt;CONTACT TYPE: STAMPED
+
+&lt;br&gt;TAB MATERIAL: BRASS
+
+&lt;br&gt;TAB PLATING: 80 μ’’ MAT TIN OVER 50 μ’’ NICKEL
+
+&lt;br&gt;TAB TYPE: STAMPED
+
+&lt;br&gt;ACTUATOR MATERIAL: PA9T
+
+&lt;br&gt;ACTUATOR COLOUR: BLACK
+
+&lt;br&gt;QUALITY CLASS: 20 MATING CYCLES
+
+&lt;br&gt;PITCH: 0.50 MM
+
+&lt;br&gt; PACKAGING:TAPE AND REEL
+
+&lt;br&gt; COMPLIANCE: ROHS AND HALOGEN FREE
+
+&lt;br&gt;OPERATING TEMPERATURE: -40°C UP TO +105°C
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+&lt;br&gt;&lt;b&gt; ELECTRICAL
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt; CURRENT RATING: 0.5A
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt;WORKING VOLTAGE: 50 VAC
+
+&lt;br&gt;WITHSTANDING VOLTAGE: 0.25 KVAC/min
+
+&lt;br&gt;CONTATC RESISTANCE: 30 mOHM&lt;br&gt;INSULATION RESISTANCE: &gt;500 MΩ
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/v2/Family_05_SMT_ZIF_Horizontal_p294_WR-FPC_6871xx182122_4C.jpg" title="Enlarge picture"&gt;
+&lt;img src="http://katalog.we-online.de/media/images/v2/Family_05_SMT_ZIF_Horizontal_p294_WR-FPC_6871xx182122_4C.jpg"  width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/en/em/FPC_0_5_SMT_ZIF_HORIZONTAL_DUAL_CONTACT_BACK_LOCKING_6871XX182122"&gt;http://katalog.we-online.de/en/em/FPC_0_5_SMT_ZIF_HORIZONTAL_DUAL_CONTACT_BACK_LOCKING_6871XX182122&lt;/a&gt;&lt;p&gt;
+
+
+&lt;br&gt;&lt;/b&gt;2015 (C) Wurth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="SINGLEROW-17" x="-6.35" y="17.78"/>
+</gates>
+<devices>
+<device name="" package="687117182122">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="15" pad="15"/>
+<connect gate="G$1" pin="16" pad="16"/>
+<connect gate="G$1" pin="17" pad="17"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="687118182122" uservalue="yes">
+<description>&lt;br&gt; CONFPCI - 0.5 MM PITCH HORIZONTAL DUAL CONTACT,
+BACK FLIP ACTUATOR&lt;/b&gt;=&gt;Code : ConFPC-687118182122
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt; Characteristics
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt; INSULATOR: LCP
+
+&lt;br&gt; FLAMABILITY RATING: UL94-V0
+
+&lt;br&gt;COLOUR: IVORY
+
+&lt;br&gt;CONTACT MATERIAL: PHOSPHOR BRONZE
+
+&lt;br&gt;CONTACT PLATING: 80 μ’’ MAT TIN OVER 50 μ’’ NICKEL
+
+&lt;br&gt;CONTACT TYPE: STAMPED
+
+&lt;br&gt;TAB MATERIAL: BRASS
+
+&lt;br&gt;TAB PLATING: 80 μ’’ MAT TIN OVER 50 μ’’ NICKEL
+
+&lt;br&gt;TAB TYPE: STAMPED
+
+&lt;br&gt;ACTUATOR MATERIAL: PA9T
+
+&lt;br&gt;ACTUATOR COLOUR: BLACK
+
+&lt;br&gt;QUALITY CLASS: 20 MATING CYCLES
+
+&lt;br&gt;PITCH: 0.50 MM
+
+&lt;br&gt; PACKAGING:TAPE AND REEL
+
+&lt;br&gt; COMPLIANCE: ROHS AND HALOGEN FREE
+
+&lt;br&gt;OPERATING TEMPERATURE: -40°C UP TO +105°C
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt; ELECTRICAL
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt; CURRENT RATING: 0.5A
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt;WORKING VOLTAGE: 50 VAC
+
+&lt;br&gt;WITHSTANDING VOLTAGE: 0.25 KVAC/min
+
+&lt;br&gt;CONTATC RESISTANCE: 30 mOHM&lt;br&gt;INSULATION RESISTANCE: &gt;500 MΩ
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/v2/Family_05_SMT_ZIF_Horizontal_p294_WR-FPC_6871xx182122_4C.jpg" title="Enlarge picture"&gt;
+&lt;img src="http://katalog.we-online.de/media/images/v2/Family_05_SMT_ZIF_Horizontal_p294_WR-FPC_6871xx182122_4C.jpg"  width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/en/em/FPC_0_5_SMT_ZIF_HORIZONTAL_DUAL_CONTACT_BACK_LOCKING_6871XX182122"&gt;http://katalog.we-online.de/en/em/FPC_0_5_SMT_ZIF_HORIZONTAL_DUAL_CONTACT_BACK_LOCKING_6871XX182122&lt;/a&gt;&lt;p&gt;
+
+
+&lt;br&gt;&lt;/b&gt;2015 (C) Wurth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="SINGLEROW-18" x="-5.08" y="20.32"/>
+</gates>
+<devices>
+<device name="" package="687118182122">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="15" pad="15"/>
+<connect gate="G$1" pin="16" pad="16"/>
+<connect gate="G$1" pin="17" pad="17"/>
+<connect gate="G$1" pin="18" pad="18"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="687120182122" uservalue="yes">
+<description>&lt;br&gt; CONFPCI - 0.5 MM PITCH HORIZONTAL DUAL CONTACT,
+BACK FLIP ACTUATOR&lt;/b&gt;=&gt;Code : ConFPC-687120182122
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt; Characteristics
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt; INSULATOR: LCP
+
+&lt;br&gt; FLAMABILITY RATING: UL94-V0
+
+&lt;br&gt;COLOUR: IVORY
+
+&lt;br&gt;CONTACT MATERIAL: PHOSPHOR BRONZE
+
+&lt;br&gt;CONTACT PLATING: 80 μ’’ MAT TIN OVER 50 μ’’ NICKEL
+
+&lt;br&gt;CONTACT TYPE: STAMPED
+
+&lt;br&gt;TAB MATERIAL: BRASS
+
+&lt;br&gt;TAB PLATING: 80 μ’’ MAT TIN OVER 50 μ’’ NICKEL
+
+&lt;br&gt;TAB TYPE: STAMPED
+
+&lt;br&gt;ACTUATOR MATERIAL: PA9T
+
+&lt;br&gt;ACTUATOR COLOUR: BLACK
+
+&lt;br&gt;QUALITY CLASS: 20 MATING CYCLES
+
+&lt;br&gt;PITCH: 0.50 MM
+
+&lt;br&gt; PACKAGING:TAPE AND REEL
+
+&lt;br&gt; COMPLIANCE: ROHS AND HALOGEN FREE
+
+&lt;br&gt;OPERATING TEMPERATURE: -40°C UP TO +105°C
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt; ELECTRICAL
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt; CURRENT RATING: 0.5A
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt;WORKING VOLTAGE: 50 VAC
+
+&lt;br&gt;WITHSTANDING VOLTAGE: 0.25 KVAC/min
+
+&lt;br&gt;CONTATC RESISTANCE: 30 mOHM&lt;br&gt;INSULATION RESISTANCE: &gt;500 MΩ
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/v2/Family_05_SMT_ZIF_Horizontal_p294_WR-FPC_6871xx182122_4C.jpg" title="Enlarge picture"&gt;
+&lt;img src="http://katalog.we-online.de/media/images/v2/Family_05_SMT_ZIF_Horizontal_p294_WR-FPC_6871xx182122_4C.jpg"  width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/en/em/FPC_0_5_SMT_ZIF_HORIZONTAL_DUAL_CONTACT_BACK_LOCKING_6871XX182122"&gt;http://katalog.we-online.de/en/em/FPC_0_5_SMT_ZIF_HORIZONTAL_DUAL_CONTACT_BACK_LOCKING_6871XX182122&lt;/a&gt;&lt;p&gt;
+
+
+&lt;br&gt;&lt;/b&gt;2015 (C) Wurth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="SINGLEROW-20" x="-5.08" y="22.86"/>
+</gates>
+<devices>
+<device name="" package="687120182122">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="15" pad="15"/>
+<connect gate="G$1" pin="16" pad="16"/>
+<connect gate="G$1" pin="17" pad="17"/>
+<connect gate="G$1" pin="18" pad="18"/>
+<connect gate="G$1" pin="19" pad="19"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="20" pad="20"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="687122182122" uservalue="yes">
+<description>&lt;br&gt; CONFPCI - 0.5 MM PITCH HORIZONTAL DUAL CONTACT,
+BACK FLIP ACTUATOR&lt;/b&gt;=&gt;Code : ConFPC-687228182122
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt; Characteristics
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt; INSULATOR: LCP
+
+&lt;br&gt; FLAMABILITY RATING: UL94-V0
+
+&lt;br&gt;COLOUR: IVORY
+
+&lt;br&gt;CONTACT MATERIAL: PHOSPHOR BRONZE
+
+&lt;br&gt;CONTACT PLATING: 80 μ’’ MAT TIN OVER 50 μ’’ NICKEL
+
+&lt;br&gt;CONTACT TYPE: STAMPED
+
+&lt;br&gt;TAB MATERIAL: BRASS
+
+&lt;br&gt;TAB PLATING: 80 μ’’ MAT TIN OVER 50 μ’’ NICKEL
+
+&lt;br&gt;TAB TYPE: STAMPED
+
+&lt;br&gt;ACTUATOR MATERIAL: PA9T
+
+&lt;br&gt;ACTUATOR COLOUR: BLACK
+
+&lt;br&gt;QUALITY CLASS: 20 MATING CYCLES
+
+&lt;br&gt;PITCH: 0.50 MM
+
+&lt;br&gt; PACKAGING:TAPE AND REEL
+
+&lt;br&gt; COMPLIANCE: ROHS AND HALOGEN FREE
+
+&lt;br&gt;OPERATING TEMPERATURE: -40°C UP TO +105°C
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+&lt;br&gt;&lt;b&gt; ELECTRICAL
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt; CURRENT RATING: 0.5A
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt;WORKING VOLTAGE: 50 VAC
+
+&lt;br&gt;WITHSTANDING VOLTAGE: 0.25 KVAC/min
+
+&lt;br&gt;CONTATC RESISTANCE: 30 mOHM&lt;br&gt;INSULATION RESISTANCE: &gt;500 MΩ
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/v2/Family_05_SMT_ZIF_Horizontal_p294_WR-FPC_6871xx182122_4C.jpg" title="Enlarge picture"&gt;
+&lt;img src="http://katalog.we-online.de/media/images/v2/Family_05_SMT_ZIF_Horizontal_p294_WR-FPC_6871xx182122_4C.jpg"  width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/en/em/FPC_0_5_SMT_ZIF_HORIZONTAL_DUAL_CONTACT_BACK_LOCKING_6871XX182122"&gt;http://katalog.we-online.de/en/em/FPC_0_5_SMT_ZIF_HORIZONTAL_DUAL_CONTACT_BACK_LOCKING_6871XX182122&lt;/a&gt;&lt;p&gt;
+
+
+&lt;br&gt;&lt;/b&gt;2015 (C) Wurth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="SINGLEROW-22" x="-5.08" y="25.4"/>
+</gates>
+<devices>
+<device name="" package="687122182122">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="15" pad="15"/>
+<connect gate="G$1" pin="16" pad="16"/>
+<connect gate="G$1" pin="17" pad="17"/>
+<connect gate="G$1" pin="18" pad="18"/>
+<connect gate="G$1" pin="19" pad="19"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="20" pad="20"/>
+<connect gate="G$1" pin="21" pad="21"/>
+<connect gate="G$1" pin="22" pad="22"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="687124182122" uservalue="yes">
+<description>&lt;br&gt; CONFPCI - 0.5 MM PITCH HORIZONTAL DUAL CONTACT,
+BACK FLIP ACTUATOR&lt;/b&gt;=&gt;Code : ConFPC-687124182122
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt; Characteristics
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt; INSULATOR: LCP
+
+&lt;br&gt; FLAMABILITY RATING: UL94-V0
+
+&lt;br&gt;COLOUR: IVORY
+
+&lt;br&gt;CONTACT MATERIAL: PHOSPHOR BRONZE
+
+&lt;br&gt;CONTACT PLATING: 80 μ’’ MAT TIN OVER 50 μ’’ NICKEL
+
+&lt;br&gt;CONTACT TYPE: STAMPED
+
+&lt;br&gt;TAB MATERIAL: BRASS
+
+&lt;br&gt;TAB PLATING: 80 μ’’ MAT TIN OVER 50 μ’’ NICKEL
+
+&lt;br&gt;TAB TYPE: STAMPED
+
+&lt;br&gt;ACTUATOR MATERIAL: PA9T
+
+&lt;br&gt;ACTUATOR COLOUR: BLACK
+
+&lt;br&gt;QUALITY CLASS: 20 MATING CYCLES
+
+&lt;br&gt;PITCH: 0.50 MM
+
+&lt;br&gt; PACKAGING:TAPE AND REEL
+
+&lt;br&gt; COMPLIANCE: ROHS AND HALOGEN FREE
+
+&lt;br&gt;OPERATING TEMPERATURE: -40°C UP TO +105°C
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt; ELECTRICAL
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt; CURRENT RATING: 0.5A
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt;WORKING VOLTAGE: 50 VAC
+
+&lt;br&gt;WITHSTANDING VOLTAGE: 0.25 KVAC/min
+
+&lt;br&gt;CONTATC RESISTANCE: 30 mOHM&lt;br&gt;INSULATION RESISTANCE: &gt;500 MΩ
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/v2/Family_05_SMT_ZIF_Horizontal_p294_WR-FPC_6871xx182122_4C.jpg" title="Enlarge picture"&gt;
+&lt;img src="http://katalog.we-online.de/media/images/v2/Family_05_SMT_ZIF_Horizontal_p294_WR-FPC_6871xx182122_4C.jpg"  width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/en/em/FPC_0_5_SMT_ZIF_HORIZONTAL_DUAL_CONTACT_BACK_LOCKING_6871XX182122"&gt;http://katalog.we-online.de/en/em/FPC_0_5_SMT_ZIF_HORIZONTAL_DUAL_CONTACT_BACK_LOCKING_6871XX182122&lt;/a&gt;&lt;p&gt;
+
+
+&lt;br&gt;&lt;/b&gt;2015 (C) Wurth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="SINGLEROW-24" x="-5.08" y="27.94"/>
+</gates>
+<devices>
+<device name="" package="687124182122">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="15" pad="15"/>
+<connect gate="G$1" pin="16" pad="16"/>
+<connect gate="G$1" pin="17" pad="17"/>
+<connect gate="G$1" pin="18" pad="18"/>
+<connect gate="G$1" pin="19" pad="19"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="20" pad="20"/>
+<connect gate="G$1" pin="21" pad="21"/>
+<connect gate="G$1" pin="22" pad="22"/>
+<connect gate="G$1" pin="23" pad="23"/>
+<connect gate="G$1" pin="24" pad="24"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="687126182122" uservalue="yes">
+<description>&lt;br&gt; CONFPCI - 0.5 MM PITCH HORIZONTAL DUAL CONTACT,
+BACK FLIP ACTUATOR&lt;/b&gt;=&gt;Code : ConFPC-687126182122
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt; Characteristics
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt; INSULATOR: LCP
+
+&lt;br&gt; FLAMABILITY RATING: UL94-V0
+
+&lt;br&gt;COLOUR: IVORY
+
+&lt;br&gt;CONTACT MATERIAL: PHOSPHOR BRONZE
+
+&lt;br&gt;CONTACT PLATING: 80 μ’’ MAT TIN OVER 50 μ’’ NICKEL
+
+&lt;br&gt;CONTACT TYPE: STAMPED
+
+&lt;br&gt;TAB MATERIAL: BRASS
+
+&lt;br&gt;TAB PLATING: 80 μ’’ MAT TIN OVER 50 μ’’ NICKEL
+
+&lt;br&gt;TAB TYPE: STAMPED
+
+&lt;br&gt;ACTUATOR MATERIAL: PA9T
+
+&lt;br&gt;ACTUATOR COLOUR: BLACK
+
+&lt;br&gt;QUALITY CLASS: 20 MATING CYCLES
+
+&lt;br&gt;PITCH: 0.50 MM
+
+&lt;br&gt; PACKAGING:TAPE AND REEL
+
+&lt;br&gt; COMPLIANCE: ROHS AND HALOGEN FREE
+
+&lt;br&gt;OPERATING TEMPERATURE: -40°C UP TO +105°C
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt; ELECTRICAL
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt; CURRENT RATING: 0.5A
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt;WORKING VOLTAGE: 50 VAC
+
+&lt;br&gt;WITHSTANDING VOLTAGE: 0.25 KVAC/min
+
+&lt;br&gt;CONTATC RESISTANCE: 30 mOHM&lt;br&gt;INSULATION RESISTANCE: &gt;500 MΩ
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/v2/Family_05_SMT_ZIF_Horizontal_p294_WR-FPC_6871xx182122_4C.jpg" title="Enlarge picture"&gt;
+&lt;img src="http://katalog.we-online.de/media/images/v2/Family_05_SMT_ZIF_Horizontal_p294_WR-FPC_6871xx182122_4C.jpg"  width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/en/em/FPC_0_5_SMT_ZIF_HORIZONTAL_DUAL_CONTACT_BACK_LOCKING_6871XX182122"&gt;http://katalog.we-online.de/en/em/FPC_0_5_SMT_ZIF_HORIZONTAL_DUAL_CONTACT_BACK_LOCKING_6871XX182122&lt;/a&gt;&lt;p&gt;
+
+
+&lt;br&gt;&lt;/b&gt;2015 (C) Wurth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="SINGLEROW-26" x="-5.08" y="27.94"/>
+</gates>
+<devices>
+<device name="" package="687126182122">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="15" pad="15"/>
+<connect gate="G$1" pin="16" pad="16"/>
+<connect gate="G$1" pin="17" pad="17"/>
+<connect gate="G$1" pin="18" pad="18"/>
+<connect gate="G$1" pin="19" pad="19"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="20" pad="20"/>
+<connect gate="G$1" pin="21" pad="21"/>
+<connect gate="G$1" pin="22" pad="22"/>
+<connect gate="G$1" pin="23" pad="23"/>
+<connect gate="G$1" pin="24" pad="24"/>
+<connect gate="G$1" pin="25" pad="25"/>
+<connect gate="G$1" pin="26" pad="26"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="687128182122" uservalue="yes">
+<description>&lt;br&gt; CONFPCI - 0.5 MM PITCH HORIZONTAL DUAL CONTACT,
+BACK FLIP ACTUATOR&lt;/b&gt;=&gt;Code : ConFPC-687128182122
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt; Characteristics
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt; INSULATOR: LCP
+
+&lt;br&gt; FLAMABILITY RATING: UL94-V0
+
+&lt;br&gt;COLOUR: IVORY
+
+&lt;br&gt;CONTACT MATERIAL: PHOSPHOR BRONZE
+
+&lt;br&gt;CONTACT PLATING: 80 μ’’ MAT TIN OVER 50 μ’’ NICKEL
+
+&lt;br&gt;CONTACT TYPE: STAMPED
+
+&lt;br&gt;TAB MATERIAL: BRASS
+
+&lt;br&gt;TAB PLATING: 80 μ’’ MAT TIN OVER 50 μ’’ NICKEL
+
+&lt;br&gt;TAB TYPE: STAMPED
+
+&lt;br&gt;ACTUATOR MATERIAL: PA9T
+
+&lt;br&gt;ACTUATOR COLOUR: BLACK
+
+&lt;br&gt;QUALITY CLASS: 20 MATING CYCLES
+
+&lt;br&gt;PITCH: 0.50 MM
+
+&lt;br&gt; PACKAGING:TAPE AND REEL
+
+&lt;br&gt; COMPLIANCE: ROHS AND HALOGEN FREE
+
+&lt;br&gt;OPERATING TEMPERATURE: -40°C UP TO +105°C
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt; ELECTRICAL
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt; CURRENT RATING: 0.5A
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt;WORKING VOLTAGE: 50 VAC
+
+&lt;br&gt;WITHSTANDING VOLTAGE: 0.25 KVAC/min
+
+&lt;br&gt;CONTATC RESISTANCE: 30 mOHM&lt;br&gt;INSULATION RESISTANCE: &gt;500 MΩ
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/v2/Family_05_SMT_ZIF_Horizontal_p294_WR-FPC_6871xx182122_4C.jpg" title="Enlarge picture"&gt;
+&lt;img src="http://katalog.we-online.de/media/images/v2/Family_05_SMT_ZIF_Horizontal_p294_WR-FPC_6871xx182122_4C.jpg"  width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/en/em/FPC_0_5_SMT_ZIF_HORIZONTAL_DUAL_CONTACT_BACK_LOCKING_6871XX182122"&gt;http://katalog.we-online.de/en/em/FPC_0_5_SMT_ZIF_HORIZONTAL_DUAL_CONTACT_BACK_LOCKING_6871XX182122&lt;/a&gt;&lt;p&gt;
+
+
+&lt;br&gt;&lt;/b&gt;2015 (C) Wurth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="SINGLEROW-28" x="-6.35" y="29.21"/>
+</gates>
+<devices>
+<device name="" package="687128182122">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="15" pad="15"/>
+<connect gate="G$1" pin="16" pad="16"/>
+<connect gate="G$1" pin="17" pad="17"/>
+<connect gate="G$1" pin="18" pad="18"/>
+<connect gate="G$1" pin="19" pad="19"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="20" pad="20"/>
+<connect gate="G$1" pin="21" pad="21"/>
+<connect gate="G$1" pin="22" pad="22"/>
+<connect gate="G$1" pin="23" pad="23"/>
+<connect gate="G$1" pin="24" pad="24"/>
+<connect gate="G$1" pin="25" pad="25"/>
+<connect gate="G$1" pin="26" pad="26"/>
+<connect gate="G$1" pin="27" pad="27"/>
+<connect gate="G$1" pin="28" pad="28"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>

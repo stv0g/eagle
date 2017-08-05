@@ -1,9 +1,9 @@
 /*
 * svg2poly.ulp
-* Feb 2012, By Cruz Monrreal II (Cruz.Monrreal@gmail.com)
+* Jan 2013, By Cruz Monrreal II (Cruz.Monrreal@gmail.com)
 *
-* Imports select .svg file and will draw it as a set of polygons
-* For best results, follow Inkscape instructions as closely as
+* Imports Plain .svg file and will draw it as a set of polygons
+* For best results, follow GitHub instructions as closely as
 * possible.
 *
 *
@@ -13,24 +13,40 @@
 *
 */
 
-#usage "<b>Convert a modified SVG file to a Polygon</b><p>\n"
-"       run svg2poly -ratio num\n"
-"       run svg2poly -ratiox numx -ratioy numy -layer layername -outline thickness\n<p>"
-"       The polygons will automatically be centered about the current 'mark'</p>\n"
-"		For instructions on how to prepare the SVG file, go to www.thinkmaketest.com\\nn"
-"<author>Author: Cruz Monrreal II\n(cruz.monrreal@gmail.com)\n1-Feb-2011</author>"
+#usage "<b>Import a Plain SVG file to a Polygon</b>\n"
+"<p><b>NOTE:</b> Polygons will automatically be centered about the current 'mark'</p>"
+"<p>Usage: run svg2poly [ -ratio <i>num</i> ] [ -layer <i>name</i> ] [ -outline <i>thickness</i> ]"
+"<p>Options:<br>"
+"<table>"
+"<tr><td>-ratio <i>num</i></td><td>scale SVG with the given ratio, default 1</td></tr>"
+"<tr><td>-layer <i>name</i></td><td>change layer that SVG is drawn on, default tDocu</td></tr>"
+"<tr><td>-outline <i>thickness</i> </td><td>draw an outline of the given size, default 0</td></tr>"
+"</table>"
+"<p><p><b>Example:</b>"
+"<p>run svg2poly -ratio 2 -layer tDocu"
+"<p>This will import a Plain SVG file, scale it 2x, and draw it on the tDocu layer with no outline"
+"<p><p>"
+"<small><table>"
+"<tr><td><i>Cruz Monrreal</i></td></tr>"
+"<tr><td><i>cruz.monrreal@gmail.com</i></td></tr>"
+"<tr><td><i>http://anomalousmaker.com</i></td></tr>"
+"</table></small>"
+
+
 
 /* Inputs, Defaults */
-string layer = "tDocu";
-int outline = 0;
-real ratioX = 1.0, ratioY = 1.0;
+string layer = "tNames";
+real outline = 0.0005;
+real ratioX = 0.01, ratioY = 0.01;
 
 
 /* Globals */
 string tmp[], master_xml;
-int poly_start[], num_pts=0, num_polys=0;
+int poly_start[], global_pts=0, num_polys=0;
 real pts_x[], pts_y[];
 real tmp_coords[];
+real scaleFactor = 1.0; // SVG defined
+string file;	// filename of SVG
 
 /* Output */
 string cmd;
@@ -45,7 +61,7 @@ void push(string s){ stack = (stack == "") ? s : stack + "|" + s; }
 string pull()
 {
 	string tmp;
-	
+
 	if (stack == "")
         // Nothing in stack
 		return "";
@@ -67,10 +83,10 @@ string pull()
 *  Encodes all necessary information into a single string
 *  for stack-based recursion
 */
-string pack(string xml, int repush, int num_pts)
+string pack(string xml, int global_pts)
 {
 	string tmp;
-	sprintf(tmp, "%s^%d^%d", xml, repush, num_pts);
+	sprintf(tmp, "%s^%d", xml, global_pts);
 	return tmp;
 }
 
@@ -81,9 +97,9 @@ void print(string s) {printf("%s\n", s);}
 *  Sets up the eagle commands for the script.
 */
 void setup_cmd()
-{	
+{
     int i;
-    
+
     // Search for parameters
     for(i=0; i<argc; i++){
         if (argv[i] == "-ratio"){   // Scale SVG in the X and Y Axis
@@ -123,7 +139,7 @@ void setup_cmd()
             }
         }
     }
-    
+
 	// Arguments passed to replace defaults
 	/*switch (argc){
 		case 5:
@@ -137,19 +153,102 @@ void setup_cmd()
 		case 2:
 			ratioX = ratioY = strtod(argv[1]);
 	}*/
+
+}
+
+// launch a dialog box, for user input
+void userDialog()
+{
+
+	int Result = dlgDialog ("SVG to Polygon") 
+	{
+		dlgHBoxLayout 
+		{
+			dlgStretch(1);
+			dlgLabel("Enter Parameters");
+			dlgStretch(1);
+		}
+		dlgHBoxLayout 
+		{
+			dlgLabel("File &name:");
+			dlgStringEdit(file);
+			dlgPushButton("Bro&wse") 
+			{
+				file = dlgFileOpen("Select a file", "", "*.svg");
+			}
+		}
+		
+		int layerNum = 25; // default ( tNames )
+		dlgLabel("Choose layer for outline");
+		   
+		string layerSelectionString;	// build entries for combobox
+		string layersArray[];		// array of entries in combobox
+		int i = 0;					// counter to keep track of combobox position (layer number isn't necessarily index number)
+		board(B) 
+		{
+			B.layers(L) // this will loop through all used layers in board
+			{
+				string tempString;
+				sprintf(tempString, "%3d %s,", L.number, L.name);
+				layerSelectionString += tempString;
+				
+				// check to see if layer was already defined by commandline
+				if (L.name == layer)
+				{
+					layerNum = i;
+				}
+				++i;
+			}
+		} 
+		// convert string into array
+		strsplit(layersArray, layerSelectionString, ','); 
+		
+		dlgComboBox(layersArray, layerNum) 
+		{
+			string tempString[];
+			strsplit(tempString, layersArray[layerNum],' '); 
+			layer = tempString[2];
+			// dlgMessageBox("selected layer " + layer);
+		}
+		
+		dlgLabel("Choose a scale factor");
+		dlgHBoxLayout 
+		{
+			dlgLabel("X");
+			dlgRealEdit(ratioX, 0.0, 100.0);
+			dlgSpacing(10);
+			dlgLabel("Y");
+			dlgRealEdit(ratioY, 0.0, 100.0);
+			dlgSpacing(10);
+		}
+		dlgSpacing(10);
+		
+		dlgLabel("Specify outline width");
+		dlgHBoxLayout 
+		{
+			dlgRealEdit(outline, 0.0, 100.0);
+		}
+			
+		dlgHBoxLayout 
+		{
+			dlgStretch(1);
+			dlgPushButton("+OK")    dlgAccept();
+			dlgPushButton("Cancel") dlgReject();
+		}
+	}; 
 	
 	// Write it all to the eagle command
-	sprintf(cmd, "set wire_bend 2;\nchange layer %s;\nset width %d;\npoly", layer, outline);
+	sprintf(cmd, "set wire_bend 2;\nchange layer %s;\nset width %f;\npoly", layer, outline);
 }
 
 
 
 string matrix_to_translate(string translate){
 	// Might need to implement sin & cos...
-	
-	
-	
-	
+
+
+
+
 	return translate;
 }
 
@@ -163,157 +262,229 @@ int svgcoords_to_coords(string s)
 	strsplit(coords, s, ',');
 	tmp_coords[0] = strtod(coords[0]);
 	tmp_coords[1] = strtod(coords[1]);
-	
+/*
 	// Lower the point resolution
 	sprintf(s, "%2.2f,%2.2f", tmp_coords[0], tmp_coords[1]);
 	strsplit(coords, s, ',');
 	tmp_coords[0] = strtod(coords[0]);
 	tmp_coords[1] = strtod(coords[1]);
-	
+*/
+
 	return 0;
 }
 
+
 /*
 *  Extract points from a given svg path.
-*  ASSUMES: User followed instructions on site
-*     File was saved as Plain SVG & NO Relative Moves allowed
 */
 void extract_pts(string pts, string transform)
 {
-	string svg_cmds[];
-	int num = strsplit(svg_cmds, pts, ' '),
+
+	// look for a scale transformation
+	int scalePos = strrstr(transform,"scale");
+	if(scalePos >= 0)
+	{
+		string scaleString = strsub(transform,scalePos+6);
+		scaleFactor = strtod(strsub(scaleString,0, strlen(scaleString)-1)); // trim last char ")"
+	}
+	else 
+	{
+		scaleFactor = 1.0;
+	}
+	printf("Scale factor = %f\n",scaleFactor);
+	
+	string svg_pts[];
+	int size = strsplit(svg_pts, pts, ' '),
 		new_pts = 0;
-	int i = 3;
-	
+	int i = 2;
+  int mode;
+  
+
+  if(svg_pts[0] == "M"){
+    // Coords are Absolute
+    mode = 1;
+
+    sprintf(svg_pts[1], "%s,%s", svg_pts[1], svg_pts[2]);
+
+  }else{
+    // Coords are Relative
+    mode = 0;
+  }
+
+  poly_start[global_pts] = 1;
 	// Path format:
-	//  M x,y L x,y L x,y L x,y ....
-	poly_start[num_pts] = 1;
-	svgcoords_to_coords(svg_cmds[1]);
-	pts_x[num_pts] = tmp_coords[0];
-	pts_y[num_pts++] = tmp_coords[1];
-	new_pts++;
+	//  m x,y x,y L X,Y l x,y .... z
 	
-	printf("%2d) %2.2f,%2.2f\n", num_polys, tmp_coords[0], tmp_coords[1]);
-	
-	// Assume that the only commands left are 'L'
-	for(; i<num; i+=2){
-		svgcoords_to_coords(svg_cmds[i]);
-		
-		if (tmp_coords[0] != pts_x[num_pts-1] || tmp_coords[1] != pts_y[num_pts-1]){	
-			poly_start[num_pts] = 0;
-			pts_x[num_pts] = tmp_coords[0];
-			pts_y[num_pts] = tmp_coords[1];
-			
-			//if (transform == "")
-				printf("    %2.2f,%2.2f\n", pts_x[num_pts], pts_y[num_pts]);
-			poly_start[num_pts++] = 0;
-			new_pts++;
-		}
-	}
-	
-	// Apply transform if needed
-	if (transform != ""){
-		//print(" Local transform: " + transform);
-		if (strstr(transform, "translate") != -1){
-			int a = strchr(transform, '('),
-				b = strchr(transform, ')', a+1);
-			int offset = num_pts - new_pts;
+  svgcoords_to_coords(svg_pts[1]);
+  pts_x[global_pts] = tmp_coords[0] * scaleFactor;
+  pts_y[global_pts] = tmp_coords[1] * scaleFactor;
+  new_pts++;
 
-			// Extract translation offsets
-			svgcoords_to_coords(strsub(transform, a+1, b-a-1));
+  printf("%2d) %2.2f,%2.2f\n", num_polys, tmp_coords[0], tmp_coords[1]);
+  
+  while (i < size - 1){
+    if (svg_pts[i] == "m" || svg_pts[i] == "M")
+	{
+      if(svg_pts[i] == "M")
+	  {
+        // Coords are Absolute
+        mode = 1;
+        sprintf(svg_pts[i], "%s,%s", svg_pts[i], svg_pts[i+1]);
+      }else{
+        // Coords are Relative
+        mode = 0;
+      }
+	  
+		svgcoords_to_coords(svg_pts[++i]);
 
-			// Translate points
-			for(int i=0; i < num/2; i++){
-				pts_x[i + offset] += tmp_coords[0];
-				pts_y[i + offset] += tmp_coords[1];
-				//printf("%f, %f\n", pts_x[i + offset], pts_y[i + offset]);
-			}
-		}else if (strstr(transform, "matrix") != -1){
-			// Do Matrix math (yay...)
-			/* REMEMBER: Inkscape y axis is inverted...*/
-			print(" TODO: Implement Matrix Transform");
-		}else
-			print("Unknown path transformation:\n " + transform);
-	}
+      if(mode == 0){
+        pts_x[global_pts + new_pts] += tmp_coords[0] * scaleFactor;
+        pts_y[global_pts + new_pts] += tmp_coords[1] * scaleFactor;
+      }else{
+        pts_x[global_pts + new_pts] = tmp_coords[0] * scaleFactor;
+        pts_y[global_pts + new_pts] = tmp_coords[1] * scaleFactor;
+        i++;
+      }
+
+      new_pts++;
+    }
 	
-	//print("");
-	num_polys++;
+	else if (svg_pts[i] == "L" )
+	{
+      // Coords are Absolute, command is L
+      mode = 1;
+    }
+	else if (svg_pts[i] == "l")
+	{
+      // Coords are Offset, command is l
+      mode = 0;
+    }
+	else if (svg_pts[i] == "H")
+	{
+      // Coords are Absolute, command is H
+      mode = 3;
+    }
+	else if (svg_pts[i] == "h")
+	{
+      // Coords are Offset, command is h
+      mode = 2;
+    }
+	else if (svg_pts[i] == "V" )
+	{
+      // Coords are Absolute, command is V
+      mode = 5;
+    }
+	else if (svg_pts[i] == "v")
+	{
+      // Coords are Offset, command is v
+      mode = 4;
+    }
+	
+	// assume numerical coords if none of the above conditions are met
+	else
+	{
+	
+      if (mode == 1) 
+	  {
+        sprintf(svg_pts[i], "%s,%s", svg_pts[i], svg_pts[i+1]);
+      }
+	  
+	  // Line-to command, parse coordinates from text
+	  if ((mode == 0) || (mode == 1))
+	  {
+		svgcoords_to_coords(svg_pts[i]);
+	  }
+	  
+	  // horizontal line, update X only
+	  else if ((mode == 2) || (mode == 3))
+	  {
+		mode -= 2;
+		tmp_coords[0] = strtod(svg_pts[i]);
+	  }
+	  
+	  // vertical line, update Y only
+	  if ((mode == 4) || (mode == 5))
+	  {
+		mode -= 4;
+		tmp_coords[1] = strtod(svg_pts[i]);
+	  }
+
+      if (tmp_coords[0] == 0 && tmp_coords[1] == 0)
+	  {
+        print("ERROR");
+      }
+	  else
+	  {
+        poly_start[global_pts + new_pts] = 0;
+        if (mode == 0)
+		{
+          pts_x[global_pts + new_pts] = pts_x[global_pts + new_pts - 1] + tmp_coords[0] * scaleFactor;
+          pts_y[global_pts + new_pts] = pts_y[global_pts + new_pts - 1] + tmp_coords[1] * scaleFactor;
+        }
+		else if (mode == 1)
+		{
+          pts_x[global_pts + new_pts] = tmp_coords[0] * scaleFactor;
+          pts_y[global_pts + new_pts] = tmp_coords[1] * scaleFactor;
+        }
+
+        printf("    %2.2f,%2.2f\n", pts_x[global_pts + new_pts], pts_y[global_pts + new_pts]);
+        poly_start[global_pts + new_pts] = 0;
+        new_pts++;
+      }
+
+    }
+
+    i++;
+  }
+
+    // Close the polygon with the starting point
+  svgcoords_to_coords(svg_pts[1]);
+  pts_x[global_pts + new_pts] = tmp_coords[0] * scaleFactor;
+  pts_y[global_pts + new_pts] = tmp_coords[1] * scaleFactor;
+  new_pts++;
+
+  global_pts += new_pts;
+  num_polys++;
 }
 
 /*
 *  Traverse through the tree of groups, adding points to paths,
 *  while applying group transforms in the process
 */
-void extract_nested_data(string xml)
+void extract_nested_data()
 {
-	string ops[];
-	string children[];
+	string xml[];
+	string elements[];
+	string tags[];
 	int size;
-	
-	push(pack(xml, 0, num_pts));
-	
+
 	while(stack != ""){
-		strsplit(ops, pull(), '^');
-		
-		// Find # of children
-		size = xmlelements(children, ops[0], "g/g");
-		
-		if (size != 0 && ops[1] == "0"){
-			// Repush
-			push(ops[0] + "^1^" + ops[2]);
-			
-			// Reverse push children
-			for(int i=size-1; i>=0; i--)
-				push(pack(children[i], 0, num_pts));
-		}else{
-			// Search for and add points
-			print("Searching group " + xmlattribute(ops[0], "g", "id"));
-			
-			string paths[];
-			int num_paths = xmlelements(paths, ops[0], "g/path");
-			
-			for(int i=0; i<num_paths; i++){
-				print(" Found Path " + xmlattribute(paths[i], "path", "id"));
-				
-				// Extract points from each line/path
-				extract_pts(xmlattribute(paths[i], "path", "d"), xmlattribute(paths[i], "path", "transform"));
-			}
-			
-			// Find and apply group transform
-			string transform = xmlattribute(ops[0], "g", "transform");
-			if (transform != ""){
-				// Figure out where to start the transform
-				int offset = 0;
-				
-				if (ops[1] != "0")
-					offset = strtol(ops[2]);
-				
-				print(" Found transform " + transform);
-				
-				if (strstr(transform, "translate") != -1){
-					int a = strchr(transform, '('),
-						b = strchr(transform, ')', a+1);
+        // Pop xml to parse
+		strsplit(xml, pull(), '^');
 
-					// Extract translation offsets
-					svgcoords_to_coords(strsub(transform, a+1, b-a-1));
+        // Find name of root
+        string tmp[], root;
+        xmltags(tmp, xml[0], "");
+        root = tmp[0];
 
-					// Translate points
-					for(int i=offset; i < num_pts; i++){
-						pts_x[i] += tmp_coords[0];
-						pts_y[i] += tmp_coords[1];
-						//printf("%f, %f\n", pts_x[i + offset], pts_y[i + offset]);
-					}
-				}else if (strstr(transform, "matrix") != -1){
-					// Do Matrix math (yay...)
-					/* REMEMBER: Inkscape y axis is inverted...*/
-					print(" TODO: Implement Matrix Transform");
-				}else
-					print("Unknown path transformation:\n " + transform);
-				
-			}else{
-				print(" No transform found");
-			}		
-		}
+        if (root == "path"){
+            // Path found
+            print(" PATH " + xmlattribute(xml[0], "path", "id") + " FOUND ");
+            extract_pts(xmlattribute(xml[0], "path", "d"), xmlattribute(xml[0], "path", "transform"));
+        //}else if (root == ""){
+        // Add more cases here
+        }else{
+            int a = xmltags(tags, xml[0], root);
+            for(int i=0; i<a; i++){
+                int b = xmlelements(elements, xml[0], root+"/"+tags[i]);
+
+                // Reverse push children
+                for(int j=0; j<b; j++){
+                    // Push child back to search for more paths
+                    push(pack(elements[j], global_pts));
+                }
+            }
+        }
 	}
 }
 
@@ -322,62 +493,64 @@ void extract_nested_data(string xml)
 */
 output("svg2poly.log", "wt")
 {
-	setup_cmd();
-	
+	setup_cmd();	// get info from command line, if any
+	userDialog();	// launch user GUI
+
 	// Select file
-	string file = dlgFileOpen("Select a file", "", "*.svg"); 
-	
+	//string file = dlgFileOpen("Select a file", "", "*.svg");
+
 	if (file != ""){
 		int i=0, j=0;
 		string svg[];
 		master_xml= "";
-		
+
 		int len = fileread(svg, file);
-		
+
 		// Read file into one massive xml line
 		for(; i<len; i++){
 			//print(svg[i]);
 			master_xml += svg[i];
 		}
-		
+
 		// Extract Points and apply transformations
-		extract_nested_data(xmlelement(master_xml, "svg/g"));
-		
+        push(pack(master_xml, global_pts));
+		extract_nested_data();
+
 		// Correct Inkscape's Formatting issue
-		for(i=0; i<num_pts; i++)
+		for(i=0; i<global_pts; i++)
 			pts_y[i] *= -1;
-		
+
 		// Center object
 		real min_x, min_y,
 			max_x, max_y;
 		min_x = max_x = pts_x[0];
 		min_y = max_y = pts_y[0];
-		
-		for(i=1; i<num_pts; i++){
+
+		for(i=1; i<global_pts; i++){
 			// Find Min & Max
 			if (pts_x[i] < min_x)
 				min_x = pts_x[i];
 			if (pts_x[i] > max_x)
 				max_x = pts_x[i];
-				
+
 			if (pts_y[i] < min_y)
 				min_y = pts_y[i];
 			if (pts_y[i] > max_y)
 				max_y = pts_y[i];
 		}
-		
+
 		real x_center = (max_x - min_x)/2,
 			y_center = (max_y - min_y)/2;
-		
+
 		// Apply offsets to all points
-		for(i=0; i < num_pts; i++){
+		for(i=0; i < global_pts; i++){
 			pts_x[i] -= min_x + x_center;
 			pts_y[i] -= min_y + y_center;
 		}
-		printf("%f %f\n", x_center, y_center);
-		
+		printf("\nObject origin:\n%f %f\n", x_center, y_center);
+
 		// Generate eagle command
-		for(i=0; i<num_pts; i++){
+		for(i=0; i<global_pts; i++){
 			if (poly_start[i] == 1){
 				//printf("%2d) %3.4f %3.4f\n", j++, pts_x[i] * ratioX, pts_y[i] * ratioY);
 				if (i != 0)
@@ -389,11 +562,11 @@ output("svg2poly.log", "wt")
 				sprintf(cmd, "%s (R %f %f)", cmd, pts_x[i] * ratioX, pts_y[i] * ratioY);
 			}
 		}
-		
+
 		cmd += ";\n";
 		print("\nEagle Command:\n" + cmd);
 		exit(cmd);
 	}
-	
+
 	exit("");
 }
